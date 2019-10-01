@@ -10,14 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 3.9.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
   <link rel="alternate" href="/atom.xml" title="风和日丽" type="application/atom+xml">
-  <meta name="google-site-verification" content="pJVVxWd0D9DTolINrCMSlJtXXd5lLLqf3AKuLXYRXg0">
 
-<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+<link rel="stylesheet" href="/css/main.css?v=7.4.1">
 
 <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
@@ -31,7 +30,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '7.4.0',
+    version: '7.4.1',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":null},
@@ -148,16 +147,16 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <h1 class="site-subtitle" itemprop="description">把每一天当生命的最后一秒</h1>
+        <p class="site-subtitle">把每一天当生命的最后一秒</p>
       
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
@@ -182,7 +181,7 @@
       
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
       
@@ -202,7 +201,7 @@
       
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
       
@@ -224,7 +223,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">101</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">101</span></a>
 
   </li>
       
@@ -246,7 +245,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">27</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">27</span></a>
 
   </li>
       
@@ -268,7 +267,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">32</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">32</span></a>
 
   </li>
       
@@ -288,7 +287,7 @@
       
     
 
-    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comment"></i> <br>留言</a>
+    <a href="/guestbook" rel="section"><i class="fa fa-fw fa-comment"></i>留言</a>
 
   </li>
       
@@ -308,13 +307,13 @@
       
     
 
-    <a href="/photos" rel="section"><i class="menu-item-icon fa fa-fw fa-camera-retro"></i> <br>相册</a>
+    <a href="/photos" rel="section"><i class="fa fa-fw fa-camera-retro"></i>相册</a>
 
   </li>
       <li class="menu-item menu-item-search">
         <a href="javascript:;" class="popup-trigger">
         
-          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+          <i class="fa fa-search fa-fw"></i>搜索</a>
       </li>
     
   </ul>
@@ -388,8 +387,8 @@
   <div class="post-block tag">
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h2 class="collection-header">数学公式<small>标签</small>
-        </h2>
+        <h1 class="collection-header">数学公式<small>标签</small>
+        </h1>
       </div>
 
       
@@ -400,28 +399,28 @@
   
     
     <div class="collection-year">
-      <h2 class="collection-header">2019</h2>
+      <h1 class="collection-header">2019</h1>
     </div>
   
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/posts/97f2042f.html" itemprop="url">
-            <span itemprop="name">hexo开启Mathjax语法渲染配置折腾记</span>
-          </a>
-        
-      </h3>
-
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
+        <time itemprop="dateCreated"
               datetime="2019-04-30T23:25:52+08:00"
               content="2019-04-30">
           04-30
         </time>
       </div>
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/posts/97f2042f.html" itemprop="url">
+            <span itemprop="name">hexo开启Mathjax语法渲染配置折腾记</span>
+          </a>
+        
+      </h2>
 
     </header>
   </article>
@@ -444,12 +443,10 @@
         </div>
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
   <aside class="sidebar">
@@ -471,13 +468,11 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="http://lc-0ww4yxjs.cn-n1.lcfile.com/08d68726241e9640a99e/1140536605633105492.gif"
-      alt="pengzhaibo">
   <p class="site-author-name" itemprop="name">pengzhaibo</p>
   <div class="site-description" itemprop="description"></div>
 </div>
-  <nav class="site-state motion-element">
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
       <div class="site-state-item site-state-posts">
         
           <a href="/archives/">
@@ -514,6 +509,7 @@
       </div>
     
   </nav>
+</div>
   <div class="feed-link motion-element">
     <a href="/atom.xml" rel="alternate">
       <i class="fa fa-rss"></i>RSS
@@ -747,21 +743,19 @@
   </div>
 
   
-
-
   <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/fancybox@2/dist/js/jquery.fancybox.pack.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
-<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
-<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
+<script src="/js/schemes/pisces.js?v=7.4.1"></script>
 
-<script src="/js/next-boot.js?v=7.4.0"></script><script src="/js/bookmark.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.1"></script><script src="/js/bookmark.js?v=7.4.1"></script>
   <script>
 var pjax = new Pjax({
   selectors: [
@@ -824,7 +818,7 @@ window.addEventListener('pjax:success', () => {
 
 
 
-  <script src="/js/local-search.js?v=7.4.0"></script>
+  <script src="/js/local-search.js?v=7.4.1"></script>
 
 
 
@@ -912,7 +906,9 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     pageSize: '10' || 10,
     visitor: true,
     lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
   });
 }, window.Valine);
 </script>
