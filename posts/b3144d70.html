@@ -1044,11 +1044,11 @@
 
   
   <script size="300" alpha="0.6" zIndex="-1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0.2.9/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1.9.0/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
@@ -1148,7 +1148,7 @@ window.addEventListener('pjax:success', () => {
 
 <script pjax>
 if (document.querySelectorAll('div.pdf').length) {
-  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.228/images/annotation-check.svg', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js', () => {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {
@@ -1195,7 +1195,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
 
 <script>
-NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js', () => {
   var GUEST = ['nick', 'mail', 'link'];
   var guest = 'nick,mail,link';
   guest = guest.split(',').filter(item => {
