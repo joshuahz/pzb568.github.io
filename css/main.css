@@ -1320,7 +1320,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fff;
+  background: #be2555;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3107,4 +3107,11 @@ body {
   .pagination {
     margin: 8px 0 0;
   }
+}
+/* 鼠标样式 */
+* {
+  cursor: url("/images/aero_link_l.cur"), auto;
+}
+:link {
+  cursor: url("/images/aero_pen_xl.cur"), auto;
 }
