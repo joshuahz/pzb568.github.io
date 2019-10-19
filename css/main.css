@@ -1320,7 +1320,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8a47fb;
+  background: #e7d17d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3116,14 +3116,12 @@ body {
   cursor: url("/images/aero_pen_xl.cur"), auto;
 }
 /*动态背景图片*/
-/*
 body {
-  background:url(https://source.unsplash.com/random/1600x900);
+  background: url("https://source.unsplash.com/random/1600x900");
   background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position:50% 50%;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
-*/
 /*网站LOGO炫酷效果*/
 .site-title {
   background-image: linear-gradient(to right, #ff4500, #ffa500, #ffd700, #90ee90, #0ff, #1e90ff, #9370db, #ff69b4, #ff4500);
