@@ -1320,7 +1320,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff20b9;
+  background: #eb954f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3153,7 +3153,7 @@ body {
   top: -900px;
   bottom: unset;
   transition: all 0.5s ease-in-out;
-  background: url("https://s2.ax1x.com/2019/10/15/K94lnJ.png");
+  background: url("/images/scroll.png");
 }
 .back-to-top > i {
   display: none;
