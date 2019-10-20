@@ -40,7 +40,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
@@ -401,16 +401,16 @@
       <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
+      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/d8fa7a69.html" rel="bookmark">termux安装使用you-get下载视频</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/371af598.html" rel="bookmark">使用termux搭建wordpress网站</a></div>
+      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/604fe14.html" rel="bookmark">学习程序开发的神器Jupyter notebook</a></div>
+      <div class="popular-posts-title"><a href="/posts/371af598.html" rel="bookmark">使用termux搭建wordpress网站</a></div>
     </li>
   </ul>
 
@@ -888,17 +888,6 @@ NexT.utils.getScript('cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
   });
 }, window.Valine);
 </script>
-
-<script>
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
-</script>
     </div>
 
 <!-- Your XlchPlayerKey -->
@@ -912,7 +901,7 @@ NexT.utils.getScript('cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
 <!-- Scrollbar -->
 <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
 <!-- BadApplePlayer -->
-<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>

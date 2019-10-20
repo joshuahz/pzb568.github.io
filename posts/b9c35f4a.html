@@ -40,7 +40,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
@@ -866,17 +866,6 @@ NexT.utils.getScript('cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
   });
 }, window.Valine);
 </script>
-
-<script>
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
-</script>
     </div>
 
 <!-- Your XlchPlayerKey -->
@@ -890,7 +879,7 @@ NexT.utils.getScript('cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
 <!-- Scrollbar -->
 <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
 <!-- BadApplePlayer -->
-<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>
