@@ -1320,7 +1320,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff79af;
+  background: #1a5e2b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1739,7 +1739,7 @@ pre .javascript .function {
   height: 2px;
   left: 0;
   position: fixed;
-  bottom: 0;
+  top: 0;
   width: 0;
   z-index: 500;
 }
@@ -3146,6 +3146,7 @@ body {
     background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%) !important;
   }
 }
+/*
 /*个性化返回顶部*/
 .back-to-top {
   width: 70px;
@@ -3162,6 +3163,7 @@ body {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
 }
+*
 @-moz-keyframes sliding {
   to {
     background-position: -2000vw;
