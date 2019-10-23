@@ -4,7 +4,7 @@
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 4.0.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
@@ -58,18 +58,16 @@
           enable_page_level_ads: true
      });
 </script>
-  <meta name="description" content="&amp;emsp;&amp;emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。  进入主题目录并更新12cd themes/nextgit pull   因为修改了很多的配置项目，所以更新失败了">
+  <meta name="description" content="&amp;emsp;&amp;emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。  进入主题目录并更新12cd themes&#x2F;nextgit pull 因为修改了很多的配置项目，所以更新失败了">
 <meta name="keywords" content="hexo,next,主题更新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo主题更新问题处理">
-<meta property="og:url" content="https://pzb568.github.io/posts/aaf37d53.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;aaf37d53.html">
 <meta property="og:site_name" content="风和日丽">
-<meta property="og:description" content="&amp;emsp;&amp;emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。  进入主题目录并更新12cd themes/nextgit pull   因为修改了很多的配置项目，所以更新失败了">
+<meta property="og:description" content="&amp;emsp;&amp;emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。  进入主题目录并更新12cd themes&#x2F;nextgit pull 因为修改了很多的配置项目，所以更新失败了">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-25T19:49:56.276Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo主题更新问题处理">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。  进入主题目录并更新12cd themes/nextgit pull   因为修改了很多的配置项目，所以更新失败了">
 
 <link rel="canonical" href="https://pzb568.github.io/posts/aaf37d53.html">
 
@@ -306,7 +304,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/网络应用/" itemprop="url" rel="index">
+                  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8/" itemprop="url" rel="index">
                     <span itemprop="name">网络应用</span>
                   </a>
                 </span>
@@ -367,32 +365,17 @@
       
         <p>&emsp;&emsp; 由于next主题经常更新，自己又在本地大量修改主题，更新中会有很多问题，经过很多次折腾及网络上其他朋友的教程，我找到了不错的处理方法。</p>
 <ol>
-<li>进入主题目录并更新<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> themes/<span class="keyword">next</span></span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>因为修改了很多的配置项目，所以更新失败了<br><a id="more"></a></p>
-<ol>
-<li><p>将修改储藏到暂存区<br>我们可以通过<code>git stash</code>这句命令将对主题文件的修改储存到本地的暂存区：</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git stash</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行更新<br>我们现在需要再次使用 git pull 命令来获取最新的主题文件，别担心，这次不会再有上面的错误了</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从暂存区取出修改<br>我们现在要通过执行 <strong>git stash pop</strong> 这句命令来从暂存区取出修改。</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash <span class="keyword">pop</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>如果报错如下内容需要进入提示的文件修改<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git stash <span class="built_in">pop</span></span><br><span class="line">Auto-merging _config.yml</span><br><span class="line">CONFLICT (<span class="built_in">content</span>): Merge conflict <span class="keyword">in</span> _config.yml</span><br></pre></td></tr></table></figure></p>
-<ol>
+<li>进入主题目录并更新<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="attr">git</span> <span class="string">pull</span></span><br></pre></td></tr></table></figure>
+因为修改了很多的配置项目，所以更新失败了<a id="more"></a></li>
+<li>将修改储藏到暂存区<br>我们可以通过<code>git stash</code>这句命令将对主题文件的修改储存到本地的暂存区：<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git stash</span></span><br></pre></td></tr></table></figure></li>
+<li>执行更新<br>我们现在需要再次使用 git pull 命令来获取最新的主题文件，别担心，这次不会再有上面的错误了<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure></li>
+<li>从暂存区取出修改<br>我们现在要通过执行 <strong>git stash pop</strong> 这句命令来从暂存区取出修改。<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash <span class="keyword">pop</span></span><br></pre></td></tr></table></figure>
+如果报错如下内容需要进入提示的文件修改<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git stash pop</span><br><span class="line">Auto-merging _config.yml</span><br><span class="line"><span class="keyword">CONFLICT</span> (content): Merge <span class="keyword">conflict</span> <span class="keyword">in</span> _config.yml</span><br></pre></td></tr></table></figure></li>
 <li>进入文件<br>可以看到文中&lt;&lt;&lt;&lt;&lt;<head，=======中间是上游分支，======，>&gt;&gt;&gt;&gt;&gt;b8e436中间是你自己的分支，删掉一个就可以了</head，=======中间是上游分支，======，></li>
-<li><p>提交记录</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> _config.yml</span></span><br><span class="line">git commit -m <span class="string">"冲突处理"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在更新</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
-</li>
+<li>提交记录<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span><span class="bash"> _config.yml</span></span><br><span class="line">git commit -m <span class="string">"冲突处理"</span></span><br></pre></td></tr></table></figure></li>
+<li>在更新<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull</span></span><br></pre></td></tr></table></figure>
+主题升级成功。</li>
 </ol>
-<p>主题升级成功。</p>
 
     </div>
 
@@ -403,13 +386,13 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/4703653d.html" rel="bookmark">Markdown编辑器日常使用语法记录</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/a7ce4954.html" rel="bookmark">hexo网站permalink设置</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/4703653d.html" rel="bookmark">Markdown编辑器日常使用语法记录</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/4ac99040.html" rel="bookmark">网页插入pdf文件</a></div>
@@ -460,7 +443,7 @@
           <div class="post-tags">
               <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
               <a href="/tags/next/" rel="tag"><i class="fa fa-tag"></i> next</a>
-              <a href="/tags/主题更新/" rel="tag"><i class="fa fa-tag"></i> 主题更新</a>
+              <a href="/tags/%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0/" rel="tag"><i class="fa fa-tag"></i> 主题更新</a>
           </div>
 
         

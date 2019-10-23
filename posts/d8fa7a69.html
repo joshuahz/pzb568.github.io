@@ -4,7 +4,7 @@
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 4.0.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
@@ -62,14 +62,16 @@
 <meta name="keywords" content="termux,视频,嗅探,下载">
 <meta property="og:type" content="article">
 <meta property="og:title" content="termux安装使用you-get下载视频">
-<meta property="og:url" content="https://pzb568.github.io/posts/d8fa7a69.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;d8fa7a69.html">
 <meta property="og:site_name" content="风和日丽">
 <meta property="og:description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新1pkg update &amp;amp;&amp;amp; pkg upgrade 2.获取SD卡读写权限1termux-setup-storage 3.安装python ffmpeg1pkg install python">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;01.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;02.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;03.jpg">
 <meta property="og:updated_time" content="2019-09-25T19:49:56.276Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="termux安装使用you-get下载视频">
-<meta name="twitter:description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新1pkg update &amp;amp;&amp;amp; pkg upgrade 2.获取SD卡读写权限1termux-setup-storage 3.安装python ffmpeg1pkg install python">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;01.jpg">
 
 <link rel="canonical" href="https://pzb568.github.io/posts/d8fa7a69.html">
 
@@ -306,7 +308,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/应用软件/" itemprop="url" rel="index">
+                  <a href="/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index">
                     <span itemprop="name">应用软件</span>
                   </a>
                 </span>
@@ -367,18 +369,14 @@
       
         <h1 id="You-Get简单介绍"><a href="#You-Get简单介绍" class="headerlink" title="You-Get简单介绍"></a>You-Get简单介绍</h1><p>&emsp;&emsp; <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a>是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。</p>
 <h1 id="一、安裝"><a href="#一、安裝" class="headerlink" title="一、安裝"></a>一、安裝</h1><hr>
-<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">update</span> &amp;&amp; pkg <span class="keyword">upgrade</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="meta">update</span> <span class="variable">&amp;&amp;</span> pkg upgrade</span><br></pre></td></tr></table></figure>
 <h2 id="2-获取SD卡读写权限"><a href="#2-获取SD卡读写权限" class="headerlink" title="2.获取SD卡读写权限"></a>2.获取SD卡读写权限</h2><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-<span class="built_in">setup</span>-storage</span><br></pre></td></tr></table></figure>
 <h2 id="3-安装python-ffmpeg"><a href="#3-安装python-ffmpeg" class="headerlink" title="3.安装python ffmpeg"></a>3.安装python ffmpeg</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> python ffmpeg</span><br></pre></td></tr></table></figure>
 <h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip <span class="keyword">install</span> <span class="comment">--upgrade pip</span></span><br></pre></td></tr></table></figure>
 <h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> you-<span class="keyword">get</span></span><br></pre></td></tr></table></figure>
 <h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> <span class="comment">--upgrade you-get</span></span><br></pre></td></tr></table></figure>
-<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="builtin-name">get</span> -V</span><br></pre></td></tr></table></figure></p>
-<p> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -<span class="selector-tag">i</span> http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure></p>
-<p> <img alt data-src="01.jpg"></p>
-<p><strong>解析</strong><br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="keyword">get</span> -u http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure></p>
-<p><img alt data-src="02.jpg"><br><strong>下载 </strong><br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -o <span class="regexp">/sdcard/</span>video<span class="regexp">/ http:/</span><span class="regexp">/m.iqiyi.com/</span>v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure></p>
-<p><img alt data-src="03.jpg"><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
+<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="builtin-name">get</span> -V</span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -<span class="selector-tag">i</span> http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br> <img alt data-src="01.jpg"></p>
+<p><strong>解析</strong><br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="keyword">get</span> -u http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br><img alt data-src="02.jpg"><br><strong>下载 </strong><br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -o <span class="regexp">/sdcard/</span>video<span class="regexp">/ http:/</span><span class="regexp">/m.iqiyi.com/</span>v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img alt data-src="03.jpg"><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
 <iframe src="//player.bilibili.com/player.html?aid=24822266&cid=41834559&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
@@ -400,10 +398,10 @@
       <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/371af598.html" rel="bookmark">使用termux搭建wordpress网站</a></div>
+      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
+      <div class="popular-posts-title"><a href="/posts/604fe14.html" rel="bookmark">学习程序开发的神器Jupyter notebook</a></div>
     </li>
   </ul>
 
@@ -450,9 +448,9 @@
           
           <div class="post-tags">
               <a href="/tags/termux/" rel="tag"><i class="fa fa-tag"></i> termux</a>
-              <a href="/tags/视频/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
-              <a href="/tags/嗅探/" rel="tag"><i class="fa fa-tag"></i> 嗅探</a>
-              <a href="/tags/下载/" rel="tag"><i class="fa fa-tag"></i> 下载</a>
+              <a href="/tags/%E8%A7%86%E9%A2%91/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
+              <a href="/tags/%E5%97%85%E6%8E%A2/" rel="tag"><i class="fa fa-tag"></i> 嗅探</a>
+              <a href="/tags/%E4%B8%8B%E8%BD%BD/" rel="tag"><i class="fa fa-tag"></i> 下载</a>
           </div>
 
         

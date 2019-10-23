@@ -4,7 +4,7 @@
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 4.0.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
@@ -62,14 +62,12 @@
 <meta name="keywords" content="hexo,github,git,hexo备份,hexo搭建,termux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客的搭建与备份">
-<meta property="og:url" content="https://pzb568.github.io/posts/7a49eb42.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;7a49eb42.html">
 <meta property="og:site_name" content="风和日丽">
 <meta property="og:description" content="一、搭建====&amp;emsp;&amp;emsp; Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。hexo 博客在Linux系统中搭建是非常简单的，在WIN系统中比较复杂，我们接触的手机📱永远要比电脑的时间要多那么我们可以在安卓手机上使用termux来搭建，这样随时随地都可以写做和发表文章。 1. 下载te">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-25T19:49:56.276Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo博客的搭建与备份">
-<meta name="twitter:description" content="一、搭建====&amp;emsp;&amp;emsp; Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。hexo 博客在Linux系统中搭建是非常简单的，在WIN系统中比较复杂，我们接触的手机📱永远要比电脑的时间要多那么我们可以在安卓手机上使用termux来搭建，这样随时随地都可以写做和发表文章。 1. 下载te">
 
 <link rel="canonical" href="https://pzb568.github.io/posts/7a49eb42.html">
 
@@ -306,7 +304,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/应用软件/" itemprop="url" rel="index">
+                  <a href="/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index">
                     <span itemprop="name">应用软件</span>
                   </a>
                 </span>
@@ -369,148 +367,68 @@
 <h2 id="1-下载termux"><a href="#1-下载termux" class="headerlink" title="1. 下载termux"></a>1. 下载termux</h2><ol>
 <li>下载termux可以在谷歌商店里面下载，但是想要进入谷歌商店需要翻墙，想了解翻墙教程可以去看一下我之前的文章<a href="https://pzb568.github.io/2018/11/08/ss%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB%E5%8F%8A%E4%BD%BF%E7%94%A8/">ss系列软件分享及使用</a> <a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">v2ray的使用与分享</a>或者直接下载网盘分享的termux。 点击<a href="https://www.lanzous.com/i4935gh" target="_blank" rel="noopener">下载</a></li>
 <li>进入并更新termux，第一次进入需要等几分钟出现命令界面然后输入<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pkg update</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>如果感觉键位太少可以看之前的文章<a href="https://pzb568.github.io/2019/02/26/termux0.66%E6%B7%BB%E5%8A%A0%E5%B8%B8%E7%94%A8%E6%8C%89%E9%94%AE/">修改添加常用键</a></p>
-<h2 id="2-安装必须组件和hexo"><a href="#2-安装必须组件和hexo" class="headerlink" title="2. 安装必须组件和hexo"></a>2. 安装必须组件和hexo</h2><ol>
-<li><p>安装 nodejs git openssh必须软件</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs git openssh</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装hexo</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化新建一个叫blog的文件夹</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo init blog</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入blog文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装npm 核心组件支持</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="3-下载主题并配置"><a href="#3-下载主题并配置" class="headerlink" title="3. 下载主题并配置"></a>3. 下载主题并配置</h2><ol>
-<li><p>下载主题，hexo的主题非常丰富可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方主题</a>下载；下面有演示我使用的主题<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a></p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/theme-<span class="keyword">next</span>/hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在站点配置文件_config.yml开启next主题可以下载<a href="https://www.lanzous.com/i3w2y0b" target="_blank" rel="noopener">quickedit</a>来编辑打开位于/data/data/com.termux/files/home/blog文件夹下_config.yml文件查找<strong>theme:</strong>修改theme: 空格next。具体的站点和主题信息配置请自行去<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>和<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">next主题</a>文档查看</p>
-</li>
+如果感觉键位太少可以看之前的文章<a href="https://pzb568.github.io/2019/02/26/termux0.66%E6%B7%BB%E5%8A%A0%E5%B8%B8%E7%94%A8%E6%8C%89%E9%94%AE/">修改添加常用键</a><h2 id="2-安装必须组件和hexo"><a href="#2-安装必须组件和hexo" class="headerlink" title="2. 安装必须组件和hexo"></a>2. 安装必须组件和hexo</h2></li>
+<li>安装 nodejs git openssh必须软件<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs git openssh</span><br></pre></td></tr></table></figure></li>
+<li>安装hexo<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure></li>
+<li>初始化新建一个叫blog的文件夹<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo init blog</span></span><br></pre></td></tr></table></figure></li>
+<li>进入blog文件夹<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure></li>
+<li>安装npm 核心组件支持<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-下载主题并配置"><a href="#3-下载主题并配置" class="headerlink" title="3. 下载主题并配置"></a>3. 下载主题并配置</h2></li>
+<li>下载主题，hexo的主题非常丰富可以去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方主题</a>下载；下面有演示我使用的主题<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/theme-<span class="keyword">next</span>/hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure></li>
+<li>在站点配置文件_config.yml开启next主题可以下载<a href="https://www.lanzous.com/i3w2y0b" target="_blank" rel="noopener">quickedit</a>来编辑打开位于/data/data/com.termux/files/home/blog文件夹下_config.yml文件查找<strong>theme:</strong>修改theme: 空格next。具体的站点和主题信息配置请自行去<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>和<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">next主题</a>文档查看</li>
 <li>启动本地服务器查看<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-配置ssh密钥及github或者gitee部署"><a href="#4-配置ssh密钥及github或者gitee部署" class="headerlink" title="4 . 配置ssh密钥及github或者gitee部署"></a>4 . 配置ssh密钥及github或者gitee部署</h2></li>
+<li>先成<strong>ssh-keygen</strong>密钥<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh-keygen</span></span><br></pre></td></tr></table></figure></li>
+<li>注册<a href="www.gitee.com">gitee</a>或者<a href="www.github.com">github</a>帐号并新建一分项目。gitee项目名即是网站域名部署成功后需要开启gitee page；github项目名为用户名.github.io部署成功后<a href="https://用户名.github.io会自动生命github" target="_blank" rel="noopener">https://用户名.github.io会自动生命github</a> page。</li>
+<li>复制ssh公钥到新建的<a href="www.gitee.com">gitee</a>或者<a href="www.github.com">github</a>帐号的设置里面ssh密钥并保存。<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat <span class="string">.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure></li>
+<li>验证ssh是否连接成功</li>
+<li>gitee帐号验证<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-T</span> <span class="selector-tag">git</span>@<span class="keyword">gitee</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure></li>
+<li>github账号验证<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-T</span> <span class="selector-tag">git</span>@<span class="keyword">github</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-生成及部署"><a href="#5-生成及部署" class="headerlink" title="5. 生成及部署"></a>5. 生成及部署</h2></li>
+<li>清理缓存<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure></li>
+<li>生成<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">generate</span></span><br></pre></td></tr></table></figure></li>
+<li>部署<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo deploy</span></span><br></pre></td></tr></table></figure>
+可以简化一步执行<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo g -d</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="4-配置ssh密钥及github或者gitee部署"><a href="#4-配置ssh密钥及github或者gitee部署" class="headerlink" title="4 . 配置ssh密钥及github或者gitee部署"></a>4 . 配置ssh密钥及github或者gitee部署</h2><ol>
-<li><p>先成<strong>ssh-keygen</strong>密钥</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh-keygen</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>注册<a href="www.gitee.com">gitee</a>或者<a href="www.github.com">github</a>帐号并新建一分项目。gitee项目名即是网站域名部署成功后需要开启gitee page；github项目名为用户名.github.io部署成功后<a href="https://用户名.github.io会自动生命github" target="_blank" rel="noopener">https://用户名.github.io会自动生命github</a> page。</p>
-</li>
-<li><p>复制ssh公钥到新建的<a href="www.gitee.com">gitee</a>或者<a href="www.github.com">github</a>帐号的设置里面ssh密钥并保存。</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat <span class="string">.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>验证ssh是否连接成功</p>
-</li>
-<li><p>gitee帐号验证</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-T</span> <span class="selector-tag">git</span>@<span class="keyword">gitee</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>github账号验证</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-T</span> <span class="selector-tag">git</span>@<span class="keyword">github</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="5-生成及部署"><a href="#5-生成及部署" class="headerlink" title="5. 生成及部署"></a>5. 生成及部署</h2><ol>
-<li><p>清理缓存</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>生成</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">generate</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部署</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo deploy</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>可以简化一步执行<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo g -d</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="二、备份"><a href="#二、备份" class="headerlink" title="二、备份"></a>二、备份</h1><p>   经常在多个平台写博客，或者经常重新安装统、在安卓手机termux里面使用hexo经常刷机，会导致博客及配置文件的的丢失，我的这个博客也丢失了很多次了，最后我想了个办法利用github来备份博客的文件和数据，这样博客的文件和数据永远不会弃失，并且还可以在多个平台同时发布文章。</p>
 <ol>
 <li>在github新建一个叫blog的仓库</li>
 <li><p>在本地博客文件夹创建git版本库，如果有安装git必须先安装git</p>
 </li>
 <li><p>安卓termux 安装git</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Ubuntu安装git</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>archLinux安装git</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -S git</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入需要备份blog目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建版本库</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure></li>
+<li>Ubuntu安装git<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure></li>
+<li>archLinux安装git<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -S git</span></span><br></pre></td></tr></table></figure></li>
+<li>进入需要备份blog目录<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure></li>
+<li>创建版本库<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>这个时候blog的版本库已经创建好了。<br>验证是否成功，如果有一个.git的隐藏文件就说明创建成功。<br>查看隐藏文件<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ls -a</span></span><br></pre></td></tr></table></figure></p>
-<ol>
+这个时候blog的版本库已经创建好了。<br>验证是否成功，如果有一个.git的隐藏文件就说明创建成功。<br>查看隐藏文件<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ls -a</span></span><br></pre></td></tr></table></figure></li>
 <li>在github 或者gitee创建项目仓库</li>
-<li><p>连接上面github创建的仓库</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> remote <span class="keyword">add </span>origin git<span class="comment">@github.com:you name/blog.git</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加备份文件source/ themes/ _config.yml scaffolds/ package.json .gitignore 这些文件需要备份</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add source/ themes/ _config<span class="selector-class">.yml</span> scaffolds/ package<span class="selector-class">.json</span> .gitignore</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>注释备份内容，明确的注释可以回退版本</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -m <span class="string">"博客备份"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>第一次强制上传文件到github仓库</p>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
-</li>
+<li>连接上面github创建的仓库<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">git</span> remote <span class="keyword">add </span>origin git<span class="comment">@github.com:you name/blog.git</span></span><br></pre></td></tr></table></figure></li>
+<li>添加备份文件source/ themes/ _config.yml scaffolds/ package.json .gitignore 这些文件需要备份<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add source/ themes/ _config<span class="selector-class">.yml</span> scaffolds/ package<span class="selector-class">.json</span> .gitignore</span><br></pre></td></tr></table></figure></li>
+<li>注释备份内容，明确的注释可以回退版本<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -m <span class="string">"博客备份"</span></span><br></pre></td></tr></table></figure></li>
+<li>第一次强制上传文件到github仓库<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
+这样博客就备份成功了，之后备份直接前面3 `4步，第5部直接使用下面命令就可以了<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure>
+<h1 id="三、恢复"><a href="#三、恢复" class="headerlink" title="三、恢复"></a>三、恢复</h1></li>
 </ol>
-<p>这样博客就备份成功了，之后备份直接前面3 `4步，第5部直接使用下面命令就可以了<br><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure></p>
-<h1 id="三、恢复"><a href="#三、恢复" class="headerlink" title="三、恢复"></a>三、恢复</h1><h2 id="1-安装博客必要组件"><a href="#1-安装博客必要组件" class="headerlink" title="1. 安装博客必要组件"></a>1. 安装博客必要组件</h2><ol>
-<li><p>安装coreutils</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> coreutils</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装git</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装node.js</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装hexo </p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure>
-</li>
+<h2 id="1-安装博客必要组件"><a href="#1-安装博客必要组件" class="headerlink" title="1. 安装博客必要组件"></a>1. 安装博客必要组件</h2><ol>
+<li>安装coreutils<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> coreutils</span><br></pre></td></tr></table></figure></li>
+<li>安装git<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure></li>
+<li>安装node.js<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs</span><br></pre></td></tr></table></figure></li>
+<li>安装hexo <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure>
+<h2 id="2-git-clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示"><a href="#2-git-clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示" class="headerlink" title="2. git clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示"></a>2. git clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="tag">&lt;<span class="name">版本库的网址</span>&gt;</span> <span class="tag">&lt;<span class="name">本地目录名</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>进入bolg文件夹并安装hexo<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="keyword">bolg</span></span><br><span class="line"><span class="keyword">npm </span><span class="keyword">install </span>hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li>安装npm 组件<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3. 安装插件"></a>3. 安装插件</h2></li>
+<li>安装deployer-git <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure></li>
+<li>安装搜索功能插件<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-searchdb <span class="comment">--save</span></span><br></pre></td></tr></table></figure></li>
+<li>安装Valine评论系统<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> valine <span class="comment">--save</span></span><br></pre></td></tr></table></figure></li>
+<li>文字统计插件<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-symbols-<span class="keyword">count</span>-<span class="built_in">time</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure></li>
+<li>音乐插件<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-tag-aplayer</span></span><br></pre></td></tr></table></figure></li>
+<li>视频插件<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-tag-dplayer <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+搞定希望这个教程对你有所帮助。</li>
 </ol>
-<h2 id="2-git-clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示"><a href="#2-git-clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示" class="headerlink" title="2. git clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示"></a>2. git clone自己备份的博客源代码克隆备份的bolg源文件地址是你自己的地址这里不做演示</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="tag">&lt;<span class="name">版本库的网址</span>&gt;</span> <span class="tag">&lt;<span class="name">本地目录名</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>进入bolg文件夹并安装hexo</p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="keyword">bolg</span></span><br><span class="line"><span class="keyword">npm </span><span class="keyword">install </span>hexo-cli -g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装npm 组件</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3. 安装插件"></a>3. 安装插件</h2><ol>
-<li><p>安装deployer-git </p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装搜索功能插件</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-searchdb <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装Valine评论系统</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> valine <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文字统计插件</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-symbols-<span class="keyword">count</span>-<span class="built_in">time</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>音乐插件</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-tag-aplayer</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>视频插件</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-tag-dplayer <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>搞定希望这个教程对你有所帮助。</p>
 
     </div>
 
@@ -521,13 +439,13 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/d8fa7a69.html" rel="bookmark">termux安装使用you-get下载视频</a></div>
+      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/aaf37d53.html" rel="bookmark">hexo主题更新问题处理</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/4703653d.html" rel="bookmark">Markdown编辑器日常使用语法记录</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/a7ce4954.html" rel="bookmark">hexo网站permalink设置</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/4ac99040.html" rel="bookmark">网页插入pdf文件</a></div>
@@ -582,8 +500,8 @@
               <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
               <a href="/tags/github/" rel="tag"><i class="fa fa-tag"></i> github</a>
               <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
-              <a href="/tags/hexo备份/" rel="tag"><i class="fa fa-tag"></i> hexo备份</a>
-              <a href="/tags/hexo搭建/" rel="tag"><i class="fa fa-tag"></i> hexo搭建</a>
+              <a href="/tags/hexo%E5%A4%87%E4%BB%BD/" rel="tag"><i class="fa fa-tag"></i> hexo备份</a>
+              <a href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag"><i class="fa fa-tag"></i> hexo搭建</a>
               <a href="/tags/termux/" rel="tag"><i class="fa fa-tag"></i> termux</a>
           </div>
 

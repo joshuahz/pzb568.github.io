@@ -4,7 +4,7 @@
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 4.0.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
@@ -62,14 +62,12 @@
 <meta name="keywords" content="加密模板">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客加密设置">
-<meta property="og:url" content="https://pzb568.github.io/posts/456ff02a.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;456ff02a.html">
 <meta property="og:site_name" content="风和日丽">
 <meta property="og:description" content="&amp;emsp;&amp;emsp; 在添加 Hexo 博客 加密功能的模块有2个，一个是hexo-blog-encrypt，另一个是hexo-encrypt。可任选一个。 hexo-blog-encrypt插件安装hexo-blog-encrypt插件1npm install --save hexo-blog-encrypt 配置启用插件123# Securityencrypt: # hexo-blog-e">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-25T19:49:56.276Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo博客加密设置">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp; 在添加 Hexo 博客 加密功能的模块有2个，一个是hexo-blog-encrypt，另一个是hexo-encrypt。可任选一个。 hexo-blog-encrypt插件安装hexo-blog-encrypt插件1npm install --save hexo-blog-encrypt 配置启用插件123# Securityencrypt: # hexo-blog-e">
 
 <link rel="canonical" href="https://pzb568.github.io/posts/456ff02a.html">
 
@@ -306,7 +304,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo加密/" itemprop="url" rel="index">
+                  <a href="/categories/hexo%E5%8A%A0%E5%AF%86/" itemprop="url" rel="index">
                     <span itemprop="name">hexo加密</span>
                   </a>
                 </span>
@@ -368,7 +366,7 @@
         <p>&emsp;&emsp; 在添加 Hexo 博客 加密功能的模块有2个，一个是hexo-blog-encrypt，另一个是hexo-encrypt。可任选一个。</p>
 <h1 id="hexo-blog-encrypt插件"><a href="#hexo-blog-encrypt插件" class="headerlink" title="hexo-blog-encrypt插件"></a>hexo-blog-encrypt插件</h1><h2 id="安装hexo-blog-encrypt插件"><a href="#安装hexo-blog-encrypt插件" class="headerlink" title="安装hexo-blog-encrypt插件"></a>安装hexo-blog-encrypt插件</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--save hexo-blog-encrypt</span></span><br></pre></td></tr></table></figure>
 <h2 id="配置启用插件"><a href="#配置启用插件" class="headerlink" title="配置启用插件"></a>配置启用插件</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<h2 id="加密文章"><a href="#加密文章" class="headerlink" title="加密文章"></a>加密文章</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">  -</span><span class="bullet">--</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2016</span><span class="bullet">-03</span><span class="bullet">-30</span> <span class="number">21</span><span class="string">:18:02</span></span><br><span class="line"><span class="attr">password:</span> <span class="number">123456</span>  <span class="comment">#密码</span></span><br><span class="line"><span class="attr">abstract:</span> <span class="string">Something</span> <span class="string">was</span> <span class="string">encrypted,</span> <span class="string">please</span> <span class="string">enter</span> <span class="string">password</span> <span class="string">to</span> <span class="string">read.</span>  <span class="comment">#摘要</span></span><br><span class="line"><span class="attr">message:</span> <span class="string">Welcome</span> <span class="string">to</span> <span class="string">my</span> <span class="string">blog,</span> <span class="string">enter</span> <span class="string">password</span> <span class="string">to</span> <span class="string">read.</span> <span class="comment"># 描述性文字</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<h2 id="加密文章"><a href="#加密文章" class="headerlink" title="加密文章"></a>加密文章</h2><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">---</span></span><br><span class="line">title: Hello World</span><br><span class="line"><span class="type">date</span>: <span class="number">2016</span><span class="number">-03</span><span class="number">-30</span> <span class="number">21</span>:<span class="number">18</span>:<span class="number">02</span></span><br><span class="line"><span class="keyword">password</span>: <span class="number">123456</span>  #密码</span><br><span class="line">abstract: Something was <span class="keyword">encrypted</span>, please enter <span class="keyword">password</span> <span class="keyword">to</span> <span class="keyword">read</span>.  #摘要</span><br><span class="line">message: Welcome <span class="keyword">to</span> my blog, enter <span class="keyword">password</span> <span class="keyword">to</span> <span class="keyword">read</span>. # 描述性文字</span><br><span class="line"><span class="comment">---</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <h1 id="hexo-encrypt插件"><a href="#hexo-encrypt插件" class="headerlink" title="hexo-encrypt插件"></a>hexo-encrypt插件</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-<span class="keyword">encrypt</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 <h2 id="博客设置-config-yml添加"><a href="#博客设置-config-yml添加" class="headerlink" title="博客设置_config.yml添加"></a>博客设置<strong>_config.yml</strong>添加</h2><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># encrypt</span></span><br><span class="line"><span class="symbol">  encrypt:</span>     </span><br><span class="line"><span class="symbol">  pwdfile:</span> encrypt_password</span><br></pre></td></tr></table></figure>
@@ -423,7 +421,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/加密模板/" rel="tag"><i class="fa fa-tag"></i> 加密模板</a>
+              <a href="/tags/%E5%8A%A0%E5%AF%86%E6%A8%A1%E6%9D%BF/" rel="tag"><i class="fa fa-tag"></i> 加密模板</a>
           </div>
 
         

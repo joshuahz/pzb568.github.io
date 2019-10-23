@@ -4,7 +4,7 @@
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 4.0.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
@@ -62,14 +62,12 @@
 <meta name="keywords" content="scp,rsync,syncthing">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用文件传输工具使用方法">
-<meta property="og:url" content="https://pzb568.github.io/posts/b3144d70.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;b3144d70.html">
 <meta property="og:site_name" content="风和日丽">
 <meta property="og:description" content="&amp;emsp;&amp;emsp; Linux系统之间传送文件，包括Linux服务器和客户端之间，Linux主机和嵌入式Linux平台之间等，以及Linux和windows之间传送文件及同步工具；我们经常在不同的系统中或者主机设备中传输文件或者同步文件，以使用scp或者rsync及syncthing ssh登录服务器安装ubuntu1sudo apt install ssh CentOS1yum insta">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-25T19:49:56.266Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用文件传输工具使用方法">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp; Linux系统之间传送文件，包括Linux服务器和客户端之间，Linux主机和嵌入式Linux平台之间等，以及Linux和windows之间传送文件及同步工具；我们经常在不同的系统中或者主机设备中传输文件或者同步文件，以使用scp或者rsync及syncthing ssh登录服务器安装ubuntu1sudo apt install ssh CentOS1yum insta">
 
 <link rel="canonical" href="https://pzb568.github.io/posts/b3144d70.html">
 
@@ -306,7 +304,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件应用/" itemprop="url" rel="index">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" itemprop="url" rel="index">
                     <span itemprop="name">软件应用</span>
                   </a>
                 </span>
@@ -370,30 +368,23 @@
 <h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> ssh</span><br></pre></td></tr></table></figure>
 <h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>ssh</span><br></pre></td></tr></table></figure>
 <h3 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> ssh</span><br></pre></td></tr></table></figure>
-<p>格式 ssh 端口 服务器$whoami@ip<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ssh</span> <span class="selector-tag">-p</span> 22 <span class="selector-tag">user</span>@<span class="keyword">192</span>.<span class="keyword">168</span>.<span class="keyword">1</span>.<span class="keyword">154</span></span><br></pre></td></tr></table></figure></p>
+<p>格式 ssh 端口 服务器$whoami@ip<br><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p <span class="number">22</span> <span class="symbol">user@</span><span class="number">192.168</span><span class="number">.1</span><span class="number">.154</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><blockquote>
 <p>scp使用的是ssh的传输方式如果安装了ssh就可以直接使用 </p>
 </blockquote>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ol>
-<li><p>复制本地文件Caddyfile到远程服务器Home目录  </p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">8022</span> Caddyfile u0_a82<span class="variable">@192</span>.<span class="number">168.1</span>.<span class="number">105</span><span class="symbol">:~/</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>把远程家目录下的Desktop/hello.py拷贝到本地当前目录下的hello.py  </p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">22</span> user<span class="variable">@ip</span><span class="symbol">:Desktop/hello</span>.py hello.py</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>把本地当前目录下的demo拷贝到远程家目录下的Desktop  </p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P<span class="built_in"> port </span>-r demo user@ip:Desktop</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>把远程家目录下的Desktop拷贝到本地当前目录下的demo</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P<span class="built_in"> port </span>-r user@ip:Desktop demo</span><br></pre></td></tr></table></figure>
+<li>复制本地文件Caddyfile到远程服务器Home目录  <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">8022</span> Caddyfile <span class="symbol">u0_a82@</span><span class="number">192.168</span><span class="number">.1</span><span class="number">.105</span>:~/</span><br></pre></td></tr></table></figure></li>
+<li>把远程家目录下的Desktop/hello.py拷贝到本地当前目录下的hello.py  <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">22</span> user<span class="variable">@ip</span><span class="symbol">:Desktop/hello</span>.py hello.py</span><br></pre></td></tr></table></figure></li>
+<li>把本地当前目录下的demo拷贝到远程家目录下的Desktop  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P<span class="built_in"> port </span>-r demo user@ip:Desktop</span><br></pre></td></tr></table></figure></li>
+<li>把远程家目录下的Desktop拷贝到本地当前目录下的demo<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P<span class="built_in"> port </span>-r user@ip:Desktop demo</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <a id="more"></a>
 <h1 id="rsync"><a href="#rsync" class="headerlink" title="rsync"></a>rsync</h1><ol>
-<li>本地推送模式：<br>格式：rsync -选项 -本地源文件 -远程文件夹 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -avz -e <span class="string">"ssh -p 8022"</span> myblog/ u0_a82<span class="variable">@192</span>.<span class="number">168.1</span>.<span class="number">104</span><span class="symbol">:~/</span></span><br></pre></td></tr></table></figure>
+<li>本地推送模式：<br>格式：rsync -选项 -本地源文件 -远程文件夹 <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -avz -e <span class="string">"ssh -p 8022"</span> myblog/ <span class="symbol">u0_a82@</span><span class="number">192.168</span><span class="number">.1</span><span class="number">.104</span>:~/</span><br></pre></td></tr></table></figure>
+3、远程抓取模式<br>格式：rsync -选项 -远程文件夹 -本地目录<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -avz -P -e <span class="string">"ssh -p 22"</span> user01<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">108</span><span class="symbol">:/tmp/test</span> ./tmp/</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>3、远程抓取模式<br>格式：rsync -选项 -远程文件夹 -本地目录<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -avz -P -e <span class="string">"ssh -p 22"</span> user01<span class="variable">@192</span>.<span class="number">168.0</span>.<span class="number">108</span><span class="symbol">:/tmp/test</span> ./tmp/</span><br></pre></td></tr></table></figure></p>
 <h1 id="syncthing"><a href="#syncthing" class="headerlink" title="syncthing"></a>syncthing</h1><blockquote>
 <p><strong>Syncthing</strong>是一个开源免费的文件夹/文件同步神器，支持Android、Linux、Windows、Mac OS X等系统，可以使我们在2台任何系统任何设备之间，实现文件实时同步，很强大。而且数据很安全，不会存储在你的设备以外的其他地方。所有通信都使用TLS进行保护。所使用的加密包括完美的前向保密，以防止窃听者获得对您的数据的访问权限。很适合我们用来搭建私有同步网盘。  </p>
 </blockquote>
@@ -403,21 +394,21 @@
 <h3 id="安卓termux-1"><a href="#安卓termux-1" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> syncthing</span><br></pre></td></tr></table></figure>
 <h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><ul>
 <li>启动<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">syncthing</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
 <h1 id="ftp"><a href="#ftp" class="headerlink" title="ftp"></a>ftp</h1><h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu-2"><a href="#ubuntu-2" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> <span class="keyword">ftp</span></span><br></pre></td></tr></table></figure>
 <h3 id="CentOS-2"><a href="#CentOS-2" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> <span class="keyword">ftp</span></span><br></pre></td></tr></table></figure>
 <h3 id="MAC-2"><a href="#MAC-2" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>ftp</span><br></pre></td></tr></table></figure>
 <h3 id="安卓termux-2"><a href="#安卓termux-2" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> <span class="keyword">ftp</span></span><br></pre></td></tr></table></figure>
-<h3 id="启动ftp服务"><a href="#启动ftp服务" class="headerlink" title="启动ftp服务"></a>启动ftp服务</h3><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span> <span class="number">1024</span> ftpd -w /</span><br></pre></td></tr></table></figure>
-<h2 id="使用-2"><a href="#使用-2" class="headerlink" title="使用"></a>使用</h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ftp <span class="number">192.168</span><span class="number">.1</span><span class="number">.3</span> <span class="number">1024</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="启动ftp服务"><a href="#启动ftp服务" class="headerlink" title="启动ftp服务"></a>启动ftp服务</h3><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span> <span class="number">1024</span> ftpd -w /</span><br></pre></td></tr></table></figure>
+<h2 id="使用-2"><a href="#使用-2" class="headerlink" title="使用"></a>使用</h2><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ftp <span class="number">192.168</span><span class="number">.1</span><span class="number">.3</span> <span class="number">1024</span></span><br></pre></td></tr></table></figure>
 <h1 id="lftp"><a href="#lftp" class="headerlink" title="lftp"></a>lftp</h1><h2 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu-3"><a href="#ubuntu-3" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> lftp</span><br></pre></td></tr></table></figure>
 <h3 id="CentOS-3"><a href="#CentOS-3" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> lftp</span><br></pre></td></tr></table></figure>
 <h3 id="MAC-3"><a href="#MAC-3" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>lftp</span><br></pre></td></tr></table></figure>
 <h3 id="安卓termux-3"><a href="#安卓termux-3" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> lftp</span><br></pre></td></tr></table></figure>
 <h2 id="使用-3"><a href="#使用-3" class="headerlink" title="使用"></a>使用</h2><h3 id="启动lftp服务"><a href="#启动lftp服务" class="headerlink" title="启动lftp服务"></a>启动lftp服务</h3><h3 id="CentOS-4"><a href="#CentOS-4" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> service </span>vsftpd start</span><br></pre></td></tr></table></figure>
-<h3 id="termux"><a href="#termux" class="headerlink" title="termux"></a>termux</h3><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span> <span class="number">8021</span> lftpd /sdcard</span><br></pre></td></tr></table></figure>
-<h2 id="使用-4"><a href="#使用-4" class="headerlink" title="使用"></a>使用</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">lftp</span> 192<span class="selector-class">.168</span><span class="selector-class">.1</span><span class="selector-class">.106</span></span><br></pre></td></tr></table></figure>
+<h3 id="termux"><a href="#termux" class="headerlink" title="termux"></a>termux</h3><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcpsvd -vE <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span> <span class="number">8021</span> lftpd /sdcard</span><br></pre></td></tr></table></figure>
+<h2 id="使用-4"><a href="#使用-4" class="headerlink" title="使用"></a>使用</h2><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lftp <span class="number">192.168</span><span class="number">.1</span><span class="number">.106</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
