@@ -1320,7 +1320,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2190d9;
+  background: #50ff58;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3147,6 +3147,8 @@ body {
   }
 }
 /*增加显示页面宽度*/
+/*content-desktop-large   = 65em*/
+/*content-desktop-largest = 65%*/
 @-moz-keyframes sliding {
   to {
     background-position: -2000vw;
