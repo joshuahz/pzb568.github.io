@@ -1320,7 +1320,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff0379;
+  background: #b6da38;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2182,16 +2182,6 @@ pre .javascript .function {
   justify-content: center;
   text-align: center;
 }
-.vk_like {
-  align-self: center;
-  height: 21px;
-  padding-top: 7px;
-  width: 85px;
-}
-.fb_like {
-  align-self: center;
-  height: 30px;
-}
 .reward-container {
   margin: 20px auto;
   padding: 10px 0;
@@ -2582,6 +2572,10 @@ ul.breadcrumb li + li:last-child {
   line-height: 2.4;
   margin: 0;
 }
+.has-jax {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 body {
   overscroll-behavior: none;
 }
@@ -2644,23 +2638,6 @@ body {
   100% {
     background-position: 0 80%;
   }
-}
-::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.2);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0,0,0,0.1);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.3);
-}
-::-webkit-scrollbar-thumb:active {
-  background: rgba(0,0,0,0.4);
 }
 .header {
   margin: 0 auto;
