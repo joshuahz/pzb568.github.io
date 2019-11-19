@@ -177,17 +177,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">102</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">104</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">27</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">28</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">32</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">33</span></a>
 
   </li>
         <li class="menu-item menu-item-guestbook">
@@ -688,6 +688,141 @@
 
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://pzb568.github.io/posts/57793a5c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="http://lc-0ww4yxjs.cn-n1.lcfile.com/08d68726241e9640a99e/1140536605633105492.gif">
+      <meta itemprop="name" content="pengzhaibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风轻云淡">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/57793a5c.html" class="post-title-link" itemprop="url">archlinux包工具pacman常用命令使用方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-19 23:05:10 / 修改时间：23:35:10" itemprop="dateCreated datePublished" datetime="2019-11-19T23:05:10+08:00">2019-11-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
+                    <span itemprop="name">系统工具</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span id="/posts/57793a5c.html" class="post-meta-item leancloud_visitors" data-flag-title="archlinux包工具pacman常用命令使用方法" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/57793a5c.html#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/57793a5c.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>0</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>&emsp;&emsp; Pacman 是一个软件包管理器,，作为ArchLinux发行版的一部分，是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来。不管软件包是来自官方的 Arch 库还是用户自己创建，Pacman 都能方便的管理。</p>
+<h1 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h1><h2 id="列出已经安装的软件包"><a href="#列出已经安装的软件包" class="headerlink" title="列出已经安装的软件包"></a>列出已经安装的软件包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Q</span></span><br></pre></td></tr></table></figure>
+<h2 id="查看clang包是否已经安装"><a href="#查看clang包是否已经安装" class="headerlink" title="查看clang包是否已经安装"></a>查看clang包是否已经安装</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Q clang</span></span><br></pre></td></tr></table></figure>
+<h2 id="查看已安装的包python的详细信息"><a href="#查看已安装的包python的详细信息" class="headerlink" title="查看已安装的包python的详细信息"></a>查看已安装的包python的详细信息</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Qi python</span></span><br></pre></td></tr></table></figure>
+<h2 id="列出已安装包python的所有文件"><a href="#列出已安装包python的所有文件" class="headerlink" title="列出已安装包python的所有文件"></a>列出已安装包python的所有文件</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Ql python</span></span><br></pre></td></tr></table></figure>
+<h2 id="查找某个文件属于哪个包"><a href="#查找某个文件属于哪个包" class="headerlink" title="查找某个文件属于哪个包"></a>查找某个文件属于哪个包</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Qo <span class="regexp">/etc/</span>passwd</span><br></pre></td></tr></table></figure>
+<h1 id="查看组"><a href="#查看组" class="headerlink" title="查看组"></a>查看组</h1><h2 id="查询包组"><a href="#查询包组" class="headerlink" title="查询包组"></a>查询包组</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Sg</span></span><br></pre></td></tr></table></figure>
+<h2 id="查询包组所包含的软件包"><a href="#查询包组所包含的软件包" class="headerlink" title="查询包组所包含的软件包"></a>查询包组所包含的软件包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Sg gnome</span></span><br></pre></td></tr></table></figure>
+<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><h2 id="搜索virtualbox相关的包"><a href="#搜索virtualbox相关的包" class="headerlink" title="搜索virtualbox相关的包"></a>搜索virtualbox相关的包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Ss virtualbox</span></span><br></pre></td></tr></table></figure>
+<h2 id="从数据库中搜索virtualbox的信息"><a href="#从数据库中搜索virtualbox的信息" class="headerlink" title="从数据库中搜索virtualbox的信息"></a>从数据库中搜索virtualbox的信息</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Si virtualbox</span></span><br></pre></td></tr></table></figure>
+<h1 id="同步升级"><a href="#同步升级" class="headerlink" title="同步升级"></a>同步升级</h1><h2 id="仅同步源"><a href="#仅同步源" class="headerlink" title="仅同步源"></a>仅同步源</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sy</span></span><br></pre></td></tr></table></figure>
+<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Su</span></span><br></pre></td></tr></table></figure>
+<h2 id="同步源并更新系统"><a href="#同步源并更新系统" class="headerlink" title="同步源并更新系统"></a>同步源并更新系统</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Syu</span></span><br></pre></td></tr></table></figure>
+<h2 id="同步源后安装包"><a href="#同步源后安装包" class="headerlink" title="同步源后安装包"></a>同步源后安装包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sy virtualbox</span></span><br></pre></td></tr></table></figure>
+<p>升级时不升级virtualbox包<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Su <span class="comment">--ignore virtualbox</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="从本地数据库中获取git的信息，并下载安装"><a href="#从本地数据库中获取git的信息，并下载安装" class="headerlink" title="从本地数据库中获取git的信息，并下载安装"></a>从本地数据库中获取git的信息，并下载安装</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S git</span></span><br></pre></td></tr></table></figure>
+<h2 id="强制安装virtualbox包"><a href="#强制安装virtualbox包" class="headerlink" title="强制安装virtualbox包"></a>强制安装virtualbox包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sf virtualbox</span></span><br></pre></td></tr></table></figure>
+<h2 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /var/cache/pacman/pkg</span><br><span class="line">sudo pacman -U virtualbox-<span class="number">5.2</span>.<span class="number">12</span>-<span class="number">1</span>-x86_64<span class="selector-class">.pkg</span><span class="selector-class">.tar</span><span class="selector-class">.xz</span></span><br></pre></td></tr></table></figure>
+<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><h2 id="删除virtualbox"><a href="#删除virtualbox" class="headerlink" title="删除virtualbox"></a>删除virtualbox</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -R virtualbox</span></span><br></pre></td></tr></table></figure>
+<h2 id="强制删除被依赖的包慎用"><a href="#强制删除被依赖的包慎用" class="headerlink" title="强制删除被依赖的包慎用"></a>强制删除被依赖的包<strong><em>慎用</em></strong></h2><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -<span class="built_in">Rd</span> virtualbox</span><br></pre></td></tr></table></figure>
+<h2 id="删除nodejs包及依赖其的包"><a href="#删除nodejs包及依赖其的包" class="headerlink" title="删除nodejs包及依赖其的包"></a>删除nodejs包及依赖其的包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Rc nodejs</span></span><br></pre></td></tr></table></figure>
+<h2 id="删除nodejs包及其依赖的包"><a href="#删除nodejs包及其依赖的包" class="headerlink" title="删除nodejs包及其依赖的包"></a>删除nodejs包及其依赖的包</h2><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">sudo</span> pacman -<span class="keyword">Rsc </span>nodejs</span><br></pre></td></tr></table></figure>
+<h1 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h1><h2 id="清理-var-cache-pacman-pkg目录下的旧包"><a href="#清理-var-cache-pacman-pkg目录下的旧包" class="headerlink" title="清理/var/cache/pacman/pkg目录下的旧包"></a>清理/var/cache/pacman/pkg目录下的旧包</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sc</span></span><br></pre></td></tr></table></figure>
+<h2 id="清除所有下载的包和数据库"><a href="#清除所有下载的包和数据库" class="headerlink" title="清除所有下载的包和数据库"></a>清除所有下载的包和数据库</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Scc</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/57793a5c.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -1860,125 +1995,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://pzb568.github.io/posts/6e5168ba.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="http://lc-0ww4yxjs.cn-n1.lcfile.com/08d68726241e9640a99e/1140536605633105492.gif">
-      <meta itemprop="name" content="pengzhaibo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="风轻云淡">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/6e5168ba.html" class="post-title-link" itemprop="url">历史不能被忘记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-04 23:40:37" itemprop="dateCreated datePublished" datetime="2019-06-04T23:40:37+08:00">2019-06-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-29 17:31:17" itemprop="dateModified" datetime="2019-10-29T17:31:17+08:00">2019-10-29</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9A%8F%E5%BF%83%E6%89%80%E5%86%99/" itemprop="url" rel="index">
-                    <span itemprop="name">随心所写</span>
-                  </a>
-                </span>
-            </span>
-
-          
-            <span id="/posts/6e5168ba.html" class="post-meta-item leancloud_visitors" data-flag-title="历史不能被忘记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/6e5168ba.html#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/6e5168ba.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559703827511&amp;di=6efb4998df82d1b1341e07d23d3cca26&amp;imgtype=0&amp;src=http%3A%2F%2Ftxt22262.book118.com%2F2017%2F0706%2Fbook120694%2F120693205.jpg" alt=""></p>
-<p>&emsp;&emsp; 对于一个国家，一个民族，一个人有一些历史是不能被忘记的。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/6e5168ba.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -2029,20 +2045,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">33</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-count">28</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-count">104</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -2155,13 +2171,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">71k</span>
+    <span title="站点总字数">72k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:04</span>
+    <span title="站点阅读时长">1:06</span>
 </div>
 
         
@@ -2404,7 +2420,7 @@ NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () =>
 <!-- Scrollbar -->
 <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
 <!-- BadApplePlayer -->
-<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>
