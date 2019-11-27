@@ -1334,7 +1334,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d166b0;
+  background: #285d53;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3104,10 +3104,10 @@ body {
 }
 /* 鼠标样式 */
 * {
-  cursor: url("/images/aero_link_l.cur"), auto;
+  cursor: url("/images/default.cur"), auto;
 }
 :link {
-  cursor: url("/images/aero_pen_xl.cur"), auto;
+  cursor: url("/images/pointer.cur"), auto;
 }
 /*动态背景图片*/
 body {
