@@ -60,7 +60,7 @@
 <meta property="og:site_name" content="风轻云淡">
 <meta property="og:description" content="&amp;emsp;&amp;emsp; 网站搭建差不多2年了，没有设置过永久链接，所有的文章都是中文的以至于网站地址特别长，不方便记忆，不美观。利用hexo-abbrlink这个插件可以解决 安装hexo-abbrlink1npm install hexo-abbrlink --save 站点配置1234permalink: post&#x2F;:abbrlink.htmlabbrlink:  alg: crc32  #">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-29T09:31:17.120Z">
+<meta property="og:updated_time" content="2019-12-27T15:44:46.725Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://pzb568.github.io/posts/a7ce4954.html">
@@ -175,12 +175,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">104</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">97</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">28</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -289,7 +289,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-29 17:31:17" itemprop="dateModified" datetime="2019-10-29T17:31:17+08:00">2019-10-29</time>
+                <time title="修改时间：2019-12-27 23:44:46" itemprop="dateModified" datetime="2019-12-27T23:44:46+08:00">2019-12-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -363,7 +363,12 @@
 <h1 id="利用404跳转到主页"><a href="#利用404跳转到主页" class="headerlink" title="利用404跳转到主页"></a>利用404跳转到主页</h1><blockquote>
 <p>由于网址方式了变成百度谷歌抓取的信息是之前网站信息，以至于正常无法方法可以利用404网页使打不开的网页回到主页，当然你需要点击<strong>回我的主页</strong>。</p>
 <h1 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h1><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new<span class="built_in"> page </span>404</span><br></pre></td></tr></table></figure>
-<h1 id="编辑404-md"><a href="#编辑404-md" class="headerlink" title="编辑404.md"></a>编辑404.md</h1><p>添加Front-matter信息<strong>permalink: /404</strong>并替换自己的网站地址，下面的网址是腾讯公益信息宝贝回家，寻找失踪儿童的信息。<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="number">404</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2018</span><span class="bullet">-11</span><span class="bullet">-08</span> <span class="number">21</span><span class="string">:19:51</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">/404</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">&lt;script</span> <span class="string">type="text/javascript"</span> <span class="string">src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> <span class="string">charset="utf-8"</span> <span class="string">homePageUrl="https://pzb568.github.io"</span> <span class="string">homePageName="回到我的主页"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure><br>下面你可以预览一下<br><a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/</a><br>由于网站地址方式了变化，之前valine的数据地址不一样，所以所有的评论信息都会消失，请谨慎选择。</p>
+<h1 id="编辑404-md"><a href="#编辑404-md" class="headerlink" title="编辑404.md"></a>编辑404.md</h1><p>添加Front-matter信息<strong>permalink: /404</strong>并替换自己的网站地址(homePageUrl后面的地址)，下面的网址是腾讯公益信息宝贝回家，寻找失踪儿童的信息。</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="number">404</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2018</span><span class="bullet">-11</span><span class="bullet">-08</span> <span class="number">21</span><span class="string">:19:51</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">/404</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">&lt;script</span> <span class="string">type="text/javascript"</span> <span class="string">src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> <span class="string">charset="utf-8"</span> <span class="string">homePageUrl="https://pzb568.github.io"</span> <span class="string">homePageName="回到我的主页"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>下面你可以预览一下<br><a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/</a></p>
+<blockquote>
+<p>由于网站地址方式了变化，之前valine的数据地址不一样，所以所有的评论信息都会消失，请谨慎选择。</p>
 </blockquote>
 
     </div>
@@ -378,13 +383,13 @@
       <div class="popular-posts-title"><a href="/posts/4703653d.html" rel="bookmark">Markdown编辑器日常使用语法记录</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/4ac99040.html" rel="bookmark">网页插入pdf文件</a></div>
+      <div class="popular-posts-title"><a href="/posts/aaf37d53.html" rel="bookmark">hexo主题更新问题处理</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/aaf37d53.html" rel="bookmark">hexo主题更新问题处理</a></div>
+      <div class="popular-posts-title"><a href="/posts/4ac99040.html" rel="bookmark">网页插入pdf文件</a></div>
     </li>
   </ul>
 
@@ -520,13 +525,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">104</span>
+        <span class="site-state-item-count">97</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
