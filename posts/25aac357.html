@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -61,7 +62,6 @@
 <meta property="og:description" content="&amp;emsp;&amp;emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。  创建.termux文件夹1mkdir $HOME&#x2F;.termux     在$HOME&#x2F;.termux&#x2F;termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim  安装vim 1pkg install vim 进入文件">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;i.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;02&#x2F;147b0f6e881fd8f4.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;i.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;04&#x2F;1ad624dfdd20d41d.jpg">
 <meta property="og:updated_time" content="2019-12-27T16:04:23.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;i.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;02&#x2F;147b0f6e881fd8f4.jpg">
@@ -74,9 +74,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -369,13 +367,13 @@
 <li>在$HOME/.termux/termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim</li>
 </ol>
 <p>安装vim</p>
-<h2 id><a href="#" class="headerlink" title></a><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> vim</span><br></pre></td></tr></table></figure></h2><ol>
+<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> vim</span><br></pre></td></tr></table></figure></h2><ol>
 <li>进入文件夹并vim打开termux.properties<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">cd</span> <span class="selector-class">.termux</span> &amp;&amp; <span class="selector-tag">vim</span> <span class="selector-tag">termux</span><span class="selector-class">.properties</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 </li>
 </ol>
-<p>效果布局1<br>添加如下内容<br><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'['</span>,<span class="string">']'</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'&amp;'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">';'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'~'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'\"\"'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下图<br><img alt data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg"></p>
-<p>效果布局2<br><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">'PGUP'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'ALT'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'PGDN'</span>,<span class="string">'['</span>,<span class="string">']'</span>],[<span class="string">'$'</span>,<span class="string">'"'</span>,<span class="string">'='</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'('</span>,<span class="string">')'</span>,<span class="string">'&amp;'</span>,<span class="string">'%'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下<br><img data-src="https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg"></p>
+<p>效果布局1<br>添加如下内容<br><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'['</span>,<span class="string">']'</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'&amp;'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">';'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'~'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'\"\"'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg" alt=""></p>
+<p>效果布局2<br><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">'PGUP'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'ALT'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'PGDN'</span>,<span class="string">'['</span>,<span class="string">']'</span>],[<span class="string">'$'</span>,<span class="string">'"'</span>,<span class="string">'='</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'('</span>,<span class="string">')'</span>,<span class="string">'&amp;'</span>,<span class="string">'%'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下<br><img src = 'https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg' /></p>
 
     </div>
 
@@ -386,19 +384,19 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
+      <div class="popular-posts-title"><a href="/posts/d8fa7a69.html" rel="bookmark">termux安装使用you-get下载视频</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/d8fa7a69.html" rel="bookmark">termux安装使用you-get下载视频</a></div>
+      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/371af598.html" rel="bookmark">使用termux搭建wordpress网站</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/65ad595e.html" rel="bookmark">在termux安装archLinux</a></div>
+      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/96deb912.html" rel="bookmark">安卓手机利用termux搭建aria2下载服务</a></div>
+      <div class="popular-posts-title"><a href="/posts/65ad595e.html" rel="bookmark">在termux安装archLinux</a></div>
     </li>
   </ul>
 
@@ -461,32 +459,38 @@
         <div class="tab-content">
             <div class="tab-pane livere" id="comment-livere">
               
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
             </div>
             <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="comments"></div>
+              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
-      <script>
-        window.addEventListener('tabs:register', () => {
-          let activeClass = 'valine';
-            activeClass = localStorage.getItem('comments_active') || activeClass;
-          if (activeClass) {
-            let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-            if (activeTab) {
-              activeTab.click();
-            }
-          }
-        });
-        window.addEventListener('tabs:click', event => {
-          let commentClass = event.target.classList[1];
-          localStorage.setItem('comments_active', commentClass);
-        });
-      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -638,7 +642,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -648,13 +652,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -852,6 +856,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
   </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -863,33 +868,36 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 

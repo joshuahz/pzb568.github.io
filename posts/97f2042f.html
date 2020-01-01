@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -71,9 +72,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -474,32 +473,38 @@ n/2, & \text{如果$ x<=2 $}\\
         <div class="tab-content">
             <div class="tab-pane livere" id="comment-livere">
               
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
             </div>
             <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="comments"></div>
+              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
-      <script>
-        window.addEventListener('tabs:register', () => {
-          let activeClass = 'valine';
-            activeClass = localStorage.getItem('comments_active') || activeClass;
-          if (activeClass) {
-            let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-            if (activeTab) {
-              activeTab.click();
-            }
-          }
-        });
-        window.addEventListener('tabs:click', event => {
-          let commentClass = event.target.classList[1];
-          localStorage.setItem('comments_active', commentClass);
-        });
-      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -651,7 +656,7 @@ n/2, & \text{如果$ x<=2 $}\\
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -661,13 +666,13 @@ n/2, & \text{如果$ x<=2 $}\\
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -915,6 +920,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
   </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -926,33 +932,36 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 

@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -73,9 +74,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -358,7 +357,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Tor简介"><a href="#Tor简介" class="headerlink" title="Tor简介"></a>Tor简介</h1><p><img alt data-src="https://i.bmp.ovh/imgs/2019/04/07b5c785087abb9c.jpg"><br>&emsp;&emsp; Tor用户在本机运行一个洋葱代理服务器（onion proxy），这个代理周期性地与其他Tor交流，从而在Tor网络中构成虚电路（virtual circuit）。Tor是在5层协议栈中的应用层进行加密（也就是按照’onion’的模式）。而它之所以被称为onion，是因为它的结构就跟洋葱相同，你只能看出它的外表，而想要看到核心，就必须把它层层的剥开。即每个路由器间的传输都经过对等密钥（symmetric key）来加密，形成有层次的结构。它中间所经过的各节点，都好像洋葱的一层皮，把客户端包在里面，算是保护信息来源的一种方式，这样在洋葱路由器之间可以保持通讯安全。同时对于客户端，洋葱代理服务器又作为SOCKS接口。一些应用程序就可以将Tor作为代理服务器，网络通讯就可以通过Tor的虚拟环路来进行。用户通过它可以在因特网上进行匿名交流从而保护用户的隐私及资讯安全。<br>  termux可以安装tor在利用lighttpd服务器映射，下面来在termux里面安装。<br><a id="more"></a></p>
+        <h1 id="Tor简介"><a href="#Tor简介" class="headerlink" title="Tor简介"></a>Tor简介</h1><p><img data-src="https://i.bmp.ovh/imgs/2019/04/07b5c785087abb9c.jpg" alt=""><br>&emsp;&emsp; Tor用户在本机运行一个洋葱代理服务器（onion proxy），这个代理周期性地与其他Tor交流，从而在Tor网络中构成虚电路（virtual circuit）。Tor是在5层协议栈中的应用层进行加密（也就是按照’onion’的模式）。而它之所以被称为onion，是因为它的结构就跟洋葱相同，你只能看出它的外表，而想要看到核心，就必须把它层层的剥开。即每个路由器间的传输都经过对等密钥（symmetric key）来加密，形成有层次的结构。它中间所经过的各节点，都好像洋葱的一层皮，把客户端包在里面，算是保护信息来源的一种方式，这样在洋葱路由器之间可以保持通讯安全。同时对于客户端，洋葱代理服务器又作为SOCKS接口。一些应用程序就可以将Tor作为代理服务器，网络通讯就可以通过Tor的虚拟环路来进行。用户通过它可以在因特网上进行匿名交流从而保护用户的隐私及资讯安全。<br>  termux可以安装tor在利用lighttpd服务器映射，下面来在termux里面安装。<br><a id="more"></a></p>
 <h1 id="1-安装tor和lighttpd服务器"><a href="#1-安装tor和lighttpd服务器" class="headerlink" title="1. 安装tor和lighttpd服务器"></a>1. 安装tor和lighttpd服务器</h1><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">in</span> tor lighttpd</span><br></pre></td></tr></table></figure>
 <h1 id="2-编辑Torrc"><a href="#2-编辑Torrc" class="headerlink" title="2.编辑Torrc"></a>2.编辑Torrc</h1><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; $PREFIX/etc/tor/torrc &lt;&lt;EOF</span><br><span class="line">#Enable TOR SOCKS proxy</span><br><span class="line">SOCKSPort <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">9050</span></span><br><span class="line">#Hidden Service: Http</span><br><span class="line">HiddenServiceDir /data/data/com.termux/files/home/.tor/hiddenservice</span><br><span class="line">HiddenServicePort <span class="number">80</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">8080</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 <h1 id="3-编写lighttpd配置文件"><a href="#3-编写lighttpd配置文件" class="headerlink" title="3.编写lighttpd配置文件"></a>3.编写lighttpd配置文件</h1><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storage&amp;&amp;rm -rf ~/storage</span><br><span class="line">cat &gt; ~/lighttpd<span class="selector-class">.conf</span> &lt;&lt;EOF</span><br><span class="line">server<span class="selector-class">.port</span>             = <span class="number">8080</span></span><br><span class="line">server<span class="selector-class">.document-root</span>    = <span class="string">"/sdcard/Orweb"</span></span><br><span class="line">server<span class="selector-class">.upload-dirs</span>      = ( <span class="string">"/data/data/com.termux/files/usr/tmp"</span> )</span><br><span class="line">index-file<span class="selector-class">.names</span>        = ( <span class="string">"index.html"</span> )</span><br><span class="line">mimetype<span class="selector-class">.assign</span>         = (</span><br><span class="line">                                <span class="string">".html"</span> =&gt; <span class="string">"text/html"</span>,</span><br><span class="line">                                <span class="string">".txt"</span> =&gt; <span class="string">"text/plain"</span>,</span><br><span class="line">                                <span class="string">".css"</span> =&gt; <span class="string">"text/css"</span>,</span><br><span class="line">                                <span class="string">".js"</span> =&gt; <span class="string">"application/x-javascript"</span>,</span><br><span class="line">                                <span class="string">".jpg"</span> =&gt; <span class="string">"image/jpeg"</span>,</span><br><span class="line">                                <span class="string">".jpeg"</span> =&gt; <span class="string">"image/jpeg"</span>,</span><br><span class="line">                                <span class="string">".gif"</span> =&gt; <span class="string">"image/gif"</span>,</span><br><span class="line">                                <span class="string">".png"</span> =&gt; <span class="string">"image/png"</span>,</span><br><span class="line">                                <span class="string">""</span> =&gt; <span class="string">"application/octet-stream"</span></span><br><span class="line">                       )</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
@@ -447,32 +446,38 @@
         <div class="tab-content">
             <div class="tab-pane livere" id="comment-livere">
               
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
             </div>
             <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="comments"></div>
+              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
-      <script>
-        window.addEventListener('tabs:register', () => {
-          let activeClass = 'valine';
-            activeClass = localStorage.getItem('comments_active') || activeClass;
-          if (activeClass) {
-            let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-            if (activeTab) {
-              activeTab.click();
-            }
-          }
-        });
-        window.addEventListener('tabs:click', event => {
-          let commentClass = event.target.classList[1];
-          localStorage.setItem('comments_active', commentClass);
-        });
-      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -624,7 +629,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -634,13 +639,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -838,6 +843,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
   </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -849,33 +855,36 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 

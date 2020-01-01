@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -67,9 +68,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: true,
-    isPost: false,
-    isPage: false,
-    isArchive: false
+    isPost: false
   };
 </script>
 
@@ -1779,7 +1778,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-28 00:12:22" itemprop="dateModified" datetime="2019-12-28T00:12:22+08:00">2019-12-28</time>
+                <time title="修改时间：2020-01-01 15:29:12" itemprop="dateModified" datetime="2020-01-01T15:29:12+08:00">2020-01-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2009,7 +2008,7 @@
 下面安装vim编辑工具<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -S vim</span></span><br></pre></td></tr></table></figure>
 修改源为清华大学<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim etc<span class="regexp">/pacman.d/mi</span>rrorlist</span><br></pre></td></tr></table></figure>
 在这上面添加<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Server = <span class="symbol">https:</span>/<span class="regexp">/mirrors.tuna.tsinghua.edu.cn/archlinuxarm</span><span class="regexp">/aarch64/</span><span class="variable">$repo</span></span><br></pre></td></tr></table></figure>
-如下图<br><img alt data-src="https://i.bmp.ovh/imgs/2018/12/fee7293b9d02f4bb.jpg"><br>按esc 键 :wq 保存并退出<h2 id="四、更新系统"><a href="#四、更新系统" class="headerlink" title="四、更新系统"></a>四、更新系统</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Syyu</span></span><br></pre></td></tr></table></figure>
+如下图<br><img data-src="https://i.bmp.ovh/imgs/2018/12/fee7293b9d02f4bb.jpg" alt=""><br>按esc 键 :wq 保存并退出<h2 id="四、更新系统"><a href="#四、更新系统" class="headerlink" title="四、更新系统"></a>四、更新系统</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pacman -Syyu</span></span><br></pre></td></tr></table></figure>
 <h2 id="五、安装常用软件"><a href="#五、安装常用软件" class="headerlink" title="五、安装常用软件"></a>五、安装常用软件</h2><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pacman</span> <span class="string">-S python</span></span><br><span class="line"><span class="attr">pacman</span> <span class="string">-S openssh</span></span><br><span class="line"><span class="attr">pacman</span> <span class="string">-S git</span></span><br><span class="line"><span class="attr">pacman</span> <span class="string">-S vim</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
@@ -2039,6 +2038,28 @@
 
           </div>
           
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -2189,7 +2210,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -2199,13 +2220,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -2395,29 +2416,31 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 

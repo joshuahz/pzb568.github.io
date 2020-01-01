@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -75,9 +76,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -368,8 +367,8 @@
 <h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip <span class="keyword">install</span> <span class="comment">--upgrade pip</span></span><br></pre></td></tr></table></figure>
 <h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> you-<span class="keyword">get</span></span><br></pre></td></tr></table></figure>
 <h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> <span class="comment">--upgrade you-get</span></span><br></pre></td></tr></table></figure>
-<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="builtin-name">get</span> -V</span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -<span class="selector-tag">i</span> http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br> <img alt data-src="01.jpg"></p>
-<p><strong>解析</strong><br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="keyword">get</span> -u http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br><img alt data-src="02.jpg"><br><strong>下载 </strong><br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -o <span class="regexp">/sdcard/</span>video<span class="regexp">/ http:/</span><span class="regexp">/m.iqiyi.com/</span>v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img alt data-src="03.jpg"><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="builtin-name">get</span> -V</span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -<span class="selector-tag">i</span> http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br> <img data-src="01.jpg" alt=""></p>
+<p><strong>解析</strong><br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-<span class="keyword">get</span> -u http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br><img data-src="02.jpg" alt=""><br><strong>下载 </strong><br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get -o <span class="regexp">/sdcard/</span>video<span class="regexp">/ http:/</span><span class="regexp">/m.iqiyi.com/</span>v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="03.jpg" alt=""><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
 <iframe src="//player.bilibili.com/player.html?aid=24822266&cid=41834559&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
@@ -385,16 +384,16 @@
       <div class="popular-posts-title"><a href="/posts/96deb912.html" rel="bookmark">安卓手机利用termux搭建aria2下载服务</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
+      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
+      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/371af598.html" rel="bookmark">使用termux搭建wordpress网站</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/65ad595e.html" rel="bookmark">在termux安装archLinux</a></div>
+      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
     </li>
   </ul>
 
@@ -459,32 +458,38 @@
         <div class="tab-content">
             <div class="tab-pane livere" id="comment-livere">
               
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
             </div>
             <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="comments"></div>
+              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
-      <script>
-        window.addEventListener('tabs:register', () => {
-          let activeClass = 'valine';
-            activeClass = localStorage.getItem('comments_active') || activeClass;
-          if (activeClass) {
-            let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-            if (activeTab) {
-              activeTab.click();
-            }
-          }
-        });
-        window.addEventListener('tabs:click', event => {
-          let commentClass = event.target.classList[1];
-          localStorage.setItem('comments_active', commentClass);
-        });
-      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -636,7 +641,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -646,13 +651,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -850,6 +855,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
   </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -861,33 +867,36 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 

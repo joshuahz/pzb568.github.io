@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -74,9 +75,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -372,7 +371,7 @@
 <p>需要在次初始化数据库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_install_db</span><br></pre></td></tr></table></figure><br>直接mysqld退出后必须重新启动才能使用，可以通过tmux来管理就不需要重启了<br><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux <span class="keyword">new</span> <span class="type"></span>-s mysql</span><br></pre></td></tr></table></figure><br>启动数据库服务器<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mysqld</span></span><br></pre></td></tr></table></figure><br>4.打开一个新窗口修改密码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure><br>输入当前输入密码<br>因为是空密码, 这里默认 回车<br><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter <span class="keyword">current</span> <span class="keyword">password</span> <span class="keyword">for</span> root (enter <span class="keyword">for</span> <span class="keyword">none</span>):</span><br></pre></td></tr></table></figure><br>设置新密码<br>这里设置新的root密码<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span> root <span class="keyword">password</span>? [Y/n] y</span><br><span class="line"><span class="keyword">New</span> <span class="keyword">password</span>:</span><br><span class="line">Re-enter <span class="keyword">new</span> <span class="keyword">password</span>:</span><br></pre></td></tr></table></figure><br>其他设置下面根据个人偏好来进行设置,没有绝对的要求<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Remove</span> anonymous users? [Y/n] Y                <span class="comment">#是否移除匿名用户</span></span><br><span class="line">Disallow root login remotely? [Y/n] n          <span class="comment">#是否不允许root远程登录</span></span><br><span class="line"><span class="keyword">Remove</span> <span class="keyword">test</span> database <span class="keyword">and</span> access to it? [Y/n] n <span class="comment">#是否移除test数据库</span></span><br><span class="line">Reload privilege tables now? [Y/n] y           <span class="comment">#是否重新加载表的权限</span></span><br></pre></td></tr></table></figure><br>~~</p>
 <ol>
 <li>修改数据库密码<blockquote>
-<p>新版本升级修改密码有了一些变化，具体信息访问<a href>termux wiki</a></p>
+<p>新版本升级修改密码有了一些变化，具体信息访问<a href="">termux wiki</a></p>
 <h1 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h1><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> php</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 </blockquote>
@@ -382,11 +381,11 @@
 <li>新建数据库 提示下面*就是之前设置的密码<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p*** -e"<span class="keyword">create</span> <span class="keyword">database</span> wordpress;show databases;"</span><br></pre></td></tr></table></figure></li>
 <li>下载解压 wordpress<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="comment">//cn.wordpress.org/wordpress-5.0.3-zh_CN.tar.gz</span></span><br><span class="line">tar -zxvf wordpress-<span class="number">5.0</span>.<span class="number">3</span>-zh_CN<span class="selector-class">.tar</span><span class="selector-class">.gz</span></span><br></pre></td></tr></table></figure></li>
 <li>进入wordpress文件夹<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> wordpress</span><br></pre></td></tr></table></figure></li>
-<li>配置wp -config<br>图下是设置需要修改数据库名用户名和密码<br><img alt data-src="01.jpg"></li>
+<li>配置wp -config<br>图下是设置需要修改数据库名用户名和密码<br><img data-src="01.jpg" alt=""></li>
 <li>浏览器输入172.0.0.1:9000登录<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php -S <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">9000</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>设置配置文件用户名密码<br><img alt data-src="https://i.bmp.ovh/imgs/2019/02/b961fded72875694.jpg"><br>然后配置网站标题用户名密码登录，详细内容这里就不做演示了。</p>
+<p>设置配置文件用户名密码<br><img data-src="https://i.bmp.ovh/imgs/2019/02/b961fded72875694.jpg" alt=""><br>然后配置网站标题用户名密码登录，详细内容这里就不做演示了。</p>
 <h1 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h1><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nginx</span><br></pre></td></tr></table></figure>
 <h1 id="安装模拟root环境"><a href="#安装模拟root环境" class="headerlink" title="安装模拟root环境"></a>安装模拟root环境</h1><p>由于termux的特殊性，nginx和php-fpm的修改都必须在模拟root环境下，才能成功。<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> proot</span><br></pre></td></tr></table></figure></p>
 <h2 id="进入模拟root模式"><a href="#进入模拟root模式" class="headerlink" title="进入模拟root模式"></a>进入模拟root模式</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">termux-chroot</span></span><br></pre></td></tr></table></figure>
@@ -437,19 +436,19 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
+      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/d8fa7a69.html" rel="bookmark">termux安装使用you-get下载视频</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
+      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/8de2b9ae.html" rel="bookmark">termux安装hugo搭建hugo博客部署到netlify</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/65ad595e.html" rel="bookmark">在termux安装archLinux</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/96deb912.html" rel="bookmark">安卓手机利用termux搭建aria2下载服务</a></div>
     </li>
   </ul>
 
@@ -518,32 +517,38 @@
         <div class="tab-content">
             <div class="tab-pane livere" id="comment-livere">
               
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
             </div>
             <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="comments"></div>
+              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
-      <script>
-        window.addEventListener('tabs:register', () => {
-          let activeClass = 'valine';
-            activeClass = localStorage.getItem('comments_active') || activeClass;
-          if (activeClass) {
-            let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-            if (activeTab) {
-              activeTab.click();
-            }
-          }
-        });
-        window.addEventListener('tabs:click', event => {
-          let commentClass = event.target.classList[1];
-          localStorage.setItem('comments_active', commentClass);
-        });
-      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -695,7 +700,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -705,13 +710,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -909,6 +914,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
   </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -920,33 +926,36 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 

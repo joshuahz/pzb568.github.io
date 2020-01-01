@@ -23,7 +23,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.6.0',
+    version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -33,6 +33,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -73,9 +74,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
+    isPost: true
   };
 </script>
 
@@ -376,7 +375,7 @@
 <li>启动<br>输入tmux<br>在新建的窗口中输入 启动Aria2<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">aria2c</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">enable</span><span class="literal">-</span><span class="comment">rpc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">rpc</span><span class="literal">-</span><span class="comment">listen</span><span class="literal">-</span><span class="comment">all=true</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">rpc</span><span class="literal">-</span><span class="comment">allow</span><span class="literal">-</span><span class="comment">origin</span><span class="literal">-</span><span class="comment">all</span> <span class="literal">-</span><span class="comment">c</span></span><br></pre></td></tr></table></figure>
 按Ctrl+b之后再按d返回之前的窗口，将此窗口放在后台执行（输入tmux attach能够重新进入,按Ctrl+b之后再按&amp;关闭当前tmux窗口）<br>返回后启动AriaNg,输入<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span>~</span><br><span class="line">caddy</span><br></pre></td></tr></table></figure>
 6.访问<br>打开浏览器地址栏输入<br>127.0.0.1:8080<a id="more"></a>
-<img alt data-src="01.jpg"></li>
+<img data-src="01.jpg" alt=""></li>
 <li>下载BT种文文件需要设置BT服务器<br><a href="https://github.com/ngosang/trackerslist/blob/master/README.md" target="_blank" rel="noopener">https://github.com/ngosang/trackerslist/blob/master/README.md</a><br>在ariaNg设置中找到BT设置BT服务器填入以链接中的内容并附上BT服务器<br><a href="https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt" target="_blank" rel="noopener">https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best_ip.txt</a><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">udp:</span><span class="comment">//62.138.0.158:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//188.241.58.209:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//62.210.79.110:1337/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//185.225.17.100:1337/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//151.80.120.112:2710/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//208.83.20.20:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//184.105.151.164:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//176.113.68.67:8080/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//51.15.40.114:80/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">http:</span><span class="comment">//176.113.71.19:6961/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//176.113.68.66:6961/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//91.216.110.52:451/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//5.206.28.90:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//188.246.227.212:80/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//5.2.79.219:1337/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//5.2.79.22:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//95.211.168.204:2710/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">http:</span><span class="comment">//51.68.122.172:80/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//210.244.71.25:6969/announce</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">udp:</span><span class="comment">//51.38.184.185:6969/announce</span></span><br></pre></td></tr></table></figure>
 <h2 id="二、也可以使用安装网页版webui-aria2"><a href="#二、也可以使用安装网页版webui-aria2" class="headerlink" title="二、也可以使用安装网页版webui-aria2"></a>二、也可以使用安装网页版webui-aria2</h2></li>
 <li>下载网页版webui-aria2<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/ziahamza/webui-aria2.git</span><br></pre></td></tr></table></figure></li>
@@ -410,10 +409,10 @@
       <div class="popular-posts-title"><a href="/posts/102fd15b.html" rel="bookmark">WIN10和manjanro双系统grub引导修复</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
+      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
+      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/371af598.html" rel="bookmark">使用termux搭建wordpress网站</a></div>
@@ -481,32 +480,38 @@
         <div class="tab-content">
             <div class="tab-pane livere" id="comment-livere">
               
-  <div class="comments" id="comments">
+  <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
             </div>
             <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="comments"></div>
+              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
-      <script>
-        window.addEventListener('tabs:register', () => {
-          let activeClass = 'valine';
-            activeClass = localStorage.getItem('comments_active') || activeClass;
-          if (activeClass) {
-            let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-            if (activeTab) {
-              activeTab.click();
-            }
-          }
-        });
-        window.addEventListener('tabs:click', event => {
-          let commentClass = event.target.classList[1];
-          localStorage.setItem('comments_active', commentClass);
-        });
-      </script>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
           
@@ -658,7 +663,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -668,13 +673,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">74k</span>
+    <span title="站点总字数">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:04</span>
 </div>
 
         
@@ -872,6 +877,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
   </script>
 
 <script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
     refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
   };
@@ -883,33 +889,36 @@ if (document.querySelectorAll('pre.mermaid').length) {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
+});
 </script>
 
 
 <script>
-NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: true,
-    appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-    appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
-    placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: true,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-    recordIP: true,
-    serverURLs: ''
-  });
-}, window.Valine);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
 </script>
     </div>
 
