@@ -743,7 +743,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/604fe14.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/604fe14.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/604fe14.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -861,7 +861,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/2d957091.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/2d957091.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/2d957091.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -981,7 +981,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/2dde8310.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/2dde8310.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/2dde8310.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1321,7 +1321,7 @@ window.addEventListener('pjax:success', () => {
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -1333,6 +1333,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }

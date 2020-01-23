@@ -737,7 +737,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/57793a5c.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/57793a5c.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/57793a5c.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -878,7 +878,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/46e7be8d.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/46e7be8d.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/46e7be8d.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -999,7 +999,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/a7ce4954.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/a7ce4954.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/a7ce4954.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1119,7 +1119,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/1feab083.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/1feab083.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/1feab083.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1248,7 +1248,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/1f77a6f0.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/1f77a6f0.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/1f77a6f0.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1370,7 +1370,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/4ac99040.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/4ac99040.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/4ac99040.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1491,7 +1491,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/456ff02a.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/456ff02a.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/456ff02a.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1612,7 +1612,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/aaf37d53.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/aaf37d53.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/aaf37d53.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1733,7 +1733,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/b3144d70.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/b3144d70.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/b3144d70.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -1866,7 +1866,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/ee59f1b1.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/ee59f1b1.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/ee59f1b1.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -2259,7 +2259,7 @@ window.addEventListener('pjax:success', () => {
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -2271,6 +2271,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }

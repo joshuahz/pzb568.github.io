@@ -54,7 +54,7 @@
      });
 </script>
   <meta name="description" content="You-Get简单介绍&amp;emsp;&amp;emsp; you-get是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。 一、安裝 1.更新1pkg update &amp;amp;&amp;amp; pkg upgrade 2.获取SD卡读写权限1termux-setup-storage 3.安装python ffmpeg1pkg install python">
-<meta name="keywords" content="termux,下载,视频,嗅探">
+<meta name="keywords" content="termux,视频,嗅探,下载">
 <meta property="og:type" content="article">
 <meta property="og:title" content="termux安装使用you-get下载视频">
 <meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;d8fa7a69.html">
@@ -329,7 +329,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/d8fa7a69.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/d8fa7a69.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/d8fa7a69.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -419,9 +419,9 @@
           
           <div class="post-tags">
               <a href="/tags/termux/" rel="tag"><i class="fa fa-tag"></i> termux</a>
-              <a href="/tags/%E4%B8%8B%E8%BD%BD/" rel="tag"><i class="fa fa-tag"></i> 下载</a>
               <a href="/tags/%E8%A7%86%E9%A2%91/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
               <a href="/tags/%E5%97%85%E6%8E%A2/" rel="tag"><i class="fa fa-tag"></i> 嗅探</a>
+              <a href="/tags/%E4%B8%8B%E8%BD%BD/" rel="tag"><i class="fa fa-tag"></i> 下载</a>
           </div>
 
         
@@ -744,7 +744,7 @@ window.addEventListener('pjax:success', () => {
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -756,6 +756,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }

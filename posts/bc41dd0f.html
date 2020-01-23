@@ -53,13 +53,13 @@
           enable_page_level_ads: true
      });
 </script>
-  <meta name="description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-ziCSFznh&quot;),             narrow: false,             autoplay: false,             s">
+  <meta name="description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-aKmOceLr&quot;),             narrow: false,             autoplay: false,             s">
 <meta name="keywords" content="三体,刘慈欣,黑暗森林">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三体名句收藏">
 <meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;bc41dd0f.html">
 <meta property="og:site_name" content="风轻云淡">
-<meta property="og:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-ziCSFznh&quot;),             narrow: false,             autoplay: false,             s">
+<meta property="og:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-aKmOceLr&quot;),             narrow: false,             autoplay: false,             s">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558808485058&amp;di=962b65efbf8874d59f35744100b29247&amp;imgtype=0&amp;src=http%3A%2F%2Fimg1.3lian.com%2F2015%2Fw6%2F53%2Fd%2F1.jpg">
 <meta property="og:updated_time" content="2019-12-27T16:17:45.425Z">
@@ -329,7 +329,7 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/bc41dd0f.html#comments" itemprop="discussionUrl">
+    <a title="valine" href="/posts/bc41dd0f.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/posts/bc41dd0f.html" itemprop="commentCount"></span>
     </a>
   </span>
@@ -360,12 +360,12 @@
 
       
         
-        <div id="aplayer-ziCSFznh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-aKmOceLr" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-ziCSFznh"),
+            element: document.getElementById("aplayer-aKmOceLr"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -744,7 +744,7 @@ window.addEventListener('pjax:success', () => {
       script.async = false;
     }
     if (element.getAttribute('pjax') !== null) {
-      element.setAttribute('pjax', '');
+      script.setAttribute('pjax', '');
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -756,6 +756,7 @@ window.addEventListener('pjax:success', () => {
   if (CONFIG.motion.enable) {
     NexT.motion.integrator
       .init()
+      .add(NexT.motion.middleWares.subMenu)
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
