@@ -54,7 +54,7 @@
      });
 </script>
   <meta name="description" content="&amp;emsp;&amp;emsp; v2ray是最新的翻墙软件，相比ss系列提高了安全性，减少被防火墙封锁的风险，同时可以使用ss的节点(但是不支持SSR节点)。 想了解详细的安装说明信息可以在去官方网站或者去github v2ray开源项目的教程说明。 软件下载安卓系统 v2rayNG   下载地址https:&#x2F;&#x2F;github.com&#x2F;2dust&#x2F;v2rayNG&#x2F;releases   导入下面节点   B">
-<meta name="keywords" content="VPN,谷歌,翻墙,网络长城,节点分享,v2rayNG,BifrostV,Kitsunebi,v2rayN">
+<meta name="keywords" content="VPN,谷歌,翻墙,节点分享,网络长城,v2rayNG,BifrostV,Kitsunebi,v2rayN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="v2ray的使用方法与节点分享">
 <meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;3be63484.html">
@@ -442,8 +442,8 @@
               <a href="/tags/VPN/" rel="tag"><i class="fa fa-tag"></i> VPN</a>
               <a href="/tags/%E8%B0%B7%E6%AD%8C/" rel="tag"><i class="fa fa-tag"></i> 谷歌</a>
               <a href="/tags/%E7%BF%BB%E5%A2%99/" rel="tag"><i class="fa fa-tag"></i> 翻墙</a>
-              <a href="/tags/%E7%BD%91%E7%BB%9C%E9%95%BF%E5%9F%8E/" rel="tag"><i class="fa fa-tag"></i> 网络长城</a>
               <a href="/tags/%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB/" rel="tag"><i class="fa fa-tag"></i> 节点分享</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C%E9%95%BF%E5%9F%8E/" rel="tag"><i class="fa fa-tag"></i> 网络长城</a>
               <a href="/tags/v2rayNG/" rel="tag"><i class="fa fa-tag"></i> v2rayNG</a>
               <a href="/tags/BifrostV/" rel="tag"><i class="fa fa-tag"></i> BifrostV</a>
               <a href="/tags/Kitsunebi/" rel="tag"><i class="fa fa-tag"></i> Kitsunebi</a>
@@ -478,19 +478,19 @@
           
       <div class="tabs tabs-comment">
         <ul class="nav-tabs">
-            <li class="tab"><a href="#comment-livere">livere</a></li>
             <li class="tab"><a href="#comment-valine">valine</a></li>
+            <li class="tab"><a href="#comment-livere">livere</a></li>
         </ul>
         <div class="tab-content">
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
             <div class="tab-pane livere" id="comment-livere">
               
   <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
-            </div>
-            <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
@@ -881,22 +881,6 @@ if (document.querySelectorAll('pre.mermaid').length) {
       });
   </script>
 
-<script>
-NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
-  window.livereOptions = {
-    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-});
-</script>
-
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
@@ -925,6 +909,22 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   }, window.Valine);
 });
 </script>
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
     </div>
 
 <!-- Your XlchPlayerKey -->
