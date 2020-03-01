@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
+<<<<<<< HEAD
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
@@ -23,7 +24,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.7.1',
+    version: '7.7.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -53,6 +54,13 @@
           enable_page_level_ads: true
      });
 </script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+
   <meta name="description" content="&amp;emsp;&amp;emsp; Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。&amp;emsp;&amp;emsp; hexo默认支持Markdown编辑文章，学习好Markdown 编辑器语法有利于更方便友好的写作;下面我会用一些事例分享Markdown 编辑器使用中的各种技巧。 段首缩进 在文章编辑排版中首先经常使用到的就是段首缩进；那可以看到">
 <meta name="keywords" content="hexo,Markdown语法,段首缩进,文本居中,音乐播放,视频播放,飘向北方,图片墙,Despacito">
 <meta property="og:type" content="article">
@@ -77,8 +85,8 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true
+    isHome : false,
+    isPost : true
   };
 </script>
 
@@ -144,6 +152,14 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
   <div class="site-meta">
 
     <div>
@@ -157,11 +173,9 @@
       
   </div>
 
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -208,11 +222,6 @@
         <li class="menu-item menu-item-top">
 
     <a href="/top/" rel="section"><i class="fa fa-fw fa-signal"></i>热榜</a>
-
-  </li>
-        <li class="menu-item menu-item-links">
-
-    <a href="/links/" rel="section"><i class="fa fa-fw fa-link"></i>友链</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -304,9 +313,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
-                    <span itemprop="name">软件工具</span>
-                  </a>
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">软件工具</span></a>
                 </span>
             </span>
 
@@ -375,8 +382,10 @@
 下面用唐诗一首演示</li>
 </ul>
 </blockquote>
-<blockquote class="blockquote-center"><p>夜宿山寺<br>唐 · 李白<br>危楼高百尺，手可摘星辰。<br>不敢高声语，恐惊天上人。</p>
-</blockquote>
+<blockquote class="blockquote-center">
+            <p>夜宿山寺<br>唐 · 李白<br>危楼高百尺，手可摘星辰。<br>不敢高声语，恐惊天上人。</p>
+
+          </blockquote>
 <h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><blockquote>
 <p>可以插入网络中和本的的图片<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="selector-attr">[]</span>(images/<span class="number">1</span>.jpg)</span><br></pre></td></tr></table></figure><br>美女图片镇楼<br><img data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559150762962&amp;di=89f86d08e03074713a0d4f9114f9b9ec&amp;imgtype=0&amp;src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3210444378%2C1295390531%26fm%3D193" alt=""></p>
 <h1 id="分页显示"><a href="#分页显示" class="headerlink" title="分页显示"></a>分页显示</h1><p>哦😊到这里应该要分页了<br>代码如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">escape</span>&gt;</span><span class="comment">&lt;!-- more --&gt;</span><span class="tag">&lt;/<span class="name">escape</span>&gt;</span></span><br></pre></td></tr></table></figure><br><a id="more"></a></p>
@@ -402,13 +411,13 @@
 <figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer <span class="string">"飘向北方"</span> <span class="string">"黄明志,王力宏"</span> <span class="string">"http://music.163.com/song/media/outer/url?id=461864856.mp3"</span> <span class="string">"https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559501443630&amp;di=5d355fdbb782fb5bc06c476af70ba19a&amp;imgtype=0&amp;src=http%3A%2F%2Fsource.upupoo.com%2Ftheme%2F1800037383%2FpreviewFix.jpg"</span> <span class="string">"lrc:lrc.txt"</span> %&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>欣赏音乐飘向北方-黄明志&amp;王力宏</strong></p>
 
-        <div id="aplayer-AbSurNEs" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-VGFVVDwU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">
 [ti:飘向北方][ar:黄明志/王力宏][al:亚洲通车][by:][offset:0][00:00.00]飘向北方 (Stranger In The North) - 黄明志 (Namewee)/王力宏 (Leehom Wang)[00:03.30]词：黄明志[00:06.60]曲：黄明志[00:09.90]飘向北方 别问我家乡[00:15.25]高耸古老的城墙 挡不住忧伤[00:20.74]我飘向北方 家人是否无恙[00:26.27]肩上沉重的行囊 盛满了惆怅[00:32.13][00:32.65]有人说他在老家欠了一堆钱[00:34.80]需要避避风头[00:35.74]有人说他练就了一身武艺[00:37.37]却没机会展露[00:38.66]有人失去了自我[00:40.02]手足无措四处漂流[00:41.49]有人为了梦想[00:42.56]为了三餐为养家糊口[00:43.96]他住在燕郊区[00:45.62]残破的求职公寓[00:46.81]拥挤的大楼里[00:47.87]堆满陌生人都来自外地[00:49.72]他埋头写着履历[00:51.02]怀抱着多少憧憬[00:52.42]往返在九三零号公路[00:53.88]内心盼着奇迹[00:54.80]忍着泪[00:55.61]不听也不想[00:56.61]不敢回头望的遗憾[00:57.96]掩着伤[00:58.44]抗下了梦想[00:59.35]要毅然决然去流浪[01:00.69]抬头看[01:01.14]卸下了自尊[01:02.16]光环 过去多风光[01:03.47]着斜阳[01:03.93]就算再不堪[01:04.87]败仗 也不能投降[01:06.26]亲爱的[01:06.73]再见了南方[01:07.70]眺望最美丽的家乡[01:09.07]在远方[01:09.53]椰子树摇晃[01:10.43]梦境倒映着的幻想[01:11.80]这城市[01:12.28]雾霾太猖狂[01:13.44]不散 都看不清前方[01:15.12]太迷惘[01:16.09]我飘向北方 别问我家乡[01:21.44]高耸古老的城墙 挡不住忧伤[01:26.95]我飘向北方 家人是否无恙[01:32.51]肩上沉重的行囊 盛满了惆怅[01:38.05]也是最后寄望 回不去的远方 oh[01:50.43]空气太脏 太混浊 他说不喜欢[01:53.08]车太混乱 太匆忙 他还不习惯[01:55.77]人行道一双又一双[01:57.35]斜视冷漠的眼光[01:58.65]他经常将自己灌醉[01:59.81]强迫融入 这大染缸[02:01.53]走着脚步蹒跚[02:02.85]二锅头在摇晃[02:04.23]失意的人啊[02:05.04]偶尔醉倒在那胡同陋巷[02:06.95]咀嚼爆肚涮羊[02:08.32]手中盛着一碗热汤[02:09.81]用力地 温暖着[02:11.15]内心里的不安[02:12.19]忍着泪[02:12.95]不听也不想[02:13.90]不敢回头望的遗憾[02:15.14]掩着伤[02:15.66]抗下了梦想[02:16.64]要毅然决然去流浪[02:17.99]抬头看[02:18.38]卸下了自尊[02:19.41]光环 过去多风光[02:20.86]着斜阳[02:21.34]就算再不堪[02:22.18]败仗 也不能投降[02:23.48]亲爱的[02:23.90]再见了南方[02:24.89]眺望最美丽的家乡[02:26.20]在远方[02:26.63]椰子树摇晃[02:27.65]梦境倒映着的幻想[02:28.87]这城市[02:29.42]雾霾太猖狂[02:30.41]不散 都看不清前方[02:31.84]太迷惘[02:33.41]我飘向北方 别问我家乡[02:38.63]高耸古老的城墙 挡不住忧伤[02:44.17]我飘向北方 家人是否无恙[02:49.60]肩上沉重的行囊 盛满了惆怅[02:55.83]就像那尘土飘散随着风向[03:01.39]谁又能带领着我一起飞翔[03:07.01]我站在天坛中央 闭上眼[03:10.57]祈求一家人都平安[03:17.33]我飘向北方 别问我家乡[03:22.80]高耸古老的城墙 挡不住忧伤[03:28.40]我飘向北方 家人是否无恙[03:33.76]肩上沉重的行囊 盛满了惆怅[03:39.45]我飘向北方[03:40.89]我站在天子脚下[03:42.09]被踩得喘不过气[03:43.40]走在前门大街[03:44.46]跟人潮 总会分歧[03:46.17]或许我根本不属于这里[03:47.84]早就该离去[03:48.84]谁能给我致命的一击[03:50.52]请用力到彻底[03:51.67]这里是梦想的中心[03:53.02]但梦想都遥不可及[03:54.43]这里是圆梦的圣地[03:55.78]但却总是扑朔迷离[03:57.09]多少人敌不过残酷的现实[03:58.76]从此销声匿迹[03:59.88]多少人陷入了昏迷[04:01.21]剩下一具 空壳尸体[04:03.34][04:06.17]Rest in peace[04:06.88]回不去的远方 哦[04:13.05]飘向北方 别再问我家乡</pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-AbSurNEs"),
+            element: document.getElementById("aplayer-VGFVVDwU"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
@@ -425,12 +434,12 @@
         </script>
 <p>Despacito-DaddyYankee&amp;Luis Fonsi</p>
 
-        <div id="aplayer-wyOKnprN" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-HAZcnhOd" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-wyOKnprN"),
+            element: document.getElementById("aplayer-HAZcnhOd"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -491,9 +500,15 @@ C -->|Two| E[iPhone]
 C -->|Three| F[Car]
           </pre>
 <h1 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h1><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name">button</span> #, 开始 %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
-<a class="btn" href="#">开始</a>
+<a class="btn" href="#">
+            开始
+          </a>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name">btn</span> #, Text %&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name">btn</span> #, 取消,, Title %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
-<a class="btn" href="#">确定</a> <a class="btn" href="#" title="Title">取消</a>
+<a class="btn" href="#">
+            确定
+          </a> <a class="btn" href="#" title="Title">
+            取消
+          </a>
 <h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">Lorem </span><span class="template-tag">&#123;% <span class="name">label</span> @ipsum %&#125;</span><span class="xml"> </span><span class="template-tag">&#123;% <span class="name">label</span> primary@dolor sit %&#125;</span><span class="xml"> amet, consectetur </span><span class="template-tag">&#123;% <span class="name">label</span> success@adipiscing elit, %&#125;</span><span class="xml"> sed </span><span class="template-tag">&#123;% <span class="name">label</span> info@do eiusmod %&#125;</span><span class="xml"> tempor incididunt ut labore et dolore magna aliqua.</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">Ut enim *</span><span class="template-tag">&#123;% <span class="name">label</span> warning @ad %&#125;</span><span class="xml">* minim veniam, quis **</span><span class="template-tag">&#123;% <span class="name">label</span> danger@nostrud %&#125;</span><span class="xml">** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">Duis aute irure dolor in reprehenderit in voluptate ~~</span><span class="template-tag">&#123;% <span class="name">label</span> default @velit %&#125;</span><span class="xml">~~ <span class="tag">&lt;<span class="name">mark</span>&gt;</span>esse<span class="tag">&lt;/<span class="name">mark</span>&gt;</span> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></span><br></pre></td></tr></table></figure>
 <p>Lorem <span class="label default">ipsum</span> <span class="label primary">dolor sit</span> amet, consectetur <span class="label success">adipiscing elit,</span> sed <span class="label info">do eiusmod</span> tempor incididunt ut labore et dolore magna aliqua.</p>
 <p>Ut enim <em><span class="label warning">ad</span></em> minim veniam, quis <strong><span class="label danger">nostrud</span></strong> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -783,13 +798,13 @@ C -->|Three| F[Car]
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">52k</span>
+    <span title="站点总字数">53k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">47 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
 </div>
 
         
@@ -940,14 +955,14 @@ if (document.querySelectorAll('div.pdf').length) {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {
-          navpanes: 0,
-          toolbar: 0,
+          navpanes : 0,
+          toolbar  : 0,
           statusbar: 0,
-          pagemode: 'thumbs',
-          view: 'FitH'
+          pagemode : 'thumbs',
+          view     : 'FitH'
         },
         PDFJS_URL: '/lib/pdf/web/viewer.html',
-        height: element.getAttribute('height') || '500px'
+        height   : element.getAttribute('height') || '500px'
       });
     });
   }, window.PDFObject);
@@ -959,11 +974,11 @@ if (document.querySelectorAll('div.pdf').length) {
 if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.0/mermaid.min.js', () => {
     mermaid.initialize({
-      theme: 'forest',
-      logLevel: 3,
-      flowchart: { curve: 'linear' },
-      gantt: { axisFormat: '%m/%d/%Y' },
-      sequence: { actorMargin: 50 }
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
 }
@@ -980,9 +995,9 @@ if (document.querySelectorAll('pre.mermaid').length) {
   <script>
       window.addEventListener('load', () => {
       quicklink({
-        timeout: 3000,
+        timeout : 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://pzb568.github.io/posts/4703653d.html',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://pzb568.github.io/posts/4703653d.html',]
       });
       });
   </script>
@@ -1013,20 +1028,20 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       return GUEST.includes(item);
     });
     new Valine({
-      el: '#valine-comments',
-      verify: true,
-      notify: true,
-      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey     : 'L9xcIdm50WT6yhvW1XPTM58e',
       placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-      avatar: 'mm',
-      meta: guest,
-      pageSize: '10' || 10,
-      visitor: true,
-      lang: 'zh-cn' || 'zh-cn',
-      path: location.pathname,
-      recordIP: true,
-      serverURLs: ''
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
     });
   }, window.Valine);
 });
@@ -1044,7 +1059,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 <!-- Scrollbar -->
 <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
 <!-- BadApplePlayer -->
-<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
+<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

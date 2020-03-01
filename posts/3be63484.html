@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
+<<<<<<< HEAD
 
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
@@ -23,7 +24,7 @@
     hostname: new URL('https://pzb568.github.io').hostname,
     root: '/',
     scheme: 'Gemini',
-    version: '7.7.1',
+    version: '7.7.2',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"mac"},
@@ -53,6 +54,13 @@
           enable_page_level_ads: true
      });
 </script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"pzb568.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+
   <meta name="description" content="&amp;emsp;&amp;emsp; v2ray是最新的翻墙软件，相比ss系列提高了安全性，减少被防火墙封锁的风险，同时可以使用ss的节点(但是不支持SSR节点)。 想了解详细的安装说明信息可以在去官方网站或者去github v2ray开源项目的教程说明。 软件下载安卓系统 v2rayNG   下载地址https:&#x2F;&#x2F;github.com&#x2F;2dust&#x2F;v2rayNG&#x2F;releases   导入下面节点   B">
 <meta name="keywords" content="VPN,谷歌,翻墙,节点分享,网络长城,v2rayNG,BifrostV,Kitsunebi,v2rayN">
 <meta property="og:type" content="article">
@@ -66,7 +74,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;ftp.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;08&#x2F;d662eb26f568b33f.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;ftp.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;08&#x2F;4a4775cf29174bf3.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;ftp.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;08&#x2F;ae9b4505ce5288c6.png">
-<meta property="og:updated_time" content="2020-02-17T07:42:19.518Z">
+<meta property="og:updated_time" content="2020-03-01T05:21:58.391Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;ftp.bmp.ovh&#x2F;imgs&#x2F;2019&#x2F;08&#x2F;0027ef05f989a975.jpg">
 
@@ -77,8 +85,8 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true
+    isHome : false,
+    isPost : true
   };
 </script>
 
@@ -142,6 +150,14 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
   <div class="site-meta">
 
     <div>
@@ -155,11 +171,9 @@
       
   </div>
 
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -206,11 +220,6 @@
         <li class="menu-item menu-item-top">
 
     <a href="/top/" rel="section"><i class="fa fa-fw fa-signal"></i>热榜</a>
-
-  </li>
-        <li class="menu-item menu-item-links">
-
-    <a href="/links/" rel="section"><i class="fa fa-fw fa-link"></i>友链</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -294,7 +303,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-17 15:42:19" itemprop="dateModified" datetime="2020-02-17T15:42:19+08:00">2020-02-17</time>
+                <time title="修改时间：2020-03-01 13:21:58" itemprop="dateModified" datetime="2020-03-01T13:21:58+08:00">2020-03-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -302,9 +311,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" itemprop="url" rel="index">
-                    <span itemprop="name">科学上网</span>
-                  </a>
+                  <a href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" itemprop="url" rel="index"><span itemprop="name">科学上网</span></a>
                 </span>
             </span>
 
@@ -397,7 +404,7 @@
 </ol>
 <p>使用Linux系统的都是大神级的，安装和使用都不在话下，这里就不出教程了。</p>
 <a id="more"></a>
-<h2 id="v2ray节点分享"><a href="#v2ray节点分享" class="headerlink" title="v2ray节点分享"></a>v2ray节点分享</h2><p>以下节点我会不定期更新，请注意更新日期。<br><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vmess://eyJhZGQiOiJ<span class="number">3</span>b<span class="number">3</span>hpYW<span class="number">5</span>nc<span class="number">2</span>hpd<span class="number">28</span>uZmZvc<span class="keyword">i50</span>ayIsImFpZCI<span class="number">6</span>IjIzMyIsImhvc<span class="number">3</span>QiOiJ<span class="number">3</span>b<span class="number">3</span>hpYW<span class="number">5</span>nc<span class="number">2</span>hpd<span class="number">28</span>uZmZvc<span class="keyword">i50</span>ayIsImlkIjoiN<span class="number">2</span>FiZDRjNjUtNDc<span class="number">0</span>My<span class="number">00</span>NTEwLWE<span class="number">0</span>NTUtZjZhNTgzN<span class="number">2</span>M<span class="number">4</span>N<span class="number">2</span>IzIiwibmV<span class="number">0</span>Ijoid<span class="number">3</span>MiLCJwYXRoIjoiLzIzM<span class="number">2</span>Jsb<span class="number">2</span>ciLCJwb<span class="number">3</span>J<span class="number">0</span>IjoiNDQzIiwicHMiOiJAU<span class="number">1</span>NSU<span class="number">1</span>VCLVYxOS<span class="number">3</span>ku<span class="number">5</span>jotLnmjqjojZA<span class="number">6</span>dC<span class="number">5</span>jb<span class="keyword">i9</span>FR<span class="number">0</span>pJeXJsIiwidGxzIjoidGxzIiwidHlwZSI<span class="number">6</span>Im<span class="number">5</span>vbmUiLCJ<span class="number">2</span>IjoiMiJ<span class="number">9</span></span><br><span class="line">vmess://eyJhZGQiOiJ<span class="number">3</span>b<span class="number">3</span>hpYW<span class="number">5</span>nc<span class="number">2</span>hpd<span class="number">28</span>uZmZvc<span class="keyword">i50</span>ayIsImFpZCI<span class="number">6</span>IjIzMyIsImhvc<span class="number">3</span>QiOiJ<span class="number">3</span>b<span class="number">3</span>hpYW<span class="number">5</span>nc<span class="number">2</span>hpd<span class="number">28</span>uZmZvc<span class="keyword">i50</span>ayIsImlkIjoiN<span class="number">2</span>FiZDRjNjUtNDc<span class="number">0</span>My<span class="number">00</span>NTEwLWE<span class="number">0</span>NTUtZjZhNTgzN<span class="number">2</span>M<span class="number">4</span>N<span class="number">2</span>IzIiwibmV<span class="number">0</span>Ijoid<span class="number">3</span>MiLCJwYXRoIjoiLzIzM<span class="number">2</span>Jsb<span class="number">2</span>ciLCJwb<span class="number">3</span>J<span class="number">0</span>IjoiNDQzIiwicHMiOiJAU<span class="number">1</span>NSU<span class="number">1</span>VCLVYyMC<span class="number">3</span>ku<span class="number">5</span>jotLnmjqjojZA<span class="number">6</span>dC<span class="number">5</span>jb<span class="keyword">i9</span>FR<span class="number">0</span>pJeXJsIiwidGxzIjoidGxzIiwidHlwZSI<span class="number">6</span>Im<span class="number">5</span>vbmUiLCJ<span class="number">2</span>IjoiMiJ<span class="number">9</span></span><br><span class="line">vmess://eyJhZGQiOiIxMDcuMTc<span class="number">0</span>LjE<span class="number">3</span>MC<span class="number">4</span>xNjciLCJhaWQiOiIwIiwiaG<span class="number">9</span>zdCI<span class="number">6</span>IiIsImlkIjoiYTI<span class="number">1</span>NDhmNTAtNGRmOS<span class="number">0</span>xMWVhLWEwMDMtMDAxNjNjODcwM<span class="number">2</span>JlIiwibmV<span class="number">0</span>IjoidGNwIiwicGF<span class="number">0</span>aCI<span class="number">6</span>IiIsInBvcnQiOiIxMDI<span class="number">0</span>NSIsInBzIjo<span class="keyword">i5</span>rSb<span class="number">5</span>p<span class="number">2</span>J<span class="number">55</span>+<span class="number">2</span>IiwidGxzIjoiIiwidHlwZSI<span class="number">6</span>Im<span class="number">5</span>vbmUiLCJ<span class="number">2</span>IjoiMiJ<span class="number">9</span></span><br><span class="line">vmess://eyJhZGQiOiI<span class="number">0</span>N<span class="keyword">i4</span>xNy<span class="number">40</span>MS<span class="number">4</span>xMiIsImFpZCI<span class="number">6</span>IjAiLCJob<span class="number">3</span>N<span class="number">0</span>IjoiIiwiaWQiOiJkNWU<span class="number">4</span>MTQwN<span class="keyword">i00</span>Zjk<span class="number">2</span>LTExZWEtODM<span class="number">3</span>Z<span class="keyword">i05</span>NjM<span class="number">4</span>NmY<span class="number">2</span>YTNlMDciLCJuZXQiOiJ<span class="number">0</span>Y<span class="number">3</span>AiLCJwYXRoIjoiIiwicG<span class="number">9</span>ydCI<span class="number">6</span>IjEwMjM<span class="number">2</span>IiwicHMiOiLkv<span class="number">4</span>TnvZfmlq<span class="number">8</span>iLCJ<span class="number">0</span>bHMiOiIiLCJ<span class="number">0</span>eXBlIjoibm<span class="number">9</span>uZSIsInYiOiIyIn<span class="number">0</span>=</span><br><span class="line">vmess://eyJhZGQiOiJsd<span class="keyword">i5</span>iZXR<span class="number">0</span>ZXIwN<span class="keyword">i54</span>eXoiLCJhaWQiOiI<span class="number">2</span>NCIsImhvc<span class="number">3</span>QiOiIiLCJpZCI<span class="number">6</span>IjQ<span class="number">1</span>NGYxYWY<span class="number">1</span>LTMxNjgtNDU<span class="number">2</span>OC<span class="number">04</span>MzJjLWNkYTFjNDEyOTQ<span class="number">5</span>NSIsIm<span class="number">5</span>ldCI<span class="number">6</span>IndzIiwicGF<span class="number">0</span>aCI<span class="number">6</span>I<span class="keyword">i9</span>icmVha<span class="number">3</span>ciLCJwb<span class="number">3</span>J<span class="number">0</span>IjoiNDQzIiwicHMiOiJsd<span class="keyword">i13</span><span class="keyword">c</span><span class="number">3</span>MiLCJ<span class="number">0</span>bHMiOiJ<span class="number">0</span>bHMiLCJ<span class="number">0</span>eXBlIjoibm<span class="number">9</span>uZSIsInYiOiIyIn<span class="number">0</span>=</span><br><span class="line">vmess://eyJhZGQiOiJjdXRldXMuemhpbGVzaHUuY<span class="number">29</span>tIiwiYWlkIjoiMCIsImhvc<span class="number">3</span>QiOiJjdXRldXMuemhpbGVzaHUuY<span class="number">29</span>tIiwiaWQiOiJBMjA<span class="number">0</span>REFGR<span class="keyword">i0</span>zREU<span class="number">3</span>LTJFOTYtQzk<span class="number">5</span>NS<span class="number">1</span>EREY<span class="number">0</span>QjBCOTg<span class="number">0</span>RUIiLCJuZXQiOiJ<span class="number">3</span>cyIsInBhdGgiOiIvIiwicG<span class="number">9</span>ydCI<span class="number">6</span>IjQ<span class="number">0</span>MyIsInBzIjoiQkdQIOe+juWbvU<span class="number">5</span>ldGZsaXgoMSkiLCJ<span class="number">0</span>bHMiOiJ<span class="number">0</span>bHMiLCJ<span class="number">0</span>eXBlIjoibm<span class="number">9</span>uZSIsInYiOiIyIn<span class="number">0</span>=</span><br><span class="line">vmess://eyJhZGQiOiIxMDcuMTc<span class="number">0</span>LjE<span class="number">3</span>MC<span class="number">4</span>xNjciLCJhaWQiOiIwIiwiaG<span class="number">9</span>zdCI<span class="number">6</span>IiIsImlkIjoiYTI<span class="number">1</span>NDhmNTAtNGRmOS<span class="number">0</span>xMWVhLWEwMDMtMDAxNjNjODcwM<span class="number">2</span>JlIiwibmV<span class="number">0</span>IjoidGNwIiwicGF<span class="number">0</span>aCI<span class="number">6</span>IiIsInBvcnQiOiIxMDI<span class="number">0</span>NSIsInBzIjo<span class="keyword">i5</span>rSb<span class="number">5</span>p<span class="number">2</span>J<span class="number">55</span>+<span class="number">2</span>IiwidGxzIjoiIiwidHlwZSI<span class="number">6</span>Im<span class="number">5</span>vbmUiLCJ<span class="number">2</span>IjoiMiJ<span class="number">9</span></span><br><span class="line">vmess://eyJhZGQiOiIxOTIuMy<span class="number">44</span>MC<span class="number">4</span>xNTkiLCJhaWQiOiIwIiwiaG<span class="number">9</span>zdCI<span class="number">6</span>IiIsImlkIjoiNmJlOWJjZTQtNGY<span class="number">5</span>N<span class="keyword">i0</span>xMWVhLThiN<span class="number">2</span>YtMDAxNjNjOGRjNTFlIiwibmV<span class="number">0</span>IjoidGNwIiwicGF<span class="number">0</span>aCI<span class="number">6</span>IiIsInBvcnQiOiIxMDA<span class="number">5</span>OCIsInBzIjo<span class="keyword">i6</span>KW/<span class="number">6</span>ZuF<span class="number">5</span>Zu+IiwidGxzIjoiIiwidHlwZSI<span class="number">6</span>Im<span class="number">5</span>vbmUiLCJ<span class="number">2</span>IjoiMiJ<span class="number">9</span></span><br><span class="line">vmess://eyJhZGQiOiI<span class="number">0</span>N<span class="keyword">i4</span>xNy<span class="number">40</span>MS<span class="number">4</span>xMiIsImFpZCI<span class="number">6</span>IjAiLCJob<span class="number">3</span>N<span class="number">0</span>IjoiIiwiaWQiOiJkNWU<span class="number">4</span>MTQwN<span class="keyword">i00</span>Zjk<span class="number">2</span>LTExZWEtODM<span class="number">3</span>Z<span class="keyword">i05</span>NjM<span class="number">4</span>NmY<span class="number">2</span>YTNlMDciLCJuZXQiOiJ<span class="number">0</span>Y<span class="number">3</span>AiLCJwYXRoIjoiIiwicG<span class="number">9</span>ydCI<span class="number">6</span>IjEwMjM<span class="number">2</span>IiwicHMiOiLkv<span class="number">4</span>TnvZfmlq<span class="number">8</span>iLCJ<span class="number">0</span>bHMiOiIiLCJ<span class="number">0</span>eXBlIjoibm<span class="number">9</span>uZSIsInYiOiIyIn<span class="number">0</span>=</span><br></pre></td></tr></table></figure></p>
+<h2 id="v2ray节点分享"><a href="#v2ray节点分享" class="headerlink" title="v2ray节点分享"></a>v2ray节点分享</h2><p>以下节点我会不定期更新，请注意更新日期。<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ2NC5zc3JzdWIueHl6IiwiYWlkIjoiMjMzIiwiaG9zdCI6IiIsImlkIjoiYmM3OTM2OTUtMzgzZS00N2M0LTk3ODAtY2JiZjRlNDZjZDJhIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzMzg5IiwicHMiOiJAU1NSU1VCLVY0LeS7mOi0ueaOqOiNkDp0LmNuL0VHSkl5cmwiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ2NS5zc3JzdWIueHl6IiwiYWlkIjoiMjMzIiwiaG9zdCI6IiIsImlkIjoiMjgzYWZkZmQtOWNmZi00OThhLWJkNDktMTVlMTBlNDJlYzA5IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzMzg5IiwicHMiOiJAU1NSU1VCLVY1LeS7mOi0ueaOqOiNkDp0LmNuL0VHSkl5cmwiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ2Ny5zc3JzdWIueHl6IiwiYWlkIjoiMjMzIiwiaG9zdCI6IiIsImlkIjoiZDliN2JjMTEtYzE0Ni00ZmQ2LThiY2YtODI4NmY0NzljNzdjIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzMzg5IiwicHMiOiJAU1NSU1VCLVY3LeS7mOi0ueaOqOiNkDp0LmNuL0VHSkl5cmwiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ2OC5zc3JzdWIueHl6IiwiYWlkIjoiMjMzIiwiaG9zdCI6IiIsImlkIjoiZmFmMzhiNzEtN2FiMi00OGViLTgxNmYtZDU4NTM5N2M4MzJkIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzMzg5IiwicHMiOiJAU1NSU1VCLVY4LeS7mOi0ueaOqOiNkDp0LmNuL0VHSkl5cmwiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ2MTEuc3Nyc3ViLnh5eiIsImFpZCI6IjIzMyIsImhvc3QiOiIiLCJpZCI6ImE3ZWQ1MTM5LWNmNDctNDEyMC1hMTE1LTIyNzM4MjZhN2I5MyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMzM4OSIsInBzIjoiQFNTUlNVQi1WMTEt5LuY6LS55o6o6I2QOnQuY24vRUdKSXlybCIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiI0NS4xNDAuMTY5LjE4MiIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJlNzc2YTgxNC01YjM5LTExZWEtOTlmOC1iMjE2ODBlNWJlZmUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjM5OTg3IiwicHMiOiLkv4TnvZfmlq8iLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiIxMDcuMTcyLjg5LjExOCIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiIwODQyOWM0Mi01YjNhLTExZWEtYmY5My0wMDE2M2M1MmY2NWQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjM0ODk3IiwicHMiOiLmtJvmnYnnn7YiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br></pre></td></tr></table></figure></p>
 
     </div>
 
@@ -677,13 +684,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">52k</span>
+    <span title="站点总字数">53k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">47 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
 </div>
 
         
@@ -834,14 +841,14 @@ if (document.querySelectorAll('div.pdf').length) {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {
-          navpanes: 0,
-          toolbar: 0,
+          navpanes : 0,
+          toolbar  : 0,
           statusbar: 0,
-          pagemode: 'thumbs',
-          view: 'FitH'
+          pagemode : 'thumbs',
+          view     : 'FitH'
         },
         PDFJS_URL: '/lib/pdf/web/viewer.html',
-        height: element.getAttribute('height') || '500px'
+        height   : element.getAttribute('height') || '500px'
       });
     });
   }, window.PDFObject);
@@ -853,11 +860,11 @@ if (document.querySelectorAll('div.pdf').length) {
 if (document.querySelectorAll('pre.mermaid').length) {
   NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.0/mermaid.min.js', () => {
     mermaid.initialize({
-      theme: 'forest',
-      logLevel: 3,
-      flowchart: { curve: 'linear' },
-      gantt: { axisFormat: '%m/%d/%Y' },
-      sequence: { actorMargin: 50 }
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
     });
   }, window.mermaid);
 }
@@ -874,9 +881,9 @@ if (document.querySelectorAll('pre.mermaid').length) {
   <script>
       window.addEventListener('load', () => {
       quicklink({
-        timeout: 3000,
+        timeout : 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://pzb568.github.io/posts/3be63484.html',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://pzb568.github.io/posts/3be63484.html',]
       });
       });
   </script>
@@ -907,20 +914,20 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       return GUEST.includes(item);
     });
     new Valine({
-      el: '#valine-comments',
-      verify: true,
-      notify: true,
-      appId: '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
-      appKey: 'L9xcIdm50WT6yhvW1XPTM58e',
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : '0ww4YXJsr4oKntHqICeYrEKu-gzGzoHsz',
+      appKey     : 'L9xcIdm50WT6yhvW1XPTM58e',
       placeholder: "欢迎访问我的网站，希望留下宝贵意见！！！",
-      avatar: 'mm',
-      meta: guest,
-      pageSize: '10' || 10,
-      visitor: true,
-      lang: 'zh-cn' || 'zh-cn',
-      path: location.pathname,
-      recordIP: true,
-      serverURLs: ''
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
     });
   }, window.Valine);
 });
@@ -938,7 +945,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 <!-- Scrollbar -->
 <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
 <!-- BadApplePlayer -->
-<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
+<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
