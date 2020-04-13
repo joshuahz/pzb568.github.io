@@ -12,6 +12,7 @@
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="google-site-verification" content="pJVVxWd0D9DTolINrCMSlJtXXd5lLLqf3AKuLXYRXg0">
+  <meta name="msvalidate.01" content="C4046DE79F685854C805F9953FC827CD">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -24,7 +25,7 @@
   </script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1860534692691231", enable_page_level_ads: true }); </script>
   <meta name="description" content="aria2简介&amp;emsp;&amp;emsp; Aria2 是一个用于 Linux、Windows 和 Mac OSX 的轻量级、多协议和多源的命令行下载管理器&#x2F;实用程序。它支持 HTTP&#x2F;HTTPS、FTP、SFTP、BitTorrent 和 Metalink。aria2 可以通过内置的 JSON-RPC 和 XML-RPC 接口操作。它支持多线程，可以使用多个源或协议下载文件，确实可以加速并尽可能多的">
-<meta name="keywords" content="Linux,termux,下载,aria2">
+<meta name="keywords" content="termux,下载,Linux,aria2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安卓手机利用termux搭建aria2下载服务">
 <meta property="og:url" content="https:&#x2F;&#x2F;pzb568.github.io&#x2F;posts&#x2F;96deb912.html">
@@ -379,7 +380,7 @@
       <div class="popular-posts-title"><a href="/posts/d8fa7a69.html" rel="bookmark">termux安装使用you-get下载视频</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/102fd15b.html" rel="bookmark">WIN10和manjanro双系统grub引导修复</a></div>
+      <div class="popular-posts-title"><a href="/posts/7a49eb42.html" rel="bookmark">hexo博客的搭建与备份</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/posts/25aac357.html" rel="bookmark">termux0.66版本修改添加常用按键</a></div>
@@ -433,9 +434,9 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
               <a href="/tags/termux/" rel="tag"><i class="fa fa-tag"></i> termux</a>
               <a href="/tags/%E4%B8%8B%E8%BD%BD/" rel="tag"><i class="fa fa-tag"></i> 下载</a>
+              <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
               <a href="/tags/aria2/" rel="tag"><i class="fa fa-tag"></i> aria2</a>
           </div>
 
@@ -466,19 +467,19 @@
           
       <div class="tabs tabs-comment">
         <ul class="nav-tabs">
-            <li class="tab"><a href="#comment-livere">livere</a></li>
             <li class="tab"><a href="#comment-valine">valine</a></li>
+            <li class="tab"><a href="#comment-livere">livere</a></li>
         </ul>
         <div class="tab-content">
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
             <div class="tab-pane livere" id="comment-livere">
               
   <div class="comments">
     <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg0OS8xODM5NQ"></div>
   </div>
   
-            </div>
-            <div class="tab-pane valine" id="comment-valine">
-              <div class="comments" id="valine-comments"></div>
             </div>
         </div>
       </div>
@@ -865,22 +866,6 @@ if (document.querySelectorAll('pre.mermaid').length) {
       });
   </script>
 
-<script>
-NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
-  window.livereOptions = {
-    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-});
-</script>
-
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
@@ -909,6 +894,22 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   }, window.Valine);
 });
 </script>
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
+
     </div>
 
 <!-- Your XlchPlayerKey -->
