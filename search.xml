@@ -1,115 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux中优秀的命令工具</title>
-    <url>/posts/ee59f1b1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Linux系统是非常强大的，期中有很多内置命令，随和用户的增加很多人自己贡献了很多优秀的工具，使我们可以更加方便捷的使用及工作。</p>
-<h1 id="exa"><a href="#exa" class="headerlink" title="exa"></a>exa</h1><blockquote>
-<p>exa是使用 <a href="https://www.rust-lang.org/zh-CN/" target="_blank" rel="noopener">Rust</a>语言编写的<strong>ls</strong>文件列表命令替代品；同时还可以替代<strong>tree</strong>命令。</p>
-<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装"><a href="#ubuntu安装" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> exa</span><br></pre></td></tr></table></figure>
-<h3 id="archLinux"><a href="#archLinux" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S exa</span></span><br></pre></td></tr></table></figure>
-<h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">yum <span class="keyword">install</span> exa</span><br></pre></td></tr></table></figure>
-<h3 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> exa</span><br></pre></td></tr></table></figure>
-<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
-<li>查看全部文件<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">exa -a</span></span><br></pre></td></tr></table></figure></li>
-<li>查看列表<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">exa -l</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>树形结构查看替代<strong>tree</strong></li>
-</ul>
-</blockquote>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">exa -T</span></span><br></pre></td></tr></table></figure>
-<p><a href="#exa">点击这里回到exa</a></p>
-<h1 id="bat"><a href="#bat" class="headerlink" title="bat"></a>bat</h1><blockquote>
-<p><code>bat</code> 是一个语法高亮显示和<strong>Git</strong>集成的cat高级版本，也就是说，bat 有 cat的所有功能，且已经集成了代码高亮，和git版本管理的工具，并且会对过长的文件进行自动分页，不会像 cat 一样全部一次打印，所以<strong>bat</strong>完全可以替代cat。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> bat</span><br></pre></td></tr></table></figure>
-<h3 id="archLinux-1"><a href="#archLinux-1" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S bat</span></span><br></pre></td></tr></table></figure>
-<h3 id="安卓termux-1"><a href="#安卓termux-1" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> bat</span><br></pre></td></tr></table></figure>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
-<li>使用 bat 命令创建一个新的文件:<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">bat &gt; <span class="built_in">file</span>.txt</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>使用 bat 命令来查看文件内容，只需要:<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">bat <span class="built_in">file</span>.txt</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>你能同时查看多个文件:<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">bat</span> <span class="selector-tag">file1</span><span class="selector-class">.txt</span> <span class="selector-tag">file2</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>将多个文件的内容合并至一个单独文件中:<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">bat file1<span class="selector-class">.txt</span> file2<span class="selector-class">.txt</span> file3<span class="selector-class">.txt</span> &gt; document.txt</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>就像我之前提到的那样，除了浏览和编辑文件以外，bat 命令有一些非常酷的特性。</li>
-</ul>
-</blockquote>
-<ul>
-<li>cat 命令以纯文本格式显示文件的内容，而 bat 命令显示了语法高亮和整齐的文本对齐格式</li>
-</ul>
-<ul>
-<li>bat 命令也支持 Git 集成(GIT integration)，这样您就可以轻松查看/编辑 Git 存储库中的文件。 它与 Git 连接可以显示关于索引的修改。</li>
-</ul>
-<h1 id="fd"><a href="#fd" class="headerlink" title="fd"></a>fd</h1><blockquote>
-<p><strong><a href="https://github.com/chinanf-boy/fd-zh" target="_blank" rel="noopener">fd</a></strong>是一种简单又快速和用户友好的find替代方案。</p>
-<h2 id="1-安装-1"><a href="#1-安装-1" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-1"><a href="#ubuntu安装-1" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><p>下载最新<strong>.deb</strong>包装从<a href="https://github.com/sharkdp/fd/releases" target="_blank" rel="noopener">releases</a>页面并通过以下方式安装:<br><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">dpkg</span> <span class="selector-tag">-i</span> <span class="selector-tag">fd_7</span><span class="selector-class">.0</span><span class="selector-class">.0_amd64</span><span class="selector-class">.deb</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="archLinux-2"><a href="#archLinux-2" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S fd</span></span><br></pre></td></tr></table></figure>
-<h3 id="Gentoo-Linux"><a href="#Gentoo-Linux" class="headerlink" title="Gentoo Linux"></a>Gentoo Linux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">emerge -av fd</span></span><br></pre></td></tr></table></figure>
-<h3 id="Fedora"><a href="#Fedora" class="headerlink" title="Fedora"></a>Fedora</h3><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">dnf install fd-<span class="built_in">find</span></span><br></pre></td></tr></table></figure>
-<h3 id="安卓termux-2"><a href="#安卓termux-2" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> fd</span><br></pre></td></tr></table></figure>
-<h2 id="2-使用-1"><a href="#2-使用-1" class="headerlink" title="2. 使用"></a>2. 使用</h2></blockquote>
-<p>演示</p>
-<p><img data-src="doc/df.svg" alt=""></p>
-<p><a href="#fd">点击这里回到fd</a></p>
-<a id="more"></a>
-<h1 id="ag"><a href="#ag" class="headerlink" title="ag"></a>ag</h1><blockquote>
-<p>silversearcher-ag—— The silver searcher，这个软件用c编写的，速度极快，用它替代grep。</p>
-<h2 id="1-安装-2"><a href="#1-安装-2" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-2"><a href="#ubuntu安装-2" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> silversearcher-ag</span><br></pre></td></tr></table></figure>
-<h3 id="archLinux-3"><a href="#archLinux-3" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S silversearcher-ag</span></span><br></pre></td></tr></table></figure>
-<h3 id="安卓termux-3"><a href="#安卓termux-3" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> silversearcher-ag</span><br></pre></td></tr></table></figure>
-<h2 id="2-使用-2"><a href="#2-使用-2" class="headerlink" title="2. 使用"></a>2. 使用</h2><figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line">ifconfig <span class="string">| ag inet</span></span><br></pre></td></tr></table></figure>
-<p><a href="#ag">点击这里回到ag</a></p>
-</blockquote>
-<h1 id="axel"><a href="#axel" class="headerlink" title="axel"></a>axel</h1><blockquote>
-<p> Axel 是 Linux 下一个不错的HTTP/FTP高速下载工具。支持多线程下载、断点续传，且可以从多个地址或者从一个地址的多个连接来下载同一个文件。适合网速不给力时多线程下载提高下载速度;可以用来替代curl wget 。  </p>
-</blockquote>
-<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><h3 id="ubuntu-1"><a href="#ubuntu-1" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> axel</span><br></pre></td></tr></table></figure>
-<h3 id="CentOS安装"><a href="#CentOS安装" class="headerlink" title="CentOS安装"></a>CentOS安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">yum <span class="keyword">install</span> axel</span><br></pre></td></tr></table></figure>
-<h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>axel</span><br></pre></td></tr></table></figure>
-<h2 id="2-使用-3"><a href="#2-使用-3" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
-<li>下载Beyond-光辉岁月<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">axel http:<span class="regexp">//mu</span>sic.<span class="number">163</span>.com<span class="regexp">/song/m</span>edia<span class="regexp">/outer/u</span>rl?id=<span class="number">346576</span>.mp3</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>指定每移最大下载比特<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">exel -s <span class="number">1024000</span> htps:<span class="comment">//</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>设置线程<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">axel -n <span class="number">10</span> https:<span class="comment">//</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>下载到指定位置<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">axel -o <span class="regexp">/sdcard/</span> <span class="string">https:</span><span class="comment">//</span></span><br></pre></td></tr></table></figure>
-<a href="##axel">点击这里回到axel</a></li>
-</ul>
-<h1 id="mosh"><a href="#mosh" class="headerlink" title="mosh"></a>mosh</h1><blockquote>
-<p>Mosh表示移动Shell(Mobile Shell)，是一个用于从客户端跨互联网连接远程服务器的命令行工具。它能用于SSH连接，但是比Secure Shell功能更多。它是一个类似于SSH而带有更多功能的应用。程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下；Mosh最大的特点是基于UDP方式传输，支持在服务端创建一个临时的Key供客户端一次性连接，退出后失效；也支持通过SSH的配置进行认证，但数据传输本身还是自身的UDP方式，mosh的稳定性是替代ssh最好选择。</p>
-</blockquote>
-<h2 id="1-安装-3"><a href="#1-安装-3" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-3"><a href="#ubuntu安装-3" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> mosh</span><br></pre></td></tr></table></figure>
-<h3 id="archLinux-4"><a href="#archLinux-4" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S mosh</span></span><br></pre></td></tr></table></figure>
-<h3 id="MAC-1"><a href="#MAC-1" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>mosh</span><br></pre></td></tr></table></figure>
-<h2 id="2-使用-4"><a href="#2-使用-4" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
-<li>mosh用ssh连接方式<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">mosh</span> --ssh=<span class="string">"ssh -p 22"</span> roor<span class="variable">@ip</span></span><br></pre></td></tr></table></figure>
-<a href="#mosh">点击这里回到mosh</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件应用</category>
-      </categories>
-      <tags>
-        <tag>exa</tag>
-        <tag>bat</tag>
-        <tag>fd</tag>
-        <tag>ag</tag>
-        <tag>axel</tag>
-        <tag>mosh</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux常用文件传输工具使用方法</title>
     <url>/posts/b3144d70.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Linux系统之间传送文件，包括Linux服务器和客户端之间，Linux主机和嵌入式Linux平台之间等，以及Linux和windows之间传送文件及同步工具；我们经常在不同的系统中或者主机设备中传输文件或者同步文件，以使用<strong>scp</strong>或者<strong>rsync</strong>及<strong>syncthing</strong></p>
@@ -169,24 +60,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MYSQL数据库使用记录</title>
-    <url>/posts/1f77a6f0.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="查看数据库版本"><a href="#查看数据库版本" class="headerlink" title="查看数据库版本"></a>查看数据库版本</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> @@<span class="keyword">VERSION</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h2><figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>();</span><br></pre></td></tr></table></figure>
-<h2 id="查看用户权限"><a href="#查看用户权限" class="headerlink" title="查看用户权限"></a>查看用户权限</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">grants</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> wordpress;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-]]></content>
-      <categories>
-        <category>软件应用</category>
-      </categories>
-      <tags>
-        <tag>MYSQL</tag>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown编辑器日常使用语法记录</title>
     <url>/posts/4703653d.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br>&emsp;&emsp; hexo默认支持Markdown编辑文章，学习好Markdown 编辑器语法有利于更方便友好的写作;下面我会用一些事例分享Markdown 编辑器使用中的各种技巧。</p>
@@ -230,13 +103,13 @@
 <figure class="highlight perl"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer <span class="string">"飘向北方"</span> <span class="string">"黄明志,王力宏"</span> <span class="string">"http://music.163.com/song/media/outer/url?id=461864856.mp3"</span> <span class="string">"https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1559501443630&amp;di=5d355fdbb782fb5bc06c476af70ba19a&amp;imgtype=0&amp;src=http%3A%2F%2Fsource.upupoo.com%2Ftheme%2F1800037383%2FpreviewFix.jpg"</span> <span class="string">"lrc:lrc.txt"</span> %&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>欣赏音乐飘向北方-黄明志&amp;王力宏</strong></p>
 
-        <div id="aplayer-AsnscBAQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-EuqoWaQQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content">
 [ti:飘向北方][ar:黄明志/王力宏][al:亚洲通车][by:][offset:0][00:00.00]飘向北方 (Stranger In The North) - 黄明志 (Namewee)/王力宏 (Leehom Wang)[00:03.30]词：黄明志[00:06.60]曲：黄明志[00:09.90]飘向北方 别问我家乡[00:15.25]高耸古老的城墙 挡不住忧伤[00:20.74]我飘向北方 家人是否无恙[00:26.27]肩上沉重的行囊 盛满了惆怅[00:32.13][00:32.65]有人说他在老家欠了一堆钱[00:34.80]需要避避风头[00:35.74]有人说他练就了一身武艺[00:37.37]却没机会展露[00:38.66]有人失去了自我[00:40.02]手足无措四处漂流[00:41.49]有人为了梦想[00:42.56]为了三餐为养家糊口[00:43.96]他住在燕郊区[00:45.62]残破的求职公寓[00:46.81]拥挤的大楼里[00:47.87]堆满陌生人都来自外地[00:49.72]他埋头写着履历[00:51.02]怀抱着多少憧憬[00:52.42]往返在九三零号公路[00:53.88]内心盼着奇迹[00:54.80]忍着泪[00:55.61]不听也不想[00:56.61]不敢回头望的遗憾[00:57.96]掩着伤[00:58.44]抗下了梦想[00:59.35]要毅然决然去流浪[01:00.69]抬头看[01:01.14]卸下了自尊[01:02.16]光环 过去多风光[01:03.47]着斜阳[01:03.93]就算再不堪[01:04.87]败仗 也不能投降[01:06.26]亲爱的[01:06.73]再见了南方[01:07.70]眺望最美丽的家乡[01:09.07]在远方[01:09.53]椰子树摇晃[01:10.43]梦境倒映着的幻想[01:11.80]这城市[01:12.28]雾霾太猖狂[01:13.44]不散 都看不清前方[01:15.12]太迷惘[01:16.09]我飘向北方 别问我家乡[01:21.44]高耸古老的城墙 挡不住忧伤[01:26.95]我飘向北方 家人是否无恙[01:32.51]肩上沉重的行囊 盛满了惆怅[01:38.05]也是最后寄望 回不去的远方 oh[01:50.43]空气太脏 太混浊 他说不喜欢[01:53.08]车太混乱 太匆忙 他还不习惯[01:55.77]人行道一双又一双[01:57.35]斜视冷漠的眼光[01:58.65]他经常将自己灌醉[01:59.81]强迫融入 这大染缸[02:01.53]走着脚步蹒跚[02:02.85]二锅头在摇晃[02:04.23]失意的人啊[02:05.04]偶尔醉倒在那胡同陋巷[02:06.95]咀嚼爆肚涮羊[02:08.32]手中盛着一碗热汤[02:09.81]用力地 温暖着[02:11.15]内心里的不安[02:12.19]忍着泪[02:12.95]不听也不想[02:13.90]不敢回头望的遗憾[02:15.14]掩着伤[02:15.66]抗下了梦想[02:16.64]要毅然决然去流浪[02:17.99]抬头看[02:18.38]卸下了自尊[02:19.41]光环 过去多风光[02:20.86]着斜阳[02:21.34]就算再不堪[02:22.18]败仗 也不能投降[02:23.48]亲爱的[02:23.90]再见了南方[02:24.89]眺望最美丽的家乡[02:26.20]在远方[02:26.63]椰子树摇晃[02:27.65]梦境倒映着的幻想[02:28.87]这城市[02:29.42]雾霾太猖狂[02:30.41]不散 都看不清前方[02:31.84]太迷惘[02:33.41]我飘向北方 别问我家乡[02:38.63]高耸古老的城墙 挡不住忧伤[02:44.17]我飘向北方 家人是否无恙[02:49.60]肩上沉重的行囊 盛满了惆怅[02:55.83]就像那尘土飘散随着风向[03:01.39]谁又能带领着我一起飞翔[03:07.01]我站在天坛中央 闭上眼[03:10.57]祈求一家人都平安[03:17.33]我飘向北方 别问我家乡[03:22.80]高耸古老的城墙 挡不住忧伤[03:28.40]我飘向北方 家人是否无恙[03:33.76]肩上沉重的行囊 盛满了惆怅[03:39.45]我飘向北方[03:40.89]我站在天子脚下[03:42.09]被踩得喘不过气[03:43.40]走在前门大街[03:44.46]跟人潮 总会分歧[03:46.17]或许我根本不属于这里[03:47.84]早就该离去[03:48.84]谁能给我致命的一击[03:50.52]请用力到彻底[03:51.67]这里是梦想的中心[03:53.02]但梦想都遥不可及[03:54.43]这里是圆梦的圣地[03:55.78]但却总是扑朔迷离[03:57.09]多少人敌不过残酷的现实[03:58.76]从此销声匿迹[03:59.88]多少人陷入了昏迷[04:01.21]剩下一具 空壳尸体[04:03.34][04:06.17]Rest in peace[04:06.88]回不去的远方 哦[04:13.05]飘向北方 别再问我家乡</pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-AsnscBAQ"),
+            element: document.getElementById("aplayer-EuqoWaQQ"),
             narrow: false,
             autoplay: false,
             showlrc: 2,
@@ -253,12 +126,12 @@
         </script>
 <p>Despacito-DaddyYankee&amp;Luis Fonsi</p>
 
-        <div id="aplayer-yOxdkgNI" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-QgtCIrJw" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-yOxdkgNI"),
+            element: document.getElementById("aplayer-QgtCIrJw"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -352,6 +225,42 @@ C -->|Three| F[Car]
       </tags>
   </entry>
   <entry>
+    <title>WIN10和manjanro双系统grub引导修复</title>
+    <url>/posts/102fd15b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; 安装WIN和Linux双系统时经常出现引导错误而无法加入任何一个系统的情况，这个时间不要重新安装，修复一下grub引导就好，重新安装又需要浪费很多时间及精力，我相信很多人用遇到这种情况，使用写一个教程给大家。</p>
+<h1 id="修复引导"><a href="#修复引导" class="headerlink" title="修复引导"></a>修复引导</h1><ol>
+<li>查看Linux引导硬盘的哪个分区<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">ls</span></span><br></pre></td></tr></table></figure></li>
+<li><p>会出现</p>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line"><span class="comment">(hd0)</span>  <span class="comment">(hd0,gpt9)</span>  <span class="comment">(hd0,gpt8)</span>...</span><br></pre></td></tr></table></figure>
+<p>这是硬盘分区信息，分区不一样，显示的有可能会有区别</p>
+</li>
+<li><p>如果不知道Linux分区信息接下来一个一个测试</p>
+<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line">ls (<span class="name">hd0</span>,gpt9)/</span><br></pre></td></tr></table></figure>
+<p>如果出现Linux文件结构就说明这是安装Linux的分区，如果不是安照上面命令继续测试，只需要修改括号后最后面的数字</p>
+</li>
+<li>显示Linux文件结构后继续找grub引导文件的位置<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ls</span> <span class="params">(hd0,gpt8)</span><span class="string">/grub</span></span><br></pre></td></tr></table></figure>
+如果没有x86-64-efi显示引导文件继续下面测试，因为这个是一个没有独立文件夹的引导<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ls</span> <span class="params">(hd0,gpt8)</span><span class="string">/boot/grub</span></span><br></pre></td></tr></table></figure>
+出现后下面找回引导</li>
+<li>设置权限<figure class="highlight gams"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> root=(hd0,gpt8)/boot/grub</span><br></pre></td></tr></table></figure></li>
+<li>设置引导<figure class="highlight gams"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> prefix=(hd0,gpt8)/boot/grub</span><br></pre></td></tr></table></figure></li>
+<li>修复<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">insmod normal</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<img data-src="https://i.bmp.ovh/imgs/2019/02/9dc692733b099550.jpg" alt=""></li>
+<li>进入Linux更新grub找回引导。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>WIN10</tag>
+        <tag>Linux</tag>
+        <tag>manjanro</tag>
+        <tag>grub</tag>
+        <tag>双系统修复</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WireGuard的使用与分享</title>
     <url>/posts/1bd1d3ff.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; WireGuard是国外开发的一个高速翻墙工具，没有中文，但是非常简单好用，现在推荐给大家<br>1.注册AzireVPN账号：<a href="https://www.azirevpn.com/manager/auth/login，只需要填写用户名USERNAME和密码PASSWORD即可，可以不填Email，这才是注重隐私的VPN供应商" target="_blank" rel="noopener">https://www.azirevpn.com/manager/auth/login，只需要填写用户名USERNAME和密码PASSWORD即可，可以不填Email，这才是注重隐私的VPN供应商</a><br><del>2.下载配置文件：<a href="https://www.azirevpn.com/cfg/wireguard，在这个网址填写注册的用户名密码，点Download" target="_blank" rel="noopener">https://www.azirevpn.com/cfg/wireguard，在这个网址填写注册的用户名密码，点Download</a> Configuration。目前提供了加拿大多伦多(azirevpn-ca1)，西班牙马拉加(azirevpn-es1)，瑞典斯德哥尔摩(azirevpn-se1)，英国伦敦(azirevpn-uk1)，美国迈阿密(azirevpn-us1)这5个节点</del>之前有免费体验，现在只能购买了。<br><a id="more"></a><br>3.<br>安装WireGuard Android客户端，Play下载地址：<a href="https://play.google.com/store/apps/details?id=com.wireguard.android" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.wireguard.android</a><br>4.导入配置文件：把之前下载的配置文件传到手机里，手机上打开WireGuard客户端，点右下角加号，选择第一个Create from file or archive，点选传到手机里的配置文件。这时直接点选某个配置文件即可连接VPN，建议选择uk1服务器<br>5.WireGuard客户端可以允许部分应用绕过VPN，打开WireGuard，点击一个节点配置，在右上角点击铅笔按钮，在中间有蓝色的0 EXCLUDED APPLICATIONS，点击后进入APP排除设置，勾选某个APP就是让这个APP不走VPN通道。选择完成后点右下角蓝色SET EXCLUSIONGS，然后点配置界面右上角的保存按钮即可。<br>6.WireGuard Android客户端支持快捷设置面板功能。即在下拉通知栏中可以添加WireGuard快捷设置</p>
@@ -369,6 +278,42 @@ C -->|Three| F[Car]
       </tags>
   </entry>
   <entry>
+    <title>archlinux包工具pacman常用命令使用方法</title>
+    <url>/posts/57793a5c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Pacman 是一个软件包管理器,，作为ArchLinux发行版的一部分，是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来。不管软件包是来自官方的 Arch 库还是用户自己创建，Pacman 都能方便的管理。</p>
+<h1 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h1><h2 id="列出已经安装的软件包"><a href="#列出已经安装的软件包" class="headerlink" title="列出已经安装的软件包"></a>列出已经安装的软件包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Q</span></span><br></pre></td></tr></table></figure>
+<h2 id="查看clang包是否已经安装"><a href="#查看clang包是否已经安装" class="headerlink" title="查看clang包是否已经安装"></a>查看clang包是否已经安装</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Q clang</span></span><br></pre></td></tr></table></figure>
+<h2 id="查看已安装的包python的详细信息"><a href="#查看已安装的包python的详细信息" class="headerlink" title="查看已安装的包python的详细信息"></a>查看已安装的包python的详细信息</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Qi python</span></span><br></pre></td></tr></table></figure>
+<h2 id="列出已安装包python的所有文件"><a href="#列出已安装包python的所有文件" class="headerlink" title="列出已安装包python的所有文件"></a>列出已安装包python的所有文件</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Ql python</span></span><br></pre></td></tr></table></figure>
+<h2 id="查找某个文件属于哪个包"><a href="#查找某个文件属于哪个包" class="headerlink" title="查找某个文件属于哪个包"></a>查找某个文件属于哪个包</h2><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">pacman -Qo <span class="regexp">/etc/</span>passwd</span><br></pre></td></tr></table></figure>
+<h1 id="查看组"><a href="#查看组" class="headerlink" title="查看组"></a>查看组</h1><h2 id="查询包组"><a href="#查询包组" class="headerlink" title="查询包组"></a>查询包组</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Sg</span></span><br></pre></td></tr></table></figure>
+<h2 id="查询包组所包含的软件包"><a href="#查询包组所包含的软件包" class="headerlink" title="查询包组所包含的软件包"></a>查询包组所包含的软件包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Sg gnome</span></span><br></pre></td></tr></table></figure>
+<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><h2 id="搜索virtualbox相关的包"><a href="#搜索virtualbox相关的包" class="headerlink" title="搜索virtualbox相关的包"></a>搜索virtualbox相关的包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Ss virtualbox</span></span><br></pre></td></tr></table></figure>
+<h2 id="从数据库中搜索virtualbox的信息"><a href="#从数据库中搜索virtualbox的信息" class="headerlink" title="从数据库中搜索virtualbox的信息"></a>从数据库中搜索virtualbox的信息</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Si virtualbox</span></span><br></pre></td></tr></table></figure>
+<h1 id="同步升级"><a href="#同步升级" class="headerlink" title="同步升级"></a>同步升级</h1><h2 id="仅同步源"><a href="#仅同步源" class="headerlink" title="仅同步源"></a>仅同步源</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sy</span></span><br></pre></td></tr></table></figure>
+<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Su</span></span><br></pre></td></tr></table></figure>
+<h2 id="同步源并更新系统"><a href="#同步源并更新系统" class="headerlink" title="同步源并更新系统"></a>同步源并更新系统</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Syu</span></span><br></pre></td></tr></table></figure>
+<h2 id="同步源后安装包"><a href="#同步源后安装包" class="headerlink" title="同步源后安装包"></a>同步源后安装包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sy virtualbox</span></span><br></pre></td></tr></table></figure>
+<p>升级时不升级virtualbox包<br><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">sudo pacman -Su <span class="comment">--ignore virtualbox</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="从本地数据库中获取git的信息，并下载安装"><a href="#从本地数据库中获取git的信息，并下载安装" class="headerlink" title="从本地数据库中获取git的信息，并下载安装"></a>从本地数据库中获取git的信息，并下载安装</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S git</span></span><br></pre></td></tr></table></figure>
+<h2 id="强制安装virtualbox包"><a href="#强制安装virtualbox包" class="headerlink" title="强制安装virtualbox包"></a>强制安装virtualbox包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sf virtualbox</span></span><br></pre></td></tr></table></figure>
+<h2 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h2><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">cd /var/cache/pacman/pkg</span><br><span class="line">sudo pacman -U virtualbox-<span class="number">5.2</span>.<span class="number">12</span>-<span class="number">1</span>-x86_64<span class="selector-class">.pkg</span><span class="selector-class">.tar</span><span class="selector-class">.xz</span></span><br></pre></td></tr></table></figure>
+<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><h2 id="删除virtualbox"><a href="#删除virtualbox" class="headerlink" title="删除virtualbox"></a>删除virtualbox</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -R virtualbox</span></span><br></pre></td></tr></table></figure>
+<h2 id="强制删除被依赖的包慎用"><a href="#强制删除被依赖的包慎用" class="headerlink" title="强制删除被依赖的包慎用"></a>强制删除被依赖的包<strong><em>慎用</em></strong></h2><figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">sudo pacman -<span class="built_in">Rd</span> virtualbox</span><br></pre></td></tr></table></figure>
+<h2 id="删除nodejs包及依赖其的包"><a href="#删除nodejs包及依赖其的包" class="headerlink" title="删除nodejs包及依赖其的包"></a>删除nodejs包及依赖其的包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Rc nodejs</span></span><br></pre></td></tr></table></figure>
+<h2 id="删除nodejs包及其依赖的包"><a href="#删除nodejs包及其依赖的包" class="headerlink" title="删除nodejs包及其依赖的包"></a>删除nodejs包及其依赖的包</h2><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">sudo</span> pacman -<span class="keyword">Rsc </span>nodejs</span><br></pre></td></tr></table></figure>
+<h1 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h1><h2 id="清理-var-cache-pacman-pkg目录下的旧包"><a href="#清理-var-cache-pacman-pkg目录下的旧包" class="headerlink" title="清理/var/cache/pacman/pkg目录下的旧包"></a>清理/var/cache/pacman/pkg目录下的旧包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sc</span></span><br></pre></td></tr></table></figure>
+<h2 id="清除所有下载的包和数据库"><a href="#清除所有下载的包和数据库" class="headerlink" title="清除所有下载的包和数据库"></a>清除所有下载的包和数据库</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Scc</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>系统工具</category>
+      </categories>
+      <tags>
+        <tag>pacman</tag>
+        <tag>arch</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>archlinux启动ssh服务</title>
     <url>/posts/e1ab7e88.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Archlinux和Manjaro开启ssh服务命令及使用方法。</p>
@@ -382,32 +327,6 @@ C -->|Three| F[Car]
       </categories>
       <tags>
         <tag>ssh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo网站permalink设置</title>
-    <url>/posts/a7ce4954.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; 网站搭建差不多2年了，没有设置过永久链接，所有的文章都是中文的以至于网站地址特别长，不方便记忆，不美观。利用<strong>hexo-abbrlink</strong>这个插件可以解决</p>
-<h1 id="安装hexo-abbrlink"><a href="#安装hexo-abbrlink" class="headerlink" title="安装hexo-abbrlink"></a>安装hexo-abbrlink</h1><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-abbrlink <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-<h1 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h1><figure class="highlight x86asm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">permalink:</span> post/:abbrlink.html</span><br><span class="line"><span class="symbol">abbrlink:</span></span><br><span class="line"><span class="symbol">  alg:</span> <span class="keyword">crc32</span>  # 算法：crc16(<span class="meta">default</span>) <span class="keyword">and</span> <span class="keyword">crc32</span></span><br><span class="line"><span class="symbol">  rep:</span> hex    # 进制：<span class="keyword">dec</span>(<span class="meta">default</span>) <span class="keyword">and</span> hex</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h1 id="利用404跳转到主页"><a href="#利用404跳转到主页" class="headerlink" title="利用404跳转到主页"></a>利用404跳转到主页</h1><blockquote>
-<p>由于网址方式了变成百度谷歌抓取的信息是之前网站信息，以至于正常无法方法可以利用404网页使打不开的网页回到主页，当然你需要点击<strong>回我的主页</strong>。</p>
-<h1 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h1><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">hexo new<span class="built_in"> page </span>404</span><br></pre></td></tr></table></figure>
-<h1 id="编辑404-md"><a href="#编辑404-md" class="headerlink" title="编辑404.md"></a>编辑404.md</h1><p>添加Front-matter信息<strong>permalink: /404</strong>并替换自己的网站地址(homePageUrl后面的地址)，下面的网址是腾讯公益信息宝贝回家，寻找失踪儿童的信息。</p>
-</blockquote>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="number">404</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2018</span><span class="bullet">-11</span><span class="bullet">-08</span> <span class="number">21</span><span class="string">:19:51</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">/404</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">&lt;script</span> <span class="string">type="text/javascript"</span> <span class="string">src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> <span class="string">charset="utf-8"</span> <span class="string">homePageUrl="https://pzb568.github.io"</span> <span class="string">homePageName="回到我的主页"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
-<p>下面你可以预览一下<br><a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/</a></p>
-<blockquote>
-<p>由于网站地址方式了变化，之前valine的数据地址不一样，所以所有的评论信息都会消失，请谨慎选择。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网络应用</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>permalink</tag>
       </tags>
   </entry>
   <entry>
@@ -434,6 +353,32 @@ C -->|Three| F[Car]
         <tag>hexo</tag>
         <tag>next</tag>
         <tag>主题更新</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo网站permalink设置</title>
+    <url>/posts/a7ce4954.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; 网站搭建差不多2年了，没有设置过永久链接，所有的文章都是中文的以至于网站地址特别长，不方便记忆，不美观。利用<strong>hexo-abbrlink</strong>这个插件可以解决</p>
+<h1 id="安装hexo-abbrlink"><a href="#安装hexo-abbrlink" class="headerlink" title="安装hexo-abbrlink"></a>安装hexo-abbrlink</h1><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-abbrlink <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<h1 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h1><figure class="highlight x86asm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">permalink:</span> post/:abbrlink.html</span><br><span class="line"><span class="symbol">abbrlink:</span></span><br><span class="line"><span class="symbol">  alg:</span> <span class="keyword">crc32</span>  # 算法：crc16(<span class="meta">default</span>) <span class="keyword">and</span> <span class="keyword">crc32</span></span><br><span class="line"><span class="symbol">  rep:</span> hex    # 进制：<span class="keyword">dec</span>(<span class="meta">default</span>) <span class="keyword">and</span> hex</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="利用404跳转到主页"><a href="#利用404跳转到主页" class="headerlink" title="利用404跳转到主页"></a>利用404跳转到主页</h1><blockquote>
+<p>由于网址方式了变成百度谷歌抓取的信息是之前网站信息，以至于正常无法方法可以利用404网页使打不开的网页回到主页，当然你需要点击<strong>回我的主页</strong>。</p>
+<h1 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h1><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">hexo new<span class="built_in"> page </span>404</span><br></pre></td></tr></table></figure>
+<h1 id="编辑404-md"><a href="#编辑404-md" class="headerlink" title="编辑404.md"></a>编辑404.md</h1><p>添加Front-matter信息<strong>permalink: /404</strong>并替换自己的网站地址(homePageUrl后面的地址)，下面的网址是腾讯公益信息宝贝回家，寻找失踪儿童的信息。</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="number">404</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2018</span><span class="bullet">-11</span><span class="bullet">-08</span> <span class="number">21</span><span class="string">:19:51</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">/404</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">&lt;script</span> <span class="string">type="text/javascript"</span> <span class="string">src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> <span class="string">charset="utf-8"</span> <span class="string">homePageUrl="https://pzb568.github.io"</span> <span class="string">homePageName="回到我的主页"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>下面你可以预览一下<br><a href="https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/">https://pzb568.github.io/2018/11/09/v2ray%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E5%88%86%E4%BA%AB/</a></p>
+<blockquote>
+<p>由于网站地址方式了变化，之前valine的数据地址不一样，所以所有的评论信息都会消失，请谨慎选择。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网络应用</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>permalink</tag>
       </tags>
   </entry>
   <entry>
@@ -600,6 +545,35 @@ n/2, & \text{如果$ x<=2 $}\\
       </tags>
   </entry>
   <entry>
+    <title>termux0.66版本修改添加常用按键</title>
+    <url>/posts/25aac357.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。</p>
+<ol>
+<li>创建.termux文件夹<figure class="highlight perl"><table><tr><td class="code"><pre><span class="line"><span class="keyword">mkdir</span> $HOME/.termux</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol>
+<li>在$HOME/.termux/termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim</li>
+</ol>
+<p>安装vim</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> vim</span><br></pre></td></tr></table></figure></h2><ol>
+<li>进入文件夹并vim打开termux.properties<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">cd</span> <span class="selector-class">.termux</span> &amp;&amp; <span class="selector-tag">vim</span> <span class="selector-tag">termux</span><span class="selector-class">.properties</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+</li>
+</ol>
+<p>效果布局1<br>添加如下内容<br><figure class="highlight prolog"><table><tr><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'['</span>,<span class="string">']'</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'&amp;'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">';'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'~'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'\"\"'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg" alt=""></p>
+<p>效果布局2<br><figure class="highlight prolog"><table><tr><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">'PGUP'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'ALT'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'PGDN'</span>,<span class="string">'['</span>,<span class="string">']'</span>],[<span class="string">'$'</span>,<span class="string">'"'</span>,<span class="string">'='</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'('</span>,<span class="string">')'</span>,<span class="string">'&amp;'</span>,<span class="string">'%'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下<br><img src = 'https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg' /></p>
+]]></content>
+      <categories>
+        <category>手机软件</category>
+      </categories>
+      <tags>
+        <tag>termux</tag>
+        <tag>常用键</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ss系列软件分享及使用</title>
     <url>/posts/2d957091.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; ss是非常流行的翻墙软件，涵盖所有平台，安全性不如之后会介绍的v2ray，都是速度非常快。</p>
@@ -628,32 +602,157 @@ n/2, & \text{如果$ x<=2 $}\\
       </tags>
   </entry>
   <entry>
-    <title>termux0.66版本修改添加常用按键</title>
-    <url>/posts/25aac357.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; termux0.66版本之后又改了快捷键，去掉了左右，home，更新后用的不习惯，并且不方便，可以修改并添加快捷键。</p>
-<ol>
-<li>创建.termux文件夹<figure class="highlight perl"><table><tr><td class="code"><pre><span class="line"><span class="keyword">mkdir</span> $HOME/.termux</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<hr>
-<ol>
-<li>在$HOME/.termux/termux.properties 文件中加上下面代码，如果没有安装vim 下面先安装vim</li>
-</ol>
-<p>安装vim</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> vim</span><br></pre></td></tr></table></figure></h2><ol>
-<li>进入文件夹并vim打开termux.properties<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">cd</span> <span class="selector-class">.termux</span> &amp;&amp; <span class="selector-tag">vim</span> <span class="selector-tag">termux</span><span class="selector-class">.properties</span></span><br></pre></td></tr></table></figure>
+    <title>Linux中优秀的命令工具</title>
+    <url>/posts/ee59f1b1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Linux系统是非常强大的，期中有很多内置命令，随和用户的增加很多人自己贡献了很多优秀的工具，使我们可以更加方便捷的使用及工作。</p>
+<h1 id="exa"><a href="#exa" class="headerlink" title="exa"></a>exa</h1><blockquote>
+<p>exa是使用 <a href="https://www.rust-lang.org/zh-CN/" target="_blank" rel="noopener">Rust</a>语言编写的<strong>ls</strong>文件列表命令替代品；同时还可以替代<strong>tree</strong>命令。</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装"><a href="#ubuntu安装" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> exa</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux"><a href="#archLinux" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S exa</span></span><br></pre></td></tr></table></figure>
+<h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">yum <span class="keyword">install</span> exa</span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> exa</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
+<li>查看全部文件<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">exa -a</span></span><br></pre></td></tr></table></figure></li>
+<li>查看列表<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">exa -l</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>树形结构查看替代<strong>tree</strong></li>
+</ul>
+</blockquote>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">exa -T</span></span><br></pre></td></tr></table></figure>
+<p><a href="#exa">点击这里回到exa</a></p>
+<h1 id="bat"><a href="#bat" class="headerlink" title="bat"></a>bat</h1><blockquote>
+<p><code>bat</code> 是一个语法高亮显示和<strong>Git</strong>集成的cat高级版本，也就是说，bat 有 cat的所有功能，且已经集成了代码高亮，和git版本管理的工具，并且会对过长的文件进行自动分页，不会像 cat 一样全部一次打印，所以<strong>bat</strong>完全可以替代cat。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> bat</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux-1"><a href="#archLinux-1" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S bat</span></span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-1"><a href="#安卓termux-1" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> bat</span><br></pre></td></tr></table></figure>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li>使用 bat 命令创建一个新的文件:<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">bat &gt; <span class="built_in">file</span>.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>使用 bat 命令来查看文件内容，只需要:<figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">bat <span class="built_in">file</span>.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>你能同时查看多个文件:<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">bat</span> <span class="selector-tag">file1</span><span class="selector-class">.txt</span> <span class="selector-tag">file2</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>将多个文件的内容合并至一个单独文件中:<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">bat file1<span class="selector-class">.txt</span> file2<span class="selector-class">.txt</span> file3<span class="selector-class">.txt</span> &gt; document.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>就像我之前提到的那样，除了浏览和编辑文件以外，bat 命令有一些非常酷的特性。</li>
+</ul>
+</blockquote>
+<ul>
+<li>cat 命令以纯文本格式显示文件的内容，而 bat 命令显示了语法高亮和整齐的文本对齐格式</li>
+</ul>
+<ul>
+<li>bat 命令也支持 Git 集成(GIT integration)，这样您就可以轻松查看/编辑 Git 存储库中的文件。 它与 Git 连接可以显示关于索引的修改。</li>
+</ul>
+<h1 id="fd"><a href="#fd" class="headerlink" title="fd"></a>fd</h1><blockquote>
+<p><strong><a href="https://github.com/chinanf-boy/fd-zh" target="_blank" rel="noopener">fd</a></strong>是一种简单又快速和用户友好的find替代方案。</p>
+<h2 id="1-安装-1"><a href="#1-安装-1" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-1"><a href="#ubuntu安装-1" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><p>下载最新<strong>.deb</strong>包装从<a href="https://github.com/sharkdp/fd/releases" target="_blank" rel="noopener">releases</a>页面并通过以下方式安装:<br><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">dpkg</span> <span class="selector-tag">-i</span> <span class="selector-tag">fd_7</span><span class="selector-class">.0</span><span class="selector-class">.0_amd64</span><span class="selector-class">.deb</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="archLinux-2"><a href="#archLinux-2" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S fd</span></span><br></pre></td></tr></table></figure>
+<h3 id="Gentoo-Linux"><a href="#Gentoo-Linux" class="headerlink" title="Gentoo Linux"></a>Gentoo Linux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">emerge -av fd</span></span><br></pre></td></tr></table></figure>
+<h3 id="Fedora"><a href="#Fedora" class="headerlink" title="Fedora"></a>Fedora</h3><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">dnf install fd-<span class="built_in">find</span></span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-2"><a href="#安卓termux-2" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> fd</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-1"><a href="#2-使用-1" class="headerlink" title="2. 使用"></a>2. 使用</h2></blockquote>
+<p>演示</p>
+<p><img data-src="doc/df.svg" alt=""></p>
+<p><a href="#fd">点击这里回到fd</a></p>
 <a id="more"></a>
-</li>
-</ol>
-<p>效果布局1<br>添加如下内容<br><figure class="highlight prolog"><table><tr><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'['</span>,<span class="string">']'</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'&amp;'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">';'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'~'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'\"\"'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下图<br><img data-src="https://i.bmp.ovh/imgs/2019/02/147b0f6e881fd8f4.jpg" alt=""></p>
-<p>效果布局2<br><figure class="highlight prolog"><table><tr><td class="code"><pre><span class="line">extra-keys = [[<span class="string">'ESC'</span>,<span class="string">'/'</span>,<span class="string">'-'</span>,<span class="string">'HOME'</span>,<span class="string">'UP'</span>,<span class="string">'END'</span>,<span class="string">'PGUP'</span>,<span class="string">'&lt;'</span>,<span class="string">'&gt;'</span>],[<span class="string">'TAB'</span>,<span class="string">'CTRL'</span>,<span class="string">'ALT'</span>,<span class="string">'LEFT'</span>,<span class="string">'DOWN'</span>,<span class="string">'RIGHT'</span>,<span class="string">'PGDN'</span>,<span class="string">'['</span>,<span class="string">']'</span>],[<span class="string">'$'</span>,<span class="string">'"'</span>,<span class="string">'='</span>,<span class="string">'&#123;'</span>,<span class="string">'&#125;'</span>,<span class="string">'('</span>,<span class="string">')'</span>,<span class="string">'&amp;'</span>,<span class="string">'%'</span>]]</span><br></pre></td></tr></table></figure><br>显示效果如下<br><img src = 'https://i.bmp.ovh/imgs/2019/04/1ad624dfdd20d41d.jpg' /></p>
+<h1 id="ag"><a href="#ag" class="headerlink" title="ag"></a>ag</h1><blockquote>
+<p>silversearcher-ag—— The silver searcher，这个软件用c编写的，速度极快，用它替代grep。</p>
+<h2 id="1-安装-2"><a href="#1-安装-2" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-2"><a href="#ubuntu安装-2" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> silversearcher-ag</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux-3"><a href="#archLinux-3" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S silversearcher-ag</span></span><br></pre></td></tr></table></figure>
+<h3 id="安卓termux-3"><a href="#安卓termux-3" class="headerlink" title="安卓termux"></a>安卓termux</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> silversearcher-ag</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-2"><a href="#2-使用-2" class="headerlink" title="2. 使用"></a>2. 使用</h2><figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line">ifconfig <span class="string">| ag inet</span></span><br></pre></td></tr></table></figure>
+<p><a href="#ag">点击这里回到ag</a></p>
+</blockquote>
+<h1 id="axel"><a href="#axel" class="headerlink" title="axel"></a>axel</h1><blockquote>
+<p> Axel 是 Linux 下一个不错的HTTP/FTP高速下载工具。支持多线程下载、断点续传，且可以从多个地址或者从一个地址的多个连接来下载同一个文件。适合网速不给力时多线程下载提高下载速度;可以用来替代curl wget 。  </p>
+</blockquote>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><h3 id="ubuntu-1"><a href="#ubuntu-1" class="headerlink" title="ubuntu"></a>ubuntu</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> axel</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS安装"><a href="#CentOS安装" class="headerlink" title="CentOS安装"></a>CentOS安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">yum <span class="keyword">install</span> axel</span><br></pre></td></tr></table></figure>
+<h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>axel</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-3"><a href="#2-使用-3" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
+<li>下载Beyond-光辉岁月<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">axel http:<span class="regexp">//mu</span>sic.<span class="number">163</span>.com<span class="regexp">/song/m</span>edia<span class="regexp">/outer/u</span>rl?id=<span class="number">346576</span>.mp3</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>指定每移最大下载比特<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">exel -s <span class="number">1024000</span> htps:<span class="comment">//</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>设置线程<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">axel -n <span class="number">10</span> https:<span class="comment">//</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>下载到指定位置<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">axel -o <span class="regexp">/sdcard/</span> <span class="string">https:</span><span class="comment">//</span></span><br></pre></td></tr></table></figure>
+<a href="##axel">点击这里回到axel</a></li>
+</ul>
+<h1 id="mosh"><a href="#mosh" class="headerlink" title="mosh"></a>mosh</h1><blockquote>
+<p>Mosh表示移动Shell(Mobile Shell)，是一个用于从客户端跨互联网连接远程服务器的命令行工具。它能用于SSH连接，但是比Secure Shell功能更多。它是一个类似于SSH而带有更多功能的应用。程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下；Mosh最大的特点是基于UDP方式传输，支持在服务端创建一个临时的Key供客户端一次性连接，退出后失效；也支持通过SSH的配置进行认证，但数据传输本身还是自身的UDP方式，mosh的稳定性是替代ssh最好选择。</p>
+</blockquote>
+<h2 id="1-安装-3"><a href="#1-安装-3" class="headerlink" title="1. 安装"></a>1. 安装</h2><h3 id="ubuntu安装-3"><a href="#ubuntu安装-3" class="headerlink" title="ubuntu安装"></a>ubuntu安装</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> mosh</span><br></pre></td></tr></table></figure>
+<h3 id="archLinux-4"><a href="#archLinux-4" class="headerlink" title="archLinux"></a>archLinux</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S mosh</span></span><br></pre></td></tr></table></figure>
+<h3 id="MAC-1"><a href="#MAC-1" class="headerlink" title="MAC"></a>MAC</h3><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>mosh</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用-4"><a href="#2-使用-4" class="headerlink" title="2. 使用"></a>2. 使用</h2><ul>
+<li>mosh用ssh连接方式<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">mosh</span> --ssh=<span class="string">"ssh -p 22"</span> roor<span class="variable">@ip</span></span><br></pre></td></tr></table></figure>
+<a href="#mosh">点击这里回到mosh</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>手机软件</category>
+        <category>软件应用</category>
       </categories>
       <tags>
-        <tag>termux</tag>
-        <tag>常用键</tag>
+        <tag>exa</tag>
+        <tag>bat</tag>
+        <tag>fd</tag>
+        <tag>ag</tag>
+        <tag>axel</tag>
+        <tag>mosh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>v2ray的使用方法与节点分享</title>
+    <url>/posts/3be63484.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; v2ray是最新的翻墙软件，相比ss系列提高了安全性，减少被<strong>防火墙</strong>封锁的风险，同时可以使用ss的节点(但是不支持SSR节点)。 想了解详细的安装说明信息可以在去<a href="www.v2ray.com">官方网站</a>或者去github <a href="https://github.com/v2ray/v2ray-core" target="_blank" rel="noopener">v2ray</a>开源项目的教程说明。</p>
+<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><h3 id="安卓系统"><a href="#安卓系统" class="headerlink" title="安卓系统"></a>安卓系统</h3><ol>
+<li>v2rayNG（推荐使用）</li>
+</ol>
+<ul>
+<li>下载地址<br><a href="https://github.com/2dust/v2rayNG/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayNG/releases</a></li>
+</ul>
+<ul>
+<li>导入下面节点<br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/0027ef05f989a975.jpg" alt=""><br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/0027ef05f989a975.jpg" alt=""></li>
+</ul>
+<ol>
+<li>Surfboard （强烈推荐）<blockquote>
+<p>推荐使用速度非常快，可以扫描二维码和配合v2rayNG节点导出剪切板然后到Surfboard点击加号选择使用连接下载或添加订阅 保存即可；youtube上有人评测Surfboard是最快的，想了解详细情况点击下面网址<a href="https://jsproxy.pzb.workers.dev/-----https://m.youtube.com/watch?v=oG8y-6s6Aek" target="_blank" rel="noopener">https://jsproxy.pzb.workers.dev/-----https://m.youtube.com/watch?v=oG8y-6s6Aek</a></p>
+</blockquote>
+</li>
+<li>Pharos Pro <blockquote>
+<p><a href="https://pi-pi.gitbook.io/pharos-pro/" target="_blank" rel="noopener">Pharos Pro</a> 支持Android和iOS，支持 Trojan、V2ray-Core、SS、SS+Simple obfs、SSR、socks5、Https协议。目前还在测试中。详细情况可以点击前面链接访问开发者的文档。<br>下面附上下载地址<a href="https://goindex.pzb.workers.dev/%E8%BD%AF%E4%BB%B6/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/Pharos%20Pro_1.0.apk" target="_blank" rel="noopener">Pharos Pro</a><br>下面是谷歌市场下载地址需要番墙<br><a href="https://play.google.com/store/apps/details?id=com.getsurfboard&amp;hl=en_US&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dsurfboard&amp;pcampaignid=APPU_1_H86LXogtnMDctQ_TjJHIDA" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.getsurfboard&amp;hl=en_US&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dsurfboard&amp;pcampaignid=APPU_1_H86LXogtnMDctQ_TjJHIDA</a></p>
+<h3 id="WIN系统"><a href="#WIN系统" class="headerlink" title="WIN系统"></a>WIN系统</h3></blockquote>
+</li>
+<li>下载下面两个压缩包<br><a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="noopener">https://github.com/v2ray/v2ray-core/releases</a><br><a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayN/releases</a></li>
+<li>把v2rayN.exe 及语言包放入v2ray基础文件解压包里面<br><img src = 'https://i.bmp.ovh/imgs/2019/02/59c05c1db8f6584b.jpg' /></li>
+<li>双击启动 v2rayN 并创建快捷方式<br>下面分享一下我的v2ray节点。<h3 id="Linux系统"><a href="#Linux系统" class="headerlink" title="Linux系统"></a>Linux系统</h3></li>
+</ol>
+<p>使用Linux系统的都是大神级的，安装和使用都不在话下，这里就不出教程了。</p>
+<a id="more"></a>
+<h2 id="v2ray节点分享"><a href="#v2ray节点分享" class="headerlink" title="v2ray节点分享"></a>v2ray节点分享</h2><p>以下节点我会不定期更新，请注意更新日期。<br><figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJraXJrbGFuZGdvb2QudGsiLCJhaWQiOiIxNiIsImhvc3QiOiJraXJrbGFuZGdvb2QudGsiLCJpZCI6ImNjNGY4ZDViLTk2N2ItNDU1Ny1hNGI2LWJkZTkyOTY1YmMyNyIsIm5ldCI6IndzIiwicGF0aCI6Ii82eFdEUGVsaS8iLCJwb3J0IjoiNDQzIiwicHMiOiLovr7mi4nmlq/vvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJyb2NrZXRnb2dvLm1sIiwiYWlkIjoiNDYiLCJob3N0Ijoicm9ja2V0Z29nby5tbCIsImlkIjoiNGQ5NDhhOWUtN2UzNS0xMWVhLTkzNDgtNTYwMDAyYWVmMjIxIiwibmV0Ijoid3MiLCJwYXRoIjoiL0k1emQ4VUR1LyIsInBvcnQiOiI0NDMiLCJwcyI6IuaXpeacrDTvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJraXJrbGFuZGdvb2QubWwiLCJhaWQiOiI0NiIsImhvc3QiOiJraXJrbGFuZGdvb2QubWwiLCJpZCI6ImUwMjQ1MzZlLTdlMzgtMTFlYS1iMGRmLTU2MDAwMmFlZjUwOCIsIm5ldCI6IndzIiwicGF0aCI6Ii8yYnNKY25CWS8iLCJwb3J0IjoiNDQzIiwicHMiOiLml6XmnKwy77ya55S15oql6aKR6YGT77yaaHR0cHM6Ly90Lm1lL2NuaHVtYW5yaWdodDk5IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ4aWJ1bi5tbCIsImFpZCI6IjQ2IiwiaG9zdCI6InhpYnVuLm1sIiwiaWQiOiI5MWU3ZTFhMC03ZTNhLTExZWEtYmY4NS01NjAwMDJhZWY4MTIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvREpJSDdBMTAvIiwicG9ydCI6IjQ0MyIsInBzIjoi5ZaE5qy+NeaXpeacrO+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJnZndkYXNiLnh5eiIsImFpZCI6IjQ2IiwiaG9zdCI6Imdmd2Rhc2IueHl6IiwiaWQiOiIyNmZlZmQ0MC03ZTNjLTExZWEtOWY5YS01NjAwMDJhZWY5MDciLCJuZXQiOiJ3cyIsInBhdGgiOiIvYk1HcnBuWnMvIiwicG9ydCI6IjQ0MyIsInBzIjoi5pel5pysMTDvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ3ZW5lZWRmcmVlZG9tLm1sIiwiYWlkIjoiNDYiLCJob3N0Ijoid2VuZWVkZnJlZWRvbS5tbCIsImlkIjoiODNiZDExNWEtN2UzZS0xMWVhLTg4OGItNTYwMDAyYWVmYTFkIiwibmV0Ijoid3MiLCJwYXRoIjoiL0lPcTBHVENjLyIsInBvcnQiOiI0NDMiLCJwcyI6IuWWhOasvjfml6XmnKzvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjaGluYWh1bWFuci50ayIsImFpZCI6IjQ2IiwiaG9zdCI6ImNoaW5haHVtYW5yLnRrIiwiaWQiOiJkZTNkOWI5NC03ZTNmLTExZWEtOTJiYy01NjAwMDJhZWZhZTYiLCJuZXQiOiJ3cyIsInBhdGgiOiIvaGJVOXM1SEYvIiwicG9ydCI6IjQ0MyIsInBzIjoi5pel5pysNu+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJhcHBsZW11c2ljcy50ayIsImFpZCI6IjQ2IiwiaG9zdCI6ImFwcGxlbXVzaWNzLnRrIiwiaWQiOiI0ZGM1NjAwOC03ZTQyLTExZWEtOGMwYy01NjAwMDJhZWZjNGEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvVDVtUzRDaTIvIiwicG9ydCI6IjQ0MyIsInBzIjoi5ZaE5qy+OOaXpeacrO+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJub3RvbmVsZXNzLm1sIiwiYWlkIjoiNDYiLCJob3N0Ijoibm90b25lbGVzcy5tbCIsImlkIjoiMzNmNDdkNDItN2U0NC0xMWVhLWI4NTgtNTYwMDAyYWVmZDQxIiwibmV0Ijoid3MiLCJwYXRoIjoiL1dLTzhoSlNBLyIsInBvcnQiOiI0NDMiLCJwcyI6Iua0m+adieeftjHvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjZHAyMDE5LnRrIiwiYWlkIjoiNDYiLCJob3N0IjoiY2RwMjAxOS50ayIsImlkIjoiMTFlZTU2ZWUtN2U0Ni0xMWVhLTk0NjAtNTYwMDAyYWVmZTQyIiwibmV0Ijoid3MiLCJwYXRoIjoiL3U5QkE0bGJHLyIsInBvcnQiOiI0NDMiLCJwcyI6Iuilv+mbheWbvkPvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJtaWxrZ29nby5jZiIsImFpZCI6IjQ2IiwiaG9zdCI6Im1pbGtnb2dvLmNmIiwiaWQiOiJmMmNjYjVjMi03ZWY4LTExZWEtODlmNS01NjAwMDJhZjdmNGYiLCJuZXQiOiJ3cyIsInBhdGgiOiIvczJsWDUxVFMvIiwicG9ydCI6IjQ0MyIsInBzIjoi5ZaE5qy+M+ilv+mbheWbvu+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJicml0YWdvb2QubWwiLCJhaWQiOiI0NiIsImhvc3QiOiJicml0YWdvb2QubWwiLCJpZCI6Ijg1MjJmZTcyLTdmMDgtMTFlYS1iM2FkLTU2MDAwMmFmOGM2NCIsIm5ldCI6IndzIiwicGF0aCI6Ii9XWWhCZ0Y3VS8iLCJwb3J0IjoiNDQzIiwicHMiOiLlloTmrL455pel5pys77ya55S15oql6aKR6YGT77yaaHR0cHM6Ly90Lm1lL2NuaHVtYW5yaWdodDk5IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjaGluYWhyLm1sIiwiYWlkIjoiNDYiLCJob3N0IjoiY2hpbmFoci5tbCIsImlkIjoiNWZiZjZkOWUtN2YwYS0xMWVhLTliY2UtNTYwMDAyYWY4ZDg2IiwibmV0Ijoid3MiLCJwYXRoIjoiL24yS2psdXc2LyIsInBvcnQiOiI0NDMiLCJwcyI6Iuilv+mbheWbvkTvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjaGluYWh1bWFuci5tbCIsImFpZCI6IjQ2IiwiaG9zdCI6ImNoaW5haHVtYW5yLm1sIiwiaWQiOiI5MmFjOTViNC03ZjBiLTExZWEtOWZiOC01NjAwMDJhZjhlNmQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvRmdlVjMwNjEvIiwicG9ydCI6IjQ0MyIsInBzIjoi6KW/6ZuF5Zu+QjrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjZHAyMDE5Lm1sIiwiYWlkIjoiNDYiLCJob3N0IjoiY2RwMjAxOS5tbCIsImlkIjoiZjExYmZkYTAtN2YwYy0xMWVhLWJjNmYtNTYwMDAyYWY4ZWVjIiwibmV0Ijoid3MiLCJwYXRoIjoiL3h2amJUZzdCLyIsInBvcnQiOiI0NDMiLCJwcyI6IuaXpeacrDHvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJtaWxrZ29nby54eXoiLCJhaWQiOiI0NiIsImhvc3QiOiJtaWxrZ29nby54eXoiLCJpZCI6ImFlYjU0YzYyLTdmMGUtMTFlYS1iM2NlLTU2MDAwMmFmOGZiMyIsIm5ldCI6IndzIiwicGF0aCI6Ii9YOGZST2dEeS8iLCJwb3J0IjoiNDQzIiwicHMiOiLml6XmnKwz77ya55S15oql6aKR6YGT77yaaHR0cHM6Ly90Lm1lL2NuaHVtYW5yaWdodDk5IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ0YWNvdGFzdHkudGsiLCJhaWQiOiI0NiIsImhvc3QiOiJ0YWNvdGFzdHkudGsiLCJpZCI6IjI1N2I0YTEyLTdmMTAtMTFlYS04OGE4LTU2MDAwMmFmOTA3ZSIsIm5ldCI6IndzIiwicGF0aCI6Ii9iOW5lT2s2Qi8iLCJwb3J0IjoiNDQzIiwicHMiOiLlloTmrL425pel5pys77ya55S15oql6aKR6YGT77yaaHR0cHM6Ly90Lm1lL2NuaHVtYW5yaWdodDk5IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJtaWxrZ29nby50ayIsImFpZCI6IjQ2IiwiaG9zdCI6Im1pbGtnb2dvLnRrIiwiaWQiOiI0ZjEyODE5Yy04MDE0LTExZWEtYmIwOC01NjAwMDJiMDRjZmQiLCJuZXQiOiJ3cyIsInBhdGgiOiIvRlBraGNVNG4vIiwicG9ydCI6IjQ0MyIsInBzIjoi5ZaE5qy+NOilv+mbheWbvu+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJwYW1wZXJzdmsudGsiLCJhaWQiOiIxNiIsImhvc3QiOiJwYW1wZXJzdmsudGsiLCJpZCI6IjFmMjE5ZDdlLTgwNGItMTFlYS04YjNmLTU2MDAwMmIwNjIxOCIsIm5ldCI6IndzIiwicGF0aCI6Ii8yZmtGbVJ6MC8iLCJwb3J0IjoiNDQzIiwicHMiOiLlloTmrL4x5rSb5p2J55+277ya55S15oql6aKR6YGT77yaaHR0cHM6Ly90Lm1lL2NuaHVtYW5yaWdodDk5IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJidXJnZXJraW5nZ29vZC5tbCIsImFpZCI6IjQ2IiwiaG9zdCI6ImJ1cmdlcmtpbmdnb29kLm1sIiwiaWQiOiJlNWMyNTUxMi04MDRjLTExZWEtODYwMC01NjAwMDJiMDY0NGEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvTkhxRDQ1cmQvIiwicG9ydCI6IjQ0MyIsInBzIjoi5ZaE5qy+MuaXpeacrO+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJmaXZlZGVtYW5kcy5tbCIsImFpZCI6IjQ2IiwiaG9zdCI6ImZpdmVkZW1hbmRzLm1sIiwiaWQiOiJiMzQwZjcwNC04MDRlLTExZWEtYTdjZi01NjAwMDJiMDY1NmIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdW0xbkJGMmYvIiwicG9ydCI6IjQ0MyIsInBzIjoi5pel5pysNe+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjaGluYWhyaWdodC54eXoiLCJhaWQiOiI0NiIsImhvc3QiOiJjaGluYWhyaWdodC54eXoiLCJpZCI6ImI3M2E3ODgwLTgwNTgtMTFlYS1iNDdlLTU2MDAwMmIwNjc3NSIsIm5ldCI6IndzIiwicGF0aCI6Ii9QNXBZOVR4ZS8iLCJwb3J0IjoiNDQzIiwicHMiOiLmlrDliqDlnaHvvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJjYW5vbmdvb2QubWwiLCJhaWQiOiI0NiIsImhvc3QiOiJjYW5vbmdvb2QubWwiLCJpZCI6ImE3MjJlZWFjLTgwNWItMTFlYS1iOWM1LTU2MDAwMmIwNmZlZCIsIm5ldCI6IndzIiwicGF0aCI6Ii93UGhwM0xBYS8iLCJwb3J0IjoiNDQzIiwicHMiOiLlloTmrL4xMOaXpeacrO+8mueUteaKpemikemBk++8mmh0dHBzOi8vdC5tZS9jbmh1bWFucmlnaHQ5OSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJ0ZW5neHVuLm1vbnN0ZXIiLCJhaWQiOiIyMzMiLCJob3N0IjoidGVuZ3h1bi5tb25zdGVyIiwiaWQiOiI3NjcxNzg0My03NTNiLTQ3ODYtOTNiNy0wZDk5MTQ3OGY2NjkiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdGVuZ3h1biIsInBvcnQiOiI0NDMiLCJwcyI6ImludnPmr5vlrZAiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>科学上网</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+        <tag>谷歌</tag>
+        <tag>翻墙</tag>
+        <tag>节点分享</tag>
+        <tag>网络长城</tag>
+        <tag>v2rayNG</tag>
+        <tag>Surfboard</tag>
+        <tag>Pharos</tag>
+        <tag>v2rayN</tag>
       </tags>
   </entry>
   <entry>
@@ -731,101 +830,15 @@ n/2, & \text{如果$ x<=2 $}\\
       </tags>
   </entry>
   <entry>
-    <title>termux安装使用you-get下载视频</title>
-    <url>/posts/d8fa7a69.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="You-Get简单介绍"><a href="#You-Get简单介绍" class="headerlink" title="You-Get简单介绍"></a>You-Get简单介绍</h1><p>&emsp;&emsp; <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a>是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。</p>
-<h1 id="一、安裝"><a href="#一、安裝" class="headerlink" title="一、安裝"></a>一、安裝</h1><hr>
-<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight sas"><table><tr><td class="code"><pre><span class="line">pkg <span class="meta">update</span> <span class="variable">&amp;&amp;</span> pkg upgrade</span><br></pre></td></tr></table></figure>
-<h2 id="2-获取SD卡读写权限"><a href="#2-获取SD卡读写权限" class="headerlink" title="2.获取SD卡读写权限"></a>2.获取SD卡读写权限</h2><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">termux-<span class="built_in">setup</span>-storage</span><br></pre></td></tr></table></figure>
-<h2 id="3-安装python-ffmpeg"><a href="#3-安装python-ffmpeg" class="headerlink" title="3.安装python ffmpeg"></a>3.安装python ffmpeg</h2><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> python ffmpeg</span><br></pre></td></tr></table></figure>
-<h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">python -m pip <span class="keyword">install</span> <span class="comment">--upgrade pip</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">pip <span class="keyword">install</span> you-<span class="keyword">get</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">pip <span class="keyword">install</span> <span class="comment">--upgrade you-get</span></span><br></pre></td></tr></table></figure>
-<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">you-<span class="builtin-name">get</span> -V</span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">you-get -<span class="selector-tag">i</span> http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br> <img data-src="01.jpg" alt=""></p>
-<p><strong>解析</strong><br><figure class="highlight actionscript"><table><tr><td class="code"><pre><span class="line">you-<span class="keyword">get</span> -u http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br><img data-src="02.jpg" alt=""><br><strong>下载 </strong><br><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">you-get -o <span class="regexp">/sdcard/</span>video<span class="regexp">/ http:/</span><span class="regexp">/m.iqiyi.com/</span>v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="03.jpg" alt=""><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
-<iframe src="//player.bilibili.com/player.html?aid=24822266&cid=41834559&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-]]></content>
-      <categories>
-        <category>应用软件</category>
-      </categories>
-      <tags>
-        <tag>termux</tag>
-        <tag>视频</tag>
-        <tag>嗅探</tag>
-        <tag>下载</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>v2ray的使用方法与节点分享</title>
-    <url>/posts/3be63484.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; v2ray是最新的翻墙软件，相比ss系列提高了安全性，减少被<strong>防火墙</strong>封锁的风险，同时可以使用ss的节点(但是不支持SSR节点)。 想了解详细的安装说明信息可以在去<a href="www.v2ray.com">官方网站</a>或者去github <a href="https://github.com/v2ray/v2ray-core" target="_blank" rel="noopener">v2ray</a>开源项目的教程说明。</p>
-<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><h3 id="安卓系统"><a href="#安卓系统" class="headerlink" title="安卓系统"></a>安卓系统</h3><ol>
-<li>v2rayNG（推荐使用）</li>
-</ol>
-<ul>
-<li>下载地址<br><a href="https://github.com/2dust/v2rayNG/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayNG/releases</a></li>
-</ul>
-<ul>
-<li>导入下面节点<br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/0027ef05f989a975.jpg" alt=""><br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/0027ef05f989a975.jpg" alt=""></li>
-</ul>
-<ol>
-<li><a href="https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv&amp;hl=zh&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dbifrostv&amp;pcampaignid=APPU_1_NPjpXLSCCsKIrwS_sqDYDw" target="_blank" rel="noopener">BifrostV</a>(需要谷歌市场下载)</li>
-</ol>
-<ol>
-<li>Kitsunebi<blockquote>
-<p>Kitsunebi支持订阅和导入规则，推荐使用</p>
-</blockquote>
-</li>
-</ol>
-<ul>
-<li>下载地址<br><a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android&amp;hl=zh&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dkitsunebi&amp;pcampaignid=APPU_1_0BDwXO2IKJGZsAfJoYmACQ" target="_blank" rel="noopener">Kitsunebi</a></li>
-<li>路由规则<blockquote>
-<p>本规则只有<strong>Kitsunebi</strong>可以使用，github项目地址<a href="https://github.com/ConnersHua/Profiles/tree/master" target="_blank" rel="noopener">https://github.com/ConnersHua/Profiles/tree/master</a><br>下面是专业版的规则加去广告<br><a href="https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf" target="_blank" rel="noopener">https://raw.githubusercontent.com/ConnersHua/Profiles/master/Kitsunebi/Pro.conf</a><br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/d662eb26f568b33f.png" alt=""><br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/4a4775cf29174bf3.png" alt=""></p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>节点导入<br><img data-src="https://ftp.bmp.ovh/imgs/2019/08/ae9b4505ce5288c6.png" alt=""></li>
-</ul>
-<ol>
-<li>Surfboard （强烈推荐）<blockquote>
-<p>推荐使用速度非常快，可以扫描二维码和配合v2rayNG节点导出剪切板然后到Surfboard点击加号选择使用连接下载或添加订阅 保存即可；youtube上有人评测Surfboard是最快的，想了解详细情况点击下面网址<a href="https://jsproxy.pzb.workers.dev/-----https://m.youtube.com/watch?v=oG8y-6s6Aek" target="_blank" rel="noopener">https://jsproxy.pzb.workers.dev/-----https://m.youtube.com/watch?v=oG8y-6s6Aek</a><br>下面是谷歌市场下载地址需要番墙<br><a href="https://play.google.com/store/apps/details?id=com.getsurfboard&amp;hl=en_US&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dsurfboard&amp;pcampaignid=APPU_1_H86LXogtnMDctQ_TjJHIDA" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.getsurfboard&amp;hl=en_US&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dsurfboard&amp;pcampaignid=APPU_1_H86LXogtnMDctQ_TjJHIDA</a></p>
-<h3 id="WIN系统"><a href="#WIN系统" class="headerlink" title="WIN系统"></a>WIN系统</h3></blockquote>
-</li>
-<li>下载下面两个压缩包<br><a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="noopener">https://github.com/v2ray/v2ray-core/releases</a><br><a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayN/releases</a></li>
-<li>把v2rayN.exe 及语言包放入v2ray基础文件解压包里面<br><img src = 'https://i.bmp.ovh/imgs/2019/02/59c05c1db8f6584b.jpg' /></li>
-<li>双击启动 v2rayN 并创建快捷方式<br>下面分享一下我的v2ray节点。<h3 id="Linux系统"><a href="#Linux系统" class="headerlink" title="Linux系统"></a>Linux系统</h3></li>
-</ol>
-<p>使用Linux系统的都是大神级的，安装和使用都不在话下，这里就不出教程了。</p>
-<a id="more"></a>
-<h2 id="v2ray节点分享"><a href="#v2ray节点分享" class="headerlink" title="v2ray节点分享"></a>v2ray节点分享</h2><p>以下节点我会不定期更新，请注意更新日期。<br><figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiIxMDQuMjQ1LjMzLjg1IiwiYWlkIjoiNjQiLCJob3N0IjoiIiwiaWQiOiI4NjY5NWZmZC0zM2I4LTQxOTItYTBlMC01MzI2N2M4NWM5NTUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjMxMjkxIiwicHMiOiLnvo7lm70iLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiIxMDQuMTguNDUuNzciLCJhaWQiOiI2NCIsImhvc3QiOiJ3d3cuZnJlZW5ldC5wdyIsImlkIjoiMWM0NzZlZmMtMmQ3MS00MjBkLTkzOGYtNTFmNmU1NDE4ODRjIiwibmV0Ijoid3MiLCJwYXRoIjoiL2ZyZWVkb20vIiwicG9ydCI6IjQ0MyIsInBzIjoi576O5Zu9IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJraXJrbGFuZGdvb2QudGsiLCJhaWQiOiIxNiIsImhvc3QiOiJraXJrbGFuZGdvb2QudGsiLCJpZCI6ImNjNGY4ZDViLTk2N2ItNDU1Ny1hNGI2LWJkZTkyOTY1YmMyNyIsIm5ldCI6IndzIiwicGF0aCI6Ii82eFdEUGVsaS8iLCJwb3J0IjoiNDQzIiwicHMiOiLovr7mi4nmlq/vvJrnlLXmiqXpopHpgZPvvJpodHRwczovL3QubWUvY25odW1hbnJpZ2h0OTkiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</span></span><br><span class="line"><span class="symbol">vmess:</span><span class="comment">//eyJhZGQiOiJwYW1wZXJzdmsudGsiLCJhaWQiOiI0NiIsImhvc3QiOiJwYW1wZXJzdmsudGsiLCJpZCI6IjVkOTQ4NzRhLTdhMDgtMTFlYS1iZDU3LTU2MDAwMmFjMTMxNSIsIm5ldCI6IndzIiwicGF0aCI6Ii9oamI0OGMwdC8iLCJwb3J0IjoiNDQzIiwicHMiOiLlloTmrL4x5rSb5p2J55+277ya55S15oql6aKR6YGT77yaaHR0cHM6Ly90Lm1lL2NuaHVtYW5yaWdodDk5IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</span></span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>科学上网</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-        <tag>谷歌</tag>
-        <tag>翻墙</tag>
-        <tag>节点分享</tag>
-        <tag>网络长城</tag>
-        <tag>v2rayNG</tag>
-        <tag>BifrostV</tag>
-        <tag>Kitsunebi</tag>
-        <tag>v2rayN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>三体名句收藏</title>
     <url>/posts/bc41dd0f.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-        <div id="aplayer-yINrpuEV" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-eigkvbXD" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-yINrpuEV"),
+            element: document.getElementById("aplayer-eigkvbXD"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1084,6 +1097,43 @@ n/2, & \text{如果$ x<=2 $}\\
       </tags>
   </entry>
   <entry>
+    <title>安卓系统利用termux下载种子文件</title>
+    <url>/posts/486160a8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="transmission"><a href="#transmission" class="headerlink" title="transmission"></a>transmission</h1><h2 id="1-termux里安装transmission"><a href="#1-termux里安装transmission" class="headerlink" title="1. termux里安装transmission"></a>1. termux里安装transmission</h2><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> transmission</span><br></pre></td></tr></table></figure>
+<h2 id="2-启动transmission"><a href="#2-启动transmission" class="headerlink" title="2. 启动transmission"></a>2. 启动transmission</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">transmission-daemon -T</span></span><br></pre></td></tr></table></figure>
+<h2 id="下载管理器"><a href="#下载管理器" class="headerlink" title="下载管理器"></a>下载管理器</h2><h3 id="网页管理器"><a href="#网页管理器" class="headerlink" title="网页管理器"></a>网页管理器</h3><p>transmission GUI</p>
+<127.0.0.1:9091/transmission/web/>
+
+<h2 id="Tremotesf"><a href="#Tremotesf" class="headerlink" title="Tremotesf"></a>Tremotesf</h2><p>软件直接谷歌市场下载<br>需要修改/data/data/com.termux/files/home/.config/transmission-daemon中settings.json文件</p>
+<blockquote>
+<p>按照下图修改用户名和密码按照自己的设置，其他设置如下一样。</p>
+</blockquote>
+<a id="more"></a>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="attr">    "alt-speed-down":</span> <span class="number">50</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "alt-speed-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "alt-speed-time-begin":</span> <span class="number">540</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "alt-speed-time-day":</span> <span class="number">127</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "alt-speed-time-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "alt-speed-time-end":</span> <span class="number">1020</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "alt-speed-up":</span> <span class="number">50</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "bind-address-ipv4":</span> <span class="string">"0.0.0.0"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "bind-address-ipv6":</span> <span class="string">"::"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "blocklist-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "blocklist-url":</span> <span class="string">"http://www.example.com/blocklist"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "cache-size-mb":</span> <span class="number">2</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "dht-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "download-dir":</span> <span class="string">"/data/data/com.termux/files/home/Downloads"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "download-queue-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "download-queue-size":</span> <span class="number">5</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "encryption":</span> <span class="number">0</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "idle-seeding-limit":</span> <span class="number">30</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "idle-seeding-limit-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "incomplete-dir":</span> <span class="string">"/data/data/com.termux/files/home/Downloads"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "incomplete-dir-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "lpd-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "message-level":</span> <span class="number">2</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-congestion-algorithm":</span> <span class="string">""</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-id-ttl-hours":</span> <span class="number">6</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-limit-global":</span> <span class="number">200</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-limit-per-torrent":</span> <span class="number">50</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-port":</span> <span class="number">51413</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-port-random-high":</span> <span class="number">65535</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-port-random-low":</span> <span class="number">49152</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-port-random-on-start":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "peer-socket-tos":</span> <span class="string">"default"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "pex-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "port-forwarding-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "preallocation":</span> <span class="number">1</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "prefetch-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "queue-stalled-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "queue-stalled-minutes":</span> <span class="number">30</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "ratio-limit":</span> <span class="number">2</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "ratio-limit-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rename-partial-files":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-authentication-required":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-bind-address":</span> <span class="string">"0.0.0.0"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-host-whitelist":</span> <span class="string">""</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-host-whitelist-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-password":</span> <span class="string">"&#123;15ad59fc485380ee27c627519aac2ada787ea05734lHrHNa"</span><span class="string">,</span> <span class="comment">## 这里修改密码</span></span><br><span class="line"><span class="attr">    "rpc-port":</span> <span class="number">9091</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-url":</span> <span class="string">"/transmission/"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-username":</span> <span class="string">"termux"</span><span class="string">,</span> <span class="comment">## 这里修改用户名</span></span><br><span class="line"><span class="attr">    "rpc-whitelist":</span> <span class="string">"*"</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "rpc-whitelist-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "scrape-paused-torrents-enabled":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "script-torrent-done-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "script-torrent-done-filename":</span> <span class="string">""</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "seed-queue-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "seed-queue-size":</span> <span class="number">10</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "speed-limit-down":</span> <span class="number">100</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "speed-limit-down-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "speed-limit-up":</span> <span class="number">100</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "speed-limit-up-enabled":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "start-added-torrents":</span> <span class="literal">true</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "trash-original-torrent-files":</span> <span class="literal">false</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "umask":</span> <span class="number">18</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "upload-slots-per-torrent":</span> <span class="number">14</span><span class="string">,</span></span><br><span class="line"><span class="attr">    "utp-enabled":</span> <span class="literal">true</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>Tremotesf配置如下图<br><img data-src="https://ftp.bmp.ovh/imgs/2020/04/f75db9e7ce757e66.jpg" alt=""></p>
+<h1 id="peerflix-server"><a href="#peerflix-server" class="headerlink" title="peerflix-server"></a>peerflix-server</h1><h2 id="安卓termux"><a href="#安卓termux" class="headerlink" title="安卓termux"></a>安卓termux</h2><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attribute">yum insatll nodejs</span></span><br></pre></td></tr></table></figure>
+<h2 id="debian-ubuntu"><a href="#debian-ubuntu" class="headerlink" title="debian/ubuntu"></a>debian/ubuntu</h2><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">apt <span class="keyword">install</span> nodejs</span><br></pre></td></tr></table></figure>
+<h2 id="安装服务"><a href="#安装服务" class="headerlink" title="安装服务"></a>安装服务</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span> -g peerflix-<span class="keyword">server</span></span><br></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight axapta"><table><tr><td class="code"><pre><span class="line">peerflix-<span class="keyword">server</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>配置文件目录：~/.config/peerflix-server/config.json</p>
+<p>配置示例：<a href="https://github.com/mafintosh/torrent-stream#full-api" target="_blank" rel="noopener">https://github.com/mafintosh/torrent-stream#full-api</a></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"connections"</span>: <span class="number">100</span>,</span><br><span class="line">  <span class="attr">"tracker"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"verify"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"uploads"</span>: <span class="number">10</span>,</span><br><span class="line">  <span class="attr">"trackers"</span>: [</span><br><span class="line">      <span class="string">"udp://tracker.coppersurfer.tk:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://9.rarbg.to:2710/announce"</span>,</span><br><span class="line">    <span class="string">"udp://9.rarbg.me:2710/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.leechers-paradise.org:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.opentrackr.org:1337/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.internetwarriors.net:1337/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.openbittorrent.com:80/announce"</span>,</span><br><span class="line">    <span class="string">"udp://exodus.desync.com:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://retracker.lanta-net.ru:2710/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.tiny-vps.com:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://open.demonii.si:1337/announce"</span>,</span><br><span class="line">    <span class="string">"udp://bt.xxx-tracker.com:2710/announce"</span>,</span><br><span class="line">    <span class="string">"udp://open.stealth.si:80/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.torrent.eu.org:451/announce"</span>,</span><br><span class="line">    <span class="string">"udp://torrentclub.tech:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.cyberia.is:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://denis.stalker.upeer.me:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://tracker.moeking.me:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://explodie.org:6969/announce"</span>,</span><br><span class="line">    <span class="string">"udp://opentor.org:2710/announce"</span></span><br><span class="line">  ],</span><br><span class="line">   <span class="attr">"dht"</span>: <span class="literal">true</span>, </span><br><span class="line">   <span class="attr">"path"</span>: <span class="string">"/root/Downloads"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="管理器"><a href="#管理器" class="headerlink" title="管理器"></a>管理器</h2><p><a href="http://localhost:9000" target="_blank" rel="noopener">http://localhost:9000</a></p>
+]]></content>
+      <categories>
+        <category>工具应用</category>
+      </categories>
+      <tags>
+        <tag>下载</tag>
+        <tag>种子</tag>
+        <tag>磁力链接</tag>
+        <tag>transmission</tag>
+        <tag>Tremotesf</tag>
+        <tag>peerflix-server</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>安卓手机利用termux搭建aria2下载服务</title>
     <url>/posts/96deb912.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="aria2简介"><a href="#aria2简介" class="headerlink" title="aria2简介"></a>aria2简介</h1><p>&emsp;&emsp; Aria2 是一个用于 Linux、Windows 和 Mac OSX 的轻量级、多协议和多源的命令行下载管理器/实用程序。它支持 HTTP/HTTPS、FTP、SFTP、BitTorrent 和 Metalink。aria2 可以通过内置的 JSON-RPC 和 XML-RPC 接口操作。它支持多线程，可以使用多个源或协议下载文件，确实可以加速并尽可能多的完成下载。它非常轻量级，不需要太多的内存和 CPU。我们可以使用它作为 BitTorrent 客户端，因为它有所有你想要的 BitTorrent 客户端的功能。<br>&emsp;&emsp; 我们可以很容易的在所有的 Linux 发行版上安装 aria2 命令行下载器，例如 Debian、 Ubuntu、 Mint、 RHEL、 CentOS、 Fedora、 suse、 openSUSE、 Arch Linux、 Manjaro、 Mageia 等等……只需要输入下面的命令安装即可。对于 CentOS、 RHEL 系统，我们需要开启 uget 或者 RPMForge 库的支持。</p>
@@ -1127,9 +1177,9 @@ n/2, & \text{如果$ x<=2 $}\\
         <category>应用软件</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>termux</tag>
         <tag>下载</tag>
-        <tag>Linux</tag>
         <tag>aria2</tag>
       </tags>
   </entry>
@@ -1151,6 +1201,69 @@ n/2, & \text{如果$ x<=2 $}\\
       </tags>
   </entry>
   <entry>
+    <title>歌曲欣赏邵夷贝李志黄昏</title>
+    <url>/posts/edcc843f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+        <div id="aplayer-zaEVYvqE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content">[00:00.78]黄昏 [00:01.58][00:02.70]词：邵小毛[00:03.65]曲：李志[00:04.51][00:09.94]他用一种慈祥的姿态[00:13.25]在高处安抚着你[00:16.68][00:18.52]他铺开巨大的过滤网[00:22.09]层层信仰奢靡[00:25.53][00:27.11]他大义凌然地宣布[00:30.05]要把纯净筛留给你[00:34.55][00:36.10]过滤得只剩下了残骸[00:39.91]还要你歌颂感激[00:43.51][00:51.61]你终其一生想找到理由[00:55.40]去热爱脚下的土地[00:58.61][01:00.18]他为其定义的伟大[01:03.36]对你有什么意义[01:07.95][01:09.38]你所能做的只是[01:12.14]在奔跑中保护好你自己[01:16.34][01:17.58]你想要感受到他爱你[01:20.86][01:21.55]愿他别去伤害你[01:25.58][01:34.19]他庞大的身躯压垮了[01:37.59]多少初生的纯良[01:41.19][01:42.94]他曾有的灵魂矗立在[01:46.47]远方冷漠地观望[01:49.69][01:51.58]他费力塑造的繁华[01:54.39]成为装扮阴暗面的假象[01:58.89][02:00.65]他毁掉的美好在不久的[02:04.56]将来变成了疯狂[02:08.10][02:16.12]你终其一生想找到理由[02:19.84]去热爱脚下的土地[02:22.97][02:24.77]他为其定义的伟大[02:27.82]对你有什么意义[02:32.33][02:33.85]你所能做的只是[02:36.53]在奔跑中保护好你自己[02:40.83][02:42.12]你想要感受到他爱你[02:45.33][02:46.23]愿他别去伤害你[02:50.61][02:51.65]你终其一生找不到理由[02:55.42]去热爱脚下的土地[02:58.67][03:00.15]传说中这里的强大[03:03.24]是你生命的全部意义[03:08.20][03:09.33]你所能做的只是[03:12.02]在奔跑中保护好你自己[03:16.39][03:17.63]你想要感受到他爱你[03:20.88][03:21.82]愿他别去伤害你[03:25.60]
+</pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-zaEVYvqE"),
+            narrow: false,
+            autoplay: false,
+            showlrc: 2,
+            music: {
+              title: "黄昏",
+              author: "邵夷贝李志",
+              url: "http://lc-0ww4yxjs.cn-n1.lcfile.com/75a1ae3e5b1f02a39c1a/%E9%BB%84%E6%98%8F%28%E9%82%B5%E5%A4%B7%E8%B4%9D%E3%80%81%E6%9D%8E%E5%BF%97%29.m4a",
+              pic: "http://p4.music.126.net/Wm6bytXz5Lvn839Houu0VQ==/5702067301748582.jpg",
+              lrc: "lrc.txt"
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+<blockquote class="blockquote-center">
+            <p>邵夷贝 李志</p>
+<p>他用一种慈祥的姿态<br>在高处安抚着你<br>他铺开巨大的过滤网<br>层层信仰奢靡<br>他大义凌然地宣布<br>要把纯净筛留给你<br>过滤得只剩下了残骸<br>还要你歌颂感激<br>你终其一生想找到理由<br>去热爱脚下的土地<br>他为其定义的伟大<br>对你有什么意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你<br>他庞大的身躯压垮了<br>多少初生的纯良<br>他曾有的灵魂矗立在<br>远方冷漠地观望<br>他费力塑造的繁华<br>成为装扮阴暗面的假象<br>他毁掉的美好在不久的<br>将来变成了疯狂<br>你终其一生想找到理由<br>去热爱脚下的土地<br>他为其定义的伟大<br>对你有什么意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你<br>你终其一生找不到理由<br>去热爱脚下的土地<br>传说中这里的强大<br>是你生命的全部意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你</p>
+
+          </blockquote>
+<p><a href=""></a></p>
+<a id="more"></a>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TmLII4V5BdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://www.youtube.com/embed/TmLII4V5BdU","pic":"https://www.youtube.com/embed/TmLII4V5BdU"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+      <categories>
+        <category>音乐欣赏</category>
+      </categories>
+      <tags>
+        <tag>李志 邵夷贝</tag>
+        <tag>黄昏</tag>
+        <tag>歌曲</tag>
+        <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MYSQL数据库使用记录</title>
+    <url>/posts/1f77a6f0.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="查看数据库版本"><a href="#查看数据库版本" class="headerlink" title="查看数据库版本"></a>查看数据库版本</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> @@<span class="keyword">VERSION</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h2><figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>();</span><br></pre></td></tr></table></figure>
+<h2 id="查看用户权限"><a href="#查看用户权限" class="headerlink" title="查看用户权限"></a>查看用户权限</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">grants</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight n1ql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> wordpress;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>软件应用</category>
+      </categories>
+      <tags>
+        <tag>MYSQL</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>沉默的代价</title>
     <url>/posts/b9c35f4a.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; In Germany, they first came for the Communists,<br>&emsp;&emsp; and I didn’t speak up because I wasn’t a Communist.<br>&emsp;&emsp; Then they came for the Jews,<br>&emsp;&emsp; and I didn’t speak up because I wasn’t a Jew.<br>&emsp;&emsp; Then they came for the trade unionists,<br>&emsp;&emsp;  and I didn’t speak up because I wasn’t a trade unionist.<br>&emsp;&emsp; Then they came for the Catholics,<br>and I didn’t speak up because I was a Protestant.<br>&emsp;&emsp;  Then they came for me，<br>but by that time， there was no one left to speak up.<br>&emsp;&emsp; by Rev. Martin Niemoller, 1945</p>
@@ -1169,25 +1282,6 @@ n/2, & \text{如果$ x<=2 $}\\
         <tag>自由</tag>
         <tag>代价</tag>
         <tag>沉默</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>流浪地球在线观看</title>
-    <url>/posts/c4f8d5b0.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; 流浪地球根据刘慈欣同名小说改编,故事设定在2075年,讲述了太阳即将毁灭,已经不适合人类生存,而面对绝境，人类将开启“流浪地球”计划,试图带着地球一起逃离太阳系,寻找人类新家园的故事。</p>
-<h2 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h2><p>&emsp;&emsp; 太阳即将毁灭，过去无数岁月中做为人类精神支柱的存在，变成了死亡和恐怖的象征。<br>比起坐以待毙，人类选择挣扎到底。<br>庞大的地球逃脱计划开始实施。然而人类所能制造的普通尺寸人造环境无法承受漫长的逃脱之旅。所以人类只得在地球的一侧安装上巨大的地球发动机，将整个巨大地球环境圈化为移民方舟，以此逃离太阳系，前往新家园。<br>代价是高昂的，艺术、伦理、常识，一件又一件曾经无比熟悉的特色从人性中消失，逝去的生命更是多如繁星。剩下的只有对生存的强烈渴望。疑惑和猜忌一度在人类当中引发叛乱之火，然而太阳最后的灭亡瞬间平息了一切，人类终于怀揣希望踏上漫长的流浪之旅。<br>“地球啊，我的流浪地球啊”成为无数生活在这个时代的人弥留之际的遗言。它包含着人类这个种族亘古不变的永恒心声————我们要活下去。</p>
-<p><strong>本站可在线播放</strong></p>
-<a id="more"></a>
-<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"http://play1.cp21.ott.cibntv.net/play.videocache.lecloud.com/276/23/13/letv-uts/14/ver_00_22-1123252471-avc-419887-aac-48000-7502959-450229107-cf035329e5e491df5e69731f545e06e3-1556446273662.mp4?crypt=15aa7f2e180&b=480&nlh=4096&nlt=60&bf=30&p2p=1&video_type=mp4&termid=0&tss=no&platid=1&splatid=105&its=0&qos=3&fcheck=0&amltag=6&mltag=6&uid=140893209&token=ec5f66470804f02e1591ce120612a090&keyitem=yfNgPjIifkVzPbREoE3vzMbEOZJVlO6rU2JtvfIzyAlOpBPo7DJri31yqmg.&ntm=1562314200&nkey=ee4cf90af66091b3ca715ca433f5278d&nkey2=5a7a74a5dd0deaedc9f71d72d9754781&auth_key=1562314200-1-0-1-105-c2808359f454042888996f69fa20a811&geo=CN-19-248-2&mmsid=66969155&tm=1562295866&key=e5c3da0e170b043b4f591120d6eaab67&playid=0&vtype=13&cvid=923896122753&payff=1&uidx=0&errc=0&gn=50047&ndtype=2&vrtmcd=106&buss=6&cips=112.97.49.130","pic":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559321641532&di=a718940e0e45c65e93e354c7f6868d0f&imgtype=0&src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3242151534%2C2562079379%26fm%3D193"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-<video controls="controls" src="http://tx.stream.kg.qq.com/vqzone.gtimg.com/1006_75854151d6734e3db2d37d6dfc688c78.f0.mp4?vkey=687B4557D663C4EB9F204204EE81C5F489BF8563429AB219173F23D81B485022827B84E8EECB341760989FF3791DD3317C29ABF18C509636" poster="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559321641532&di=a718940e0e45c65e93e354c7f6868d0f&imgtype=0&src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3242151534%2C2562079379%26fm%3D193" width="100%" height="100%"></video>]]></content>
-      <categories>
-        <category>精彩视频</category>
-      </categories>
-      <tags>
-        <tag>电影</tag>
-        <tag>流浪地球</tag>
-        <tag>高清视频</tag>
-        <tag>在线观看</tag>
       </tags>
   </entry>
   <entry>
@@ -1296,120 +1390,48 @@ n/2, & \text{如果$ x<=2 $}\\
       </tags>
   </entry>
   <entry>
-    <title>WIN10和manjanro双系统grub引导修复</title>
-    <url>/posts/102fd15b.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; 安装WIN和Linux双系统时经常出现引导错误而无法加入任何一个系统的情况，这个时间不要重新安装，修复一下grub引导就好，重新安装又需要浪费很多时间及精力，我相信很多人用遇到这种情况，使用写一个教程给大家。</p>
-<h1 id="修复引导"><a href="#修复引导" class="headerlink" title="修复引导"></a>修复引导</h1><ol>
-<li>查看Linux引导硬盘的哪个分区<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">ls</span></span><br></pre></td></tr></table></figure></li>
-<li><p>会出现</p>
-<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line"><span class="comment">(hd0)</span>  <span class="comment">(hd0,gpt9)</span>  <span class="comment">(hd0,gpt8)</span>...</span><br></pre></td></tr></table></figure>
-<p>这是硬盘分区信息，分区不一样，显示的有可能会有区别</p>
-</li>
-<li><p>如果不知道Linux分区信息接下来一个一个测试</p>
-<figure class="highlight lisp"><table><tr><td class="code"><pre><span class="line">ls (<span class="name">hd0</span>,gpt9)/</span><br></pre></td></tr></table></figure>
-<p>如果出现Linux文件结构就说明这是安装Linux的分区，如果不是安照上面命令继续测试，只需要修改括号后最后面的数字</p>
-</li>
-<li>显示Linux文件结构后继续找grub引导文件的位置<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ls</span> <span class="params">(hd0,gpt8)</span><span class="string">/grub</span></span><br></pre></td></tr></table></figure>
-如果没有x86-64-efi显示引导文件继续下面测试，因为这个是一个没有独立文件夹的引导<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ls</span> <span class="params">(hd0,gpt8)</span><span class="string">/boot/grub</span></span><br></pre></td></tr></table></figure>
-出现后下面找回引导</li>
-<li>设置权限<figure class="highlight gams"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> root=(hd0,gpt8)/boot/grub</span><br></pre></td></tr></table></figure></li>
-<li>设置引导<figure class="highlight gams"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span> prefix=(hd0,gpt8)/boot/grub</span><br></pre></td></tr></table></figure></li>
-<li>修复<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">insmod normal</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<img data-src="https://i.bmp.ovh/imgs/2019/02/9dc692733b099550.jpg" alt=""></li>
-<li>进入Linux更新grub找回引导。</li>
-</ol>
+    <title>termux安装使用you-get下载视频</title>
+    <url>/posts/d8fa7a69.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="You-Get简单介绍"><a href="#You-Get简单介绍" class="headerlink" title="You-Get简单介绍"></a>You-Get简单介绍</h1><p>&emsp;&emsp; <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a>是一个基于 Python 3 的下载工具。使用 You-Get 可以很轻松的下载到网络上的视频、图片及音乐。</p>
+<h1 id="一、安裝"><a href="#一、安裝" class="headerlink" title="一、安裝"></a>一、安裝</h1><hr>
+<h2 id="1-更新"><a href="#1-更新" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight sas"><table><tr><td class="code"><pre><span class="line">pkg <span class="meta">update</span> <span class="variable">&amp;&amp;</span> pkg upgrade</span><br></pre></td></tr></table></figure>
+<h2 id="2-获取SD卡读写权限"><a href="#2-获取SD卡读写权限" class="headerlink" title="2.获取SD卡读写权限"></a>2.获取SD卡读写权限</h2><figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">termux-<span class="built_in">setup</span>-storage</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装python-ffmpeg"><a href="#3-安装python-ffmpeg" class="headerlink" title="3.安装python ffmpeg"></a>3.安装python ffmpeg</h2><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">pkg <span class="keyword">install</span> python ffmpeg</span><br></pre></td></tr></table></figure>
+<h2 id="4-升级版本-pip版本"><a href="#4-升级版本-pip版本" class="headerlink" title="4. 升级版本 pip版本"></a>4. <strong>升级</strong>版本 pip版本</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">python -m pip <span class="keyword">install</span> <span class="comment">--upgrade pip</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-安装you-get"><a href="#4-安装you-get" class="headerlink" title="4. 安装you-get"></a>4. 安装you-get</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">pip <span class="keyword">install</span> you-<span class="keyword">get</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-更新you-get"><a href="#5-更新you-get" class="headerlink" title="5. 更新you-get"></a>5. 更新you-get</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">pip <span class="keyword">install</span> <span class="comment">--upgrade you-get</span></span><br></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="二、you-get使用"><a href="#二、you-get使用" class="headerlink" title="二、you-get使用"></a>二、you-get使用</h1><p> 查看<strong>版本 </strong><br> <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">you-<span class="builtin-name">get</span> -V</span><br></pre></td></tr></table></figure><br> 查看<strong>视频信息 </strong><br>下面我测试一下西虹市首富<br> <figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">you-get -<span class="selector-tag">i</span> http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br> <img data-src="01.jpg" alt=""></p>
+<p><strong>解析</strong><br><figure class="highlight actionscript"><table><tr><td class="code"><pre><span class="line">you-<span class="keyword">get</span> -u http:<span class="comment">//m.iqiyi.com/v_19rrf2nw1g.html</span></span><br></pre></td></tr></table></figure><br><img data-src="02.jpg" alt=""><br><strong>下载 </strong><br><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">you-get -o <span class="regexp">/sdcard/</span>video<span class="regexp">/ http:/</span><span class="regexp">/m.iqiyi.com/</span>v_19rrf2nw1g.html</span><br></pre></td></tr></table></figure><br><img data-src="03.jpg" alt=""><br>you-get的功能非常的多，如果你想了解you-get的所以使用方法可以去github <a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get</a> 项目里面查看，里面有详细使用方法，这里就简单的介绍到这里了。<br>下面附一个网上简单的视频，有助于更快更简单的使用you-get。</p>
+<iframe src="//player.bilibili.com/player.html?aid=24822266&cid=41834559&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 ]]></content>
       <categories>
-        <category>操作系统</category>
+        <category>应用软件</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>WIN10</tag>
-        <tag>manjanro</tag>
-        <tag>grub</tag>
-        <tag>双系统修复</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>archlinux包工具pacman常用命令使用方法</title>
-    <url>/posts/57793a5c.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; Pacman 是一个软件包管理器,，作为ArchLinux发行版的一部分，是 Arch Linux 的一大亮点。它将一个简单的二进制包格式和易用的构建系统结合了起来。不管软件包是来自官方的 Arch 库还是用户自己创建，Pacman 都能方便的管理。</p>
-<h1 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h1><h2 id="列出已经安装的软件包"><a href="#列出已经安装的软件包" class="headerlink" title="列出已经安装的软件包"></a>列出已经安装的软件包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Q</span></span><br></pre></td></tr></table></figure>
-<h2 id="查看clang包是否已经安装"><a href="#查看clang包是否已经安装" class="headerlink" title="查看clang包是否已经安装"></a>查看clang包是否已经安装</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Q clang</span></span><br></pre></td></tr></table></figure>
-<h2 id="查看已安装的包python的详细信息"><a href="#查看已安装的包python的详细信息" class="headerlink" title="查看已安装的包python的详细信息"></a>查看已安装的包python的详细信息</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Qi python</span></span><br></pre></td></tr></table></figure>
-<h2 id="列出已安装包python的所有文件"><a href="#列出已安装包python的所有文件" class="headerlink" title="列出已安装包python的所有文件"></a>列出已安装包python的所有文件</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Ql python</span></span><br></pre></td></tr></table></figure>
-<h2 id="查找某个文件属于哪个包"><a href="#查找某个文件属于哪个包" class="headerlink" title="查找某个文件属于哪个包"></a>查找某个文件属于哪个包</h2><figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">pacman -Qo <span class="regexp">/etc/</span>passwd</span><br></pre></td></tr></table></figure>
-<h1 id="查看组"><a href="#查看组" class="headerlink" title="查看组"></a>查看组</h1><h2 id="查询包组"><a href="#查询包组" class="headerlink" title="查询包组"></a>查询包组</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Sg</span></span><br></pre></td></tr></table></figure>
-<h2 id="查询包组所包含的软件包"><a href="#查询包组所包含的软件包" class="headerlink" title="查询包组所包含的软件包"></a>查询包组所包含的软件包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Sg gnome</span></span><br></pre></td></tr></table></figure>
-<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><h2 id="搜索virtualbox相关的包"><a href="#搜索virtualbox相关的包" class="headerlink" title="搜索virtualbox相关的包"></a>搜索virtualbox相关的包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Ss virtualbox</span></span><br></pre></td></tr></table></figure>
-<h2 id="从数据库中搜索virtualbox的信息"><a href="#从数据库中搜索virtualbox的信息" class="headerlink" title="从数据库中搜索virtualbox的信息"></a>从数据库中搜索virtualbox的信息</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">pacman -Si virtualbox</span></span><br></pre></td></tr></table></figure>
-<h1 id="同步升级"><a href="#同步升级" class="headerlink" title="同步升级"></a>同步升级</h1><h2 id="仅同步源"><a href="#仅同步源" class="headerlink" title="仅同步源"></a>仅同步源</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sy</span></span><br></pre></td></tr></table></figure>
-<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Su</span></span><br></pre></td></tr></table></figure>
-<h2 id="同步源并更新系统"><a href="#同步源并更新系统" class="headerlink" title="同步源并更新系统"></a>同步源并更新系统</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Syu</span></span><br></pre></td></tr></table></figure>
-<h2 id="同步源后安装包"><a href="#同步源后安装包" class="headerlink" title="同步源后安装包"></a>同步源后安装包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sy virtualbox</span></span><br></pre></td></tr></table></figure>
-<p>升级时不升级virtualbox包<br><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">sudo pacman -Su <span class="comment">--ignore virtualbox</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="从本地数据库中获取git的信息，并下载安装"><a href="#从本地数据库中获取git的信息，并下载安装" class="headerlink" title="从本地数据库中获取git的信息，并下载安装"></a>从本地数据库中获取git的信息，并下载安装</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S git</span></span><br></pre></td></tr></table></figure>
-<h2 id="强制安装virtualbox包"><a href="#强制安装virtualbox包" class="headerlink" title="强制安装virtualbox包"></a>强制安装virtualbox包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sf virtualbox</span></span><br></pre></td></tr></table></figure>
-<h2 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h2><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">cd /var/cache/pacman/pkg</span><br><span class="line">sudo pacman -U virtualbox-<span class="number">5.2</span>.<span class="number">12</span>-<span class="number">1</span>-x86_64<span class="selector-class">.pkg</span><span class="selector-class">.tar</span><span class="selector-class">.xz</span></span><br></pre></td></tr></table></figure>
-<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><h2 id="删除virtualbox"><a href="#删除virtualbox" class="headerlink" title="删除virtualbox"></a>删除virtualbox</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -R virtualbox</span></span><br></pre></td></tr></table></figure>
-<h2 id="强制删除被依赖的包慎用"><a href="#强制删除被依赖的包慎用" class="headerlink" title="强制删除被依赖的包慎用"></a>强制删除被依赖的包<strong><em>慎用</em></strong></h2><figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">sudo pacman -<span class="built_in">Rd</span> virtualbox</span><br></pre></td></tr></table></figure>
-<h2 id="删除nodejs包及依赖其的包"><a href="#删除nodejs包及依赖其的包" class="headerlink" title="删除nodejs包及依赖其的包"></a>删除nodejs包及依赖其的包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Rc nodejs</span></span><br></pre></td></tr></table></figure>
-<h2 id="删除nodejs包及其依赖的包"><a href="#删除nodejs包及其依赖的包" class="headerlink" title="删除nodejs包及其依赖的包"></a>删除nodejs包及其依赖的包</h2><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">sudo</span> pacman -<span class="keyword">Rsc </span>nodejs</span><br></pre></td></tr></table></figure>
-<h1 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h1><h2 id="清理-var-cache-pacman-pkg目录下的旧包"><a href="#清理-var-cache-pacman-pkg目录下的旧包" class="headerlink" title="清理/var/cache/pacman/pkg目录下的旧包"></a>清理/var/cache/pacman/pkg目录下的旧包</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Sc</span></span><br></pre></td></tr></table></figure>
-<h2 id="清除所有下载的包和数据库"><a href="#清除所有下载的包和数据库" class="headerlink" title="清除所有下载的包和数据库"></a>清除所有下载的包和数据库</h2><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -Scc</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>系统工具</category>
-      </categories>
-      <tags>
-        <tag>pacman</tag>
-        <tag>arch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>歌曲欣赏邵夷贝李志黄昏</title>
-    <url>/posts/edcc843f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-        <div id="aplayer-XFTvsWXg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content">[00:00.78]黄昏 [00:01.58][00:02.70]词：邵小毛[00:03.65]曲：李志[00:04.51][00:09.94]他用一种慈祥的姿态[00:13.25]在高处安抚着你[00:16.68][00:18.52]他铺开巨大的过滤网[00:22.09]层层信仰奢靡[00:25.53][00:27.11]他大义凌然地宣布[00:30.05]要把纯净筛留给你[00:34.55][00:36.10]过滤得只剩下了残骸[00:39.91]还要你歌颂感激[00:43.51][00:51.61]你终其一生想找到理由[00:55.40]去热爱脚下的土地[00:58.61][01:00.18]他为其定义的伟大[01:03.36]对你有什么意义[01:07.95][01:09.38]你所能做的只是[01:12.14]在奔跑中保护好你自己[01:16.34][01:17.58]你想要感受到他爱你[01:20.86][01:21.55]愿他别去伤害你[01:25.58][01:34.19]他庞大的身躯压垮了[01:37.59]多少初生的纯良[01:41.19][01:42.94]他曾有的灵魂矗立在[01:46.47]远方冷漠地观望[01:49.69][01:51.58]他费力塑造的繁华[01:54.39]成为装扮阴暗面的假象[01:58.89][02:00.65]他毁掉的美好在不久的[02:04.56]将来变成了疯狂[02:08.10][02:16.12]你终其一生想找到理由[02:19.84]去热爱脚下的土地[02:22.97][02:24.77]他为其定义的伟大[02:27.82]对你有什么意义[02:32.33][02:33.85]你所能做的只是[02:36.53]在奔跑中保护好你自己[02:40.83][02:42.12]你想要感受到他爱你[02:45.33][02:46.23]愿他别去伤害你[02:50.61][02:51.65]你终其一生找不到理由[02:55.42]去热爱脚下的土地[02:58.67][03:00.15]传说中这里的强大[03:03.24]是你生命的全部意义[03:08.20][03:09.33]你所能做的只是[03:12.02]在奔跑中保护好你自己[03:16.39][03:17.63]你想要感受到他爱你[03:20.88][03:21.82]愿他别去伤害你[03:25.60]
-</pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-XFTvsWXg"),
-            narrow: false,
-            autoplay: false,
-            showlrc: 2,
-            music: {
-              title: "黄昏",
-              author: "邵夷贝李志",
-              url: "http://lc-0ww4yxjs.cn-n1.lcfile.com/75a1ae3e5b1f02a39c1a/%E9%BB%84%E6%98%8F%28%E9%82%B5%E5%A4%B7%E8%B4%9D%E3%80%81%E6%9D%8E%E5%BF%97%29.m4a",
-              pic: "http://p4.music.126.net/Wm6bytXz5Lvn839Houu0VQ==/5702067301748582.jpg",
-              lrc: "lrc.txt"
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-<blockquote class="blockquote-center">
-            <p>邵夷贝 李志</p>
-<p>他用一种慈祥的姿态<br>在高处安抚着你<br>他铺开巨大的过滤网<br>层层信仰奢靡<br>他大义凌然地宣布<br>要把纯净筛留给你<br>过滤得只剩下了残骸<br>还要你歌颂感激<br>你终其一生想找到理由<br>去热爱脚下的土地<br>他为其定义的伟大<br>对你有什么意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你<br>他庞大的身躯压垮了<br>多少初生的纯良<br>他曾有的灵魂矗立在<br>远方冷漠地观望<br>他费力塑造的繁华<br>成为装扮阴暗面的假象<br>他毁掉的美好在不久的<br>将来变成了疯狂<br>你终其一生想找到理由<br>去热爱脚下的土地<br>他为其定义的伟大<br>对你有什么意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你<br>你终其一生找不到理由<br>去热爱脚下的土地<br>传说中这里的强大<br>是你生命的全部意义<br>你所能做的只是<br>在奔跑中保护好你自己<br>你想要感受到他爱你<br>愿他别去伤害你</p>
-
-          </blockquote>
-<p><a href=""></a></p>
-<a id="more"></a>
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TmLII4V5BdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"https://www.youtube.com/embed/TmLII4V5BdU","pic":"https://www.youtube.com/embed/TmLII4V5BdU"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
-      <categories>
-        <category>音乐欣赏</category>
-      </categories>
-      <tags>
+        <tag>termux</tag>
+        <tag>下载</tag>
         <tag>视频</tag>
-        <tag>李志 邵夷贝</tag>
-        <tag>黄昏</tag>
-        <tag>歌曲</tag>
+        <tag>嗅探</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流浪地球在线观看</title>
+    <url>/posts/c4f8d5b0.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>&emsp;&emsp; 流浪地球根据刘慈欣同名小说改编,故事设定在2075年,讲述了太阳即将毁灭,已经不适合人类生存,而面对绝境，人类将开启“流浪地球”计划,试图带着地球一起逃离太阳系,寻找人类新家园的故事。</p>
+<h2 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h2><p>&emsp;&emsp; 太阳即将毁灭，过去无数岁月中做为人类精神支柱的存在，变成了死亡和恐怖的象征。<br>比起坐以待毙，人类选择挣扎到底。<br>庞大的地球逃脱计划开始实施。然而人类所能制造的普通尺寸人造环境无法承受漫长的逃脱之旅。所以人类只得在地球的一侧安装上巨大的地球发动机，将整个巨大地球环境圈化为移民方舟，以此逃离太阳系，前往新家园。<br>代价是高昂的，艺术、伦理、常识，一件又一件曾经无比熟悉的特色从人性中消失，逝去的生命更是多如繁星。剩下的只有对生存的强烈渴望。疑惑和猜忌一度在人类当中引发叛乱之火，然而太阳最后的灭亡瞬间平息了一切，人类终于怀揣希望踏上漫长的流浪之旅。<br>“地球啊，我的流浪地球啊”成为无数生活在这个时代的人弥留之际的遗言。它包含着人类这个种族亘古不变的永恒心声————我们要活下去。</p>
+<p><strong>本站可在线播放</strong></p>
+<a id="more"></a>
+<div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"http://play1.cp21.ott.cibntv.net/play.videocache.lecloud.com/276/23/13/letv-uts/14/ver_00_22-1123252471-avc-419887-aac-48000-7502959-450229107-cf035329e5e491df5e69731f545e06e3-1556446273662.mp4?crypt=15aa7f2e180&b=480&nlh=4096&nlt=60&bf=30&p2p=1&video_type=mp4&termid=0&tss=no&platid=1&splatid=105&its=0&qos=3&fcheck=0&amltag=6&mltag=6&uid=140893209&token=ec5f66470804f02e1591ce120612a090&keyitem=yfNgPjIifkVzPbREoE3vzMbEOZJVlO6rU2JtvfIzyAlOpBPo7DJri31yqmg.&ntm=1562314200&nkey=ee4cf90af66091b3ca715ca433f5278d&nkey2=5a7a74a5dd0deaedc9f71d72d9754781&auth_key=1562314200-1-0-1-105-c2808359f454042888996f69fa20a811&geo=CN-19-248-2&mmsid=66969155&tm=1562295866&key=e5c3da0e170b043b4f591120d6eaab67&playid=0&vtype=13&cvid=923896122753&payff=1&uidx=0&errc=0&gn=50047&ndtype=2&vrtmcd=106&buss=6&cips=112.97.49.130","pic":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559321641532&di=a718940e0e45c65e93e354c7f6868d0f&imgtype=0&src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3242151534%2C2562079379%26fm%3D193"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<video controls="controls" src="http://tx.stream.kg.qq.com/vqzone.gtimg.com/1006_75854151d6734e3db2d37d6dfc688c78.f0.mp4?vkey=687B4557D663C4EB9F204204EE81C5F489BF8563429AB219173F23D81B485022827B84E8EECB341760989FF3791DD3317C29ABF18C509636" poster="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559321641532&di=a718940e0e45c65e93e354c7f6868d0f&imgtype=0&src=http%3A%2F%2Ft9.baidu.com%2Fit%2Fu%3D3242151534%2C2562079379%26fm%3D193" width="100%" height="100%"></video>]]></content>
+      <categories>
+        <category>精彩视频</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+        <tag>流浪地球</tag>
+        <tag>高清视频</tag>
+        <tag>在线观看</tag>
       </tags>
   </entry>
 </search>
